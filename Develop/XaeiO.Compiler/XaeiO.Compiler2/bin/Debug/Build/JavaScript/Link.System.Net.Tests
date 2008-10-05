@@ -1,0 +1,1 @@
+../../../../../XaeiO.Linker/bin/Debug/XaeiO.Linker.exe -i OSCorlib.xo -i XaeiOS.Kernel.xo -i System.xo -i System.Browser.xo -e System.Net.xo -e System.Net.Tests.xo -v -o System.Net.Tests.xm

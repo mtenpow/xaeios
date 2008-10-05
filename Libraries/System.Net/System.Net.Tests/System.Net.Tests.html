@@ -1,0 +1,75 @@
+<html>
+<head>
+
+    <script language="JavaScript" src="System.Net.Tests.xm">
+    </script>
+
+    <script language="JavaScript">
+        function Write(logArea, s)
+        {
+        s = s.toString()
+	        var elm = document.createElement("SPAN");
+	        elm.innerHTML = s.replace("\n","<BR>");
+	        logArea.appendChild(elm);
+	        elm.scrollIntoView();
+        }
+        window.ConsoleWrite = function(s)
+        {
+            Write(document.getElementById("console-area"), s);
+        }
+        window.Debug = function(s)
+        {
+            Write(document.getElementById("debug-area"), (new Date().toString()) + " - " + s + "\n");
+        }
+        window.DebugLine = function(s)
+        {
+            Debug(s + "\n");
+        }
+        window.LogWrite = function(type, s)
+        {
+            Write(document.getElementById("debug-area"), "[" + type + " @ " + (new Date().toString()) + "] - " + s + "\n");
+        }
+        window.onload = function()
+        {
+          __module__.Initialize();
+          __module__.EntryPoint();
+        }
+    </script>
+
+    <style type="text/css">
+        body, table, tr, td
+        {
+            font: bold 8pt Tahoma, sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background: black;">
+    <div id="process-viewer-area" style="padding: 5px; font: bold 8pt Tahoma; background-color: Black;
+        color: lightblue; width: 100%; height: 180; overflow: auto;">
+    </div>
+    <hr />
+    <table height="430" width="100%" cellpadding="5" cellspacing="5" style="overflow: auto;">
+        <tr style="height: 20px; color: white;">
+            <td width="50%">
+                CONSOLE:
+            </td>
+            <td width="50%">
+                LOG:
+            </td>
+        </tr>
+        <tr>
+            <td width="50%">
+                <div id="console-area" style="padding: 5px; font: bold 8pt Tahoma; background-color: Black;
+                    color: White; width: 100%; height: 400px; overflow: auto;">
+                </div>
+            </td>
+            <td width="50%">
+                <div id="debug-area" style="padding: 5px; font: bold 8pt Tahoma; background-color: Black;
+                    color: Yellow; width: 100%; height: 400px; overflow: auto;">
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

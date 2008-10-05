@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Narrative JavaScript: Example</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<style>
+	#theButton { position:absolute; width:120px; text-align:center; }
+	#buttonContainer { position:relative; height:30px; }
+	</style>
+</head>
+<body>
+
+<div id="page">
+	<div id="header">
+		<h1><a href="index.html">Narrative JavaScript</a></h1>
+	</div>
+
+	<hr class="hrhide" />
+	
+	<div id="sidebar">
+		<ul>
+			<li><h2>NJS Contents</h2>
+				<ul>
+					<li><a href="index.html" title="Home">Home</a></li>
+					<li><a href="overview.html" title="Overview">Overview</a></li>
+					<li><a href="code.html"  title="Coding">Coding</a></li>
+					<li><a href="example.html" title="Example">Example</a></li>
+					<li><a href="compile.html" title="Compilation">Compilation</a></li>
+					<li><a href="reference.html" title="Reference">API Reference</a></li>
+				</ul>
+			</li>
+			<li><h2>Author</h2>
+				<ul>
+					<li><a href="http://www.neilmix.com/" title="neilmix.com">Neil Mix</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="content" class="narrowcolumn" style="margin:0px; ">
+	
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="code.html">coding</a></div>
+			<div class="alignright"> <a href="compile.html">compilation</a> &raquo;</div>
+		</div>
+	
+		<div class="post">
+
+			<h2>Example</h2>
+			<p>
+			We're going to create a simple animation that causes a button to
+			move back and forth on command.  To start off, we're going to
+			create a sleep method that yields execution for a specified number
+			of milliseconds:
+<pre>
+    function sleep(millis) {
+        var notifier = new EventNotifier();
+        setTimeout(notifier, millis);
+        notifier.wait->();
+    }    
+</pre>
+			Now with our <tt>sleep</tt> method implemented, we're able to implement a
+			generalized animation method that doesn't require callbacks:
+<pre>
+    function animate(element, property, endValue, duration, frequency) {    
+        // calculate animation variables
+        var frameCount = Math.ceil(duration/frequency);
+        var startValue = parseInt(element.style[property], 10);
+        var distance = endValue - startValue;
+        var jumpSize = Math.ceil(distance/frameCount);
+    
+        // do the animation
+        for (var i = 0; i < frameCount - 1; i++) {
+            var nextValue = startValue + (jumpSize * i);
+            element.style[property] = nextValue + "px";
+    
+            // note the yielding operation
+            sleep->(frequency);
+        }
+    
+        element.style[property] = endValue + "px";
+    }
+    
+</pre>
+			In addition to animation and sleeping, we'll create a method that will yield 
+			until a DOM element has been clicked:
+<pre>
+    function waitForClick(element) {
+        var notifier = new EventNotifier();
+        element.onclick = notifier;
+        notifier.wait->();
+    }    
+</pre>
+			Now we can use our <tt>animate</tt> and <tt>waitForClick</tt> methods
+			to create an interactive animation that bounces a button back and forth on
+			screen at the user's request:
+<pre>
+    function run() {
+        var theButton = document.getElementById("theButton");
+        while(true) {
+            theButton.innerHTML = "go right";
+            
+            // move the button to the right (note the blocking operations)
+            waitForClick->(theButton);
+            theButton.innerHTML = "-->";
+            animate->(theButton, "left", 200, 1000, 20);
+    
+            theButton.innerHTML = "go left";
+    
+            // move the button to the left (again note the blocking operations)
+            waitForClick->(theButton);
+            theButton.innerHTML = "<--";
+            animate->(theButton, "left", 0, 1000, 20);
+        }
+    }
+    spawn(run());
+    
+</pre>
+			We put all of the above code into one file, <a href="moveButton.njs">moveButton.njs</a>.
+			After compiling moveButton.njs the compiled code may look a little scary, 
+			but keep in mind that even it is fairly unreadable, line numbering is consistent 
+			with the original source to help with the debugging process.  
+			</p>
+			<p>
+			Finally, we need to whip up our HTML and JavaScript to load and
+			compile moveButton.js:
+<pre>
+    &lt;button id="theButton" style="left:0px;"&gt;&lt;/button&gt;
+    &lt;script src="../deploy/njs_compile.js"&gt;&lt;/script&gt;
+    &lt;script&gt;NjsCompiler.load("moveButton.njs");<&lt;/script&gt;
+
+</pre>
+			Here's the browser rendering of the above HTML and JavaScript:
+			</p>
+			<p id="buttonContainer">
+				<button id="theButton" style="left:0px;"></button>
+				<script src="../deploy/njs_compile.js"></script>
+				<script>NjsCompiler.load("moveButton.njs");</script>
+			</p>
+			<p>
+			The <a href="compile.html">next section</a> describes how to compile Narrative
+			JavaScript into regular JavaScript.
+			</p>
+		</div>
+	</div>
+	
+	<div id="footer">
+	Narrative JavaScript was created by <a href="http://www.neilmix.com/">Neil Mix</a><br />
+	<a href="http://www.azeemazeez.com/stuff/themes/" title="White as Milk theme for Wordpress">White as Milk</a> graphic design by <a href="http://www.azeemazeez.com">Azeem Azeez</a>.<br />
+	</div>
+</div>
+
+
+</body>
+</html>

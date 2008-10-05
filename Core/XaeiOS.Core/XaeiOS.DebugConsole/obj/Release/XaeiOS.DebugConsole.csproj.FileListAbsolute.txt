@@ -1,0 +1,16 @@
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\obj\Release\ResolveAssemblyReference.cache
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\bin\Release\XaeiOS.DebugConsole.exe
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\bin\Release\XaeiOS.DebugConsole.pdb
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\bin\Release\OSCorlib.dll
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\obj\Release\XaeiOS.DebugConsole.exe
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\obj\Release\XaeiOS.DebugConsole.pdb
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\bin\Debug\XaeiOS.DebugConsole.exe
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\bin\Debug\XaeiOS.DebugConsole.pdb
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\bin\Debug\XaeiOS.DebugConsole.exe
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\bin\Debug\XaeiOS.DebugConsole.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\obj\Release\ResolveAssemblyReference.cache
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\obj\Release\XaeiOS.DebugConsole.exe
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\obj\Release\XaeiOS.DebugConsole.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.DebugConsole\bin\Debug\OSCorlib.pdb

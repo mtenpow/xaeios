@@ -1,0 +1,26 @@
+C:\Documents and Settings\mtenpow-local\Local Settings\Application Data\Temporary Projects\XaeiOS.ProcessViewer\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\mtenpow-local\Local Settings\Application Data\Temporary Projects\XaeiOS.ProcessViewer\bin\Debug\XaeiOS.ProcessViewer.exe
+C:\Documents and Settings\mtenpow-local\Local Settings\Application Data\Temporary Projects\XaeiOS.ProcessViewer\bin\Debug\XaeiOS.ProcessViewer.pdb
+C:\Documents and Settings\mtenpow-local\Local Settings\Application Data\Temporary Projects\XaeiOS.ProcessViewer\bin\Debug\OSCorlib.dll
+C:\Documents and Settings\mtenpow-local\Local Settings\Application Data\Temporary Projects\XaeiOS.ProcessViewer\bin\Debug\System.Browser.dll
+C:\Documents and Settings\mtenpow-local\Local Settings\Application Data\Temporary Projects\XaeiOS.ProcessViewer\bin\Debug\System.Browser.pdb
+C:\Documents and Settings\mtenpow-local\Local Settings\Application Data\Temporary Projects\XaeiOS.ProcessViewer\bin\Debug\OSCorlib.pdb
+C:\Documents and Settings\mtenpow-local\Local Settings\Application Data\Temporary Projects\XaeiOS.ProcessViewer\obj\Release\XaeiOS.ProcessViewer.exe
+C:\Documents and Settings\mtenpow-local\Local Settings\Application Data\Temporary Projects\XaeiOS.ProcessViewer\obj\Release\XaeiOS.ProcessViewer.pdb
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\XaeiOS.ProcessViewer\bin\Debug\XaeiOS.ProcessViewer.exe
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\XaeiOS.ProcessViewer\bin\Debug\XaeiOS.ProcessViewer.pdb
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\XaeiOS.ProcessViewer\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\XaeiOS.ProcessViewer\bin\Debug\System.Browser.dll
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\XaeiOS.ProcessViewer\bin\Debug\System.Browser.pdb
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\XaeiOS.ProcessViewer\bin\Debug\OSCorlib.pdb
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\XaeiOS.ProcessViewer\obj\Release\ResolveAssemblyReference.cache
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\XaeiOS.ProcessViewer\obj\Release\XaeiOS.ProcessViewer.exe
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\XaeiOS.ProcessViewer\obj\Release\XaeiOS.ProcessViewer.pdb
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\obj\Release\XaeiOS.ProcessViewer.exe
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\obj\Release\XaeiOS.ProcessViewer.pdb
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\bin\Debug\XaeiOS.ProcessViewer.exe
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\bin\Debug\XaeiOS.ProcessViewer.pdb
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\bin\Debug\System.Browser.pdb
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\bin\Debug\OSCorlib.pdb
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\obj\Release\ResolveAssemblyReference.cache
+C:\Codebase\XaeiOS\Applications\XaeiOS.ProcessViewer\bin\Debug\OSCorlib.dll

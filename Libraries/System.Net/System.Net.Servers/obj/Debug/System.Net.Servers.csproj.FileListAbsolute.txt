@@ -1,0 +1,16 @@
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Net\System.Net.Servers\bin\Debug\System.Net.Servers.dll
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Net\System.Net.Servers\bin\Debug\System.Net.Servers.pdb
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Net\System.Net.Servers\bin\Debug\Newtonsoft.Json.dll
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Net\System.Net.Servers\bin\Debug\Newtonsoft.Json.pdb
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Net\System.Net.Servers\bin\Debug\Newtonsoft.Json.xml
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Net\System.Net.Servers\obj\Debug\ResolveAssemblyReference.cache
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Net\System.Net.Servers\obj\Debug\System.Net.Servers.dll
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Net\System.Net.Servers\obj\Debug\System.Net.Servers.pdb
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Servers\bin\Debug\System.Net.Servers.dll
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Servers\bin\Debug\System.Net.Servers.pdb
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Servers\bin\Debug\Newtonsoft.Json.dll
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Servers\bin\Debug\Newtonsoft.Json.pdb
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Servers\bin\Debug\Newtonsoft.Json.xml
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Servers\obj\Debug\ResolveAssemblyReference.cache
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Servers\obj\Debug\System.Net.Servers.dll
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Servers\obj\Debug\System.Net.Servers.pdb

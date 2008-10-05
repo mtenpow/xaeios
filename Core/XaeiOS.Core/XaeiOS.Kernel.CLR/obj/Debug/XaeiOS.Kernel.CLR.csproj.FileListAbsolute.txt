@@ -1,0 +1,8 @@
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel.CLR\bin\Debug\XaeiOS.Kernel.CLR.dll
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel.CLR\bin\Debug\XaeiOS.Kernel.CLR.pdb
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel.CLR\obj\Debug\XaeiOS.Kernel.CLR.dll
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel.CLR\obj\Debug\XaeiOS.Kernel.CLR.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel.CLR\bin\Debug\XaeiOS.Kernel.CLR.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel.CLR\bin\Debug\XaeiOS.Kernel.CLR.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel.CLR\obj\Debug\XaeiOS.Kernel.CLR.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel.CLR\obj\Debug\XaeiOS.Kernel.CLR.pdb

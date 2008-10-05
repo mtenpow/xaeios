@@ -1,0 +1,14 @@
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\bin\Debug\OSCorlib.CLR.dll
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\bin\Debug\OSCorlib.CLR.pdb
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\bin\Debug\XaeiOS.Kernel.CLR.dll
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\bin\Debug\XaeiOS.Kernel.CLR.pdb
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\obj\Debug\ResolveAssemblyReference.cache
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\obj\Debug\OSCorlib.CLR.dll
+C:\Codebase\XaeiO\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\obj\Debug\OSCorlib.CLR.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\bin\Debug\OSCorlib.CLR.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\bin\Debug\OSCorlib.CLR.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\bin\Debug\XaeiOS.Kernel.CLR.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\bin\Debug\XaeiOS.Kernel.CLR.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\obj\Debug\ResolveAssemblyReference.cache
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\obj\Debug\OSCorlib.CLR.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\OSCorlib.CLR\obj\Debug\OSCorlib.CLR.pdb

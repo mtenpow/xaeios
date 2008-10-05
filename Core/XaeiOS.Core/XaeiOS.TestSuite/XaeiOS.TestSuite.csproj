@@ -1,0 +1,107 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68FEF63B-D037-4160-9486-F03A091F09F2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XaeiOS.TestSuite</RootNamespace>
+    <AssemblyName>XaeiOS.TestSuite</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <StartupObject>XaeiOS.TestSuite.TestRunner</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\XaeiOS.TestSuite.XML</DocumentationFile>
+    <NoStdLib>true</NoStdLib>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>XaeiOS.TestSuite</AssemblyName>
+    <RootNamespace>XaeiOS.TestSuite</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>XaeiOS.TestSuite</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <RootNamespace>XaeiOS.TestSuite</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="XaeiOS\TestSuite\Assert.cs" />
+    <Compile Include="XaeiOS\TestSuite\AssertException.cs" />
+    <Compile Include="XaeiOS\TestSuite\TestSuite.cs" />
+    <Compile Include="XaeiOS\TestSuite\TestBase.cs" />
+    <Compile Include="XaeiOS\TestSuite\ITest.cs" />
+    <Compile Include="XaeiOS\TestSuite\TestRunner.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\AlertHelloWorldTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\CompilerBugsTestSuite.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\ClassStructureTestSuite.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\ThreadingTestSuite.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\ReflectionTestSuite.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\NullReferenceExceptionTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\DictionaryRemoveSSABugTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\FlowControlTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\MultiThreadingStressTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\EventTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\QuickSortTestSuite.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\ResourceTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\SingleThreadedPerformanceTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\XmlHttpRequestTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\DomTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\SynchronizationTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\MultiThreadingTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\ThreadingTest.cs" />
+    <Compile Include="XaeiOS\TestSuite\Tests\ExceptionHandlingTestSuite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OSCorlib\OSCorlib.csproj">
+      <Project>{A65012D8-10F7-4995-976C-0FAB52ADF0BF}</Project>
+      <Name>OSCorlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libraries\System\System\bin\Debug\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Browser, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libraries\System.Browser\System.Browser\System.Browser\bin\Debug\System.Browser.dll</HintPath>
+    </Reference>
+    <Reference Include="XaeiOS.ProcessViewer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Applications\XaeiOS.ProcessViewer\XaeiOS.ProcessViewer\bin\Debug\XaeiOS.ProcessViewer.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

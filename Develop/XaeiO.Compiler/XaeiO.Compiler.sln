@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XaeiO.Linker", "XaeiO.Linker\XaeiO.Linker.csproj", "{0B4FC71E-6748-438E-8DC1-26F22419F4CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil.Pdb", "Mono.Cecil.Pdb\Mono.Cecil.Pdb.csproj", "{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil", "Mono.Cecil\Mono.Cecil.csproj", "{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XaeiO.Compiler2", "XaeiO.Compiler2\XaeiO.Compiler2.csproj", "{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug XaeiO CLR|Any CPU = Debug XaeiO CLR|Any CPU
+		Debug XaeiOS|Any CPU = Debug XaeiOS|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release XaeiO CLR|Any CPU = Release XaeiO CLR|Any CPU
+		Release XaeiOS|Any CPU = Release XaeiOS|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B4FC71E-6748-438E-8DC1-26F22419F4CC}.Debug XaeiO CLR|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4FC71E-6748-438E-8DC1-26F22419F4CC}.Debug XaeiO CLR|Any CPU.Build.0 = Debug|Any CPU
+		{0B4FC71E-6748-438E-8DC1-26F22419F4CC}.Debug XaeiOS|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4FC71E-6748-438E-8DC1-26F22419F4CC}.Debug XaeiOS|Any CPU.Build.0 = Debug|Any CPU
+		{0B4FC71E-6748-438E-8DC1-26F22419F4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4FC71E-6748-438E-8DC1-26F22419F4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4FC71E-6748-438E-8DC1-26F22419F4CC}.Release XaeiO CLR|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4FC71E-6748-438E-8DC1-26F22419F4CC}.Release XaeiO CLR|Any CPU.Build.0 = Release|Any CPU
+		{0B4FC71E-6748-438E-8DC1-26F22419F4CC}.Release XaeiOS|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4FC71E-6748-438E-8DC1-26F22419F4CC}.Release XaeiOS|Any CPU.Build.0 = Release|Any CPU
+		{0B4FC71E-6748-438E-8DC1-26F22419F4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4FC71E-6748-438E-8DC1-26F22419F4CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}.Debug XaeiO CLR|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}.Debug XaeiO CLR|Any CPU.Build.0 = Debug|Any CPU
+		{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}.Debug XaeiOS|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}.Debug XaeiOS|Any CPU.Build.0 = Debug|Any CPU
+		{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}.Release XaeiO CLR|Any CPU.ActiveCfg = Release|Any CPU
+		{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}.Release XaeiO CLR|Any CPU.Build.0 = Release|Any CPU
+		{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}.Release XaeiOS|Any CPU.ActiveCfg = Release|Any CPU
+		{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}.Release XaeiOS|Any CPU.Build.0 = Release|Any CPU
+		{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}.Debug XaeiO CLR|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}.Debug XaeiO CLR|Any CPU.Build.0 = Debug|Any CPU
+		{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}.Debug XaeiOS|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}.Debug XaeiOS|Any CPU.Build.0 = Debug|Any CPU
+		{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}.Release XaeiO CLR|Any CPU.ActiveCfg = Release|Any CPU
+		{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}.Release XaeiO CLR|Any CPU.Build.0 = Release|Any CPU
+		{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}.Release XaeiOS|Any CPU.ActiveCfg = Release|Any CPU
+		{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}.Release XaeiOS|Any CPU.Build.0 = Release|Any CPU
+		{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}.Debug XaeiO CLR|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}.Debug XaeiO CLR|Any CPU.Build.0 = Debug|Any CPU
+		{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}.Debug XaeiOS|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}.Debug XaeiOS|Any CPU.Build.0 = Debug|Any CPU
+		{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}.Release XaeiO CLR|Any CPU.ActiveCfg = Release|Any CPU
+		{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}.Release XaeiO CLR|Any CPU.Build.0 = Release|Any CPU
+		{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}.Release XaeiOS|Any CPU.ActiveCfg = Release|Any CPU
+		{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}.Release XaeiOS|Any CPU.Build.0 = Release|Any CPU
+		{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

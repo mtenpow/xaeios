@@ -1,0 +1,4 @@
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\OSCorlib\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\OSCorlib\bin\Debug\OSCorlib.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\OSCorlib\obj\Debug\OSCorlib.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\OSCorlib\obj\Debug\OSCorlib.pdb

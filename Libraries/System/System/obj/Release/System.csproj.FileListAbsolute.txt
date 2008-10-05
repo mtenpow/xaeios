@@ -1,0 +1,6 @@
+C:\Codebase\XaeiO\XaeiOS\Libraries\System\System\bin\Debug\System.dll
+C:\Codebase\XaeiO\XaeiOS\Libraries\System\System\bin\Debug\System.pdb
+C:\Codebase\XaeiO\XaeiOS\Libraries\System\System\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiO\XaeiOS\Libraries\System\System\obj\Release\ResolveAssemblyReference.cache
+C:\Codebase\XaeiO\XaeiOS\Libraries\System\System\obj\Release\System.dll
+C:\Codebase\XaeiO\XaeiOS\Libraries\System\System\obj\Release\System.pdb

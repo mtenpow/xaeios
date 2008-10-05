@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Narrative JavaScript: Overview</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+</head>
+<body>
+
+<div id="page">
+	<div id="header">
+		<h1><a href="index.html">Narrative JavaScript</a></h1>
+	</div>
+
+	<hr class="hrhide" />
+	
+	<div id="sidebar">
+		<ul>
+			<li><h2>NJS Contents</h2>
+				<ul>
+					<li><a href="index.html" title="Home">Home</a></li>
+					<li><a href="overview.html" title="Overview">Overview</a></li>
+					<li><a href="code.html"  title="Coding">Coding</a></li>
+					<li><a href="example.html" title="Example">Example</a></li>
+					<li><a href="compile.html" title="Compilation">Compilation</a></li>
+					<li><a href="reference.html" title="Reference">API Reference</a></li>
+				</ul>
+			</li>
+			<li><h2>Author</h2>
+				<ul>
+					<li><a href="http://www.neilmix.com/" title="neilmix.com">Neil Mix</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="content" class="narrowcolumn" style="margin:0px; ">
+	
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="index.html">home</a></div>
+			<div class="alignright"> <a href="code.html">coding</a> &raquo;</div>
+		</div>
+	
+		<div class="post">
+	
+			<h2>Overview</h2>
+			<p>
+			Narrative JavaScript is a small extension to the JavaScript language that enables
+			blocking capabilities for asynchronous operations.  This makes writing 
+			asynchronous code sequences easier and increases code readability.
+			</p>
+			<p>
+			Narrative JavaScript invents a "yielding" operator (notated as '<tt>-></tt>')
+			that allows you to write asynchronous code in a single, linear code block.  
+			For example,
+			with Narrative JavaScript fetching a document using XmlHttp goes
+			from looking like this:
+
+	<pre>
+    function handleResponse(responseText) {
+        document.getElementById("myElem").innerHTML = responseText;
+    }
+    fetch("http://www.url.com/", handleResponse);
+	</pre>
+	
+			to this:
+	
+	<pre>
+    document.getElementById("myElem").innerHTML = fetch->("http://www.url.com/");
+	</pre>
+
+			And an animation sequence goes from looking like this:
+	
+	<pre>
+    var left = 0;
+    function onTimer() {
+        left += 10;
+        if (left <= 300) {
+            document.getElementById("myElem").style.left = left;
+            setTimeout(onTimer, 30);
+        }   
+    }
+    onTimer();
+	</pre>
+	
+			to this:
+	
+	<pre>
+    for (var left = 0; left <= 300; left += 10) {
+        left += 10;
+        document.getElementById("myElem").style.left = left;        
+        sleep->(30);
+    }
+	</pre>
+	
+			Any operation that requires a callback function is a candidate for
+			blocking.  
+			</p>
+			<p>
+			Keep in mind that blocking does not mean that the entire JavaScript runtime
+			locks up waiting for an operation to finish.  Instead, Narrative JavaScript
+			makes use of co-operative multitasking.  When you use the blocking operator,
+			you are yielding control to the JavaScript runtime to execute other operations
+			until your operation provides a return value.
+			</p>
+			<p>
+			More details about writing Narrative JavaScript can be found in the 
+			<a href="code.html">coding</a> section of the documentation.
+
+		</div>
+	</div>
+	
+	<div id="footer">
+	Narrative JavaScript was created by <a href="http://www.neilmix.com/">Neil Mix</a><br />
+	<a href="http://www.azeemazeez.com/stuff/themes/" title="White as Milk theme for Wordpress">White as Milk</a> graphic design by <a href="http://www.azeemazeez.com">Azeem Azeez</a>.<br />
+	</div>
+</div>
+
+</body>
+</html>

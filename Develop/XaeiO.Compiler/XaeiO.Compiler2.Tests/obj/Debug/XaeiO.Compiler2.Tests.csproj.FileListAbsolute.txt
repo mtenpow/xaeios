@@ -1,0 +1,12 @@
+C:\Codebase\XaeiO\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Codebase\XaeiO\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2.Tests\bin\Debug\XaeiO.Compiler2.Tests.exe
+C:\Codebase\XaeiO\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2.Tests\bin\Debug\XaeiO.Compiler2.Tests.pdb
+C:\Codebase\XaeiO\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2.Tests\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiO\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2.Tests\obj\Debug\XaeiO.Compiler2.Tests.exe
+C:\Codebase\XaeiO\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2.Tests\obj\Debug\XaeiO.Compiler2.Tests.pdb
+C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2.Tests\bin\Debug\XaeiO.Compiler2.Tests.exe
+C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2.Tests\bin\Debug\XaeiO.Compiler2.Tests.pdb
+C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2.Tests\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2.Tests\obj\Debug\XaeiO.Compiler2.Tests.exe
+C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2.Tests\obj\Debug\XaeiO.Compiler2.Tests.pdb

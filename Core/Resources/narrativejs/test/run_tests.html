@@ -1,0 +1,48 @@
+<html>
+<head>
+<script src="../deploy/njs_compile.js"></script>
+<script>
+function load(file) {
+	window.eval(readFile(file));
+}
+function readFile(file) {
+	var http = NjsRuntime.createXmlHttp();
+	http.open('GET', file, false);
+	try {
+		http.send(null);
+		return http.responseText;
+	} catch(e) {
+		return null;
+	}
+}
+function snarf(file) {
+	return readFile(file);
+}
+function print(text) {
+	document.getElementById("results").innerHTML += String(text).replace(/\n/g, "<br>") + "<br>";
+}
+function test(desc, method) {
+	try {
+		method();
+	} catch(ex) {
+		if(ex.message) {
+			print("FAILED: " + desc + ": " + ex.message);
+		} else {
+			print("FAILED: " + desc);
+		}
+		return;
+	}
+	
+	print("passed: " + desc);
+}
+function start() {
+	load("test_compiler.js");
+	load("test_runtime.js");
+}
+</script>
+</head>
+<body onload="start()">
+<pre id="results">
+</pre>
+</body>
+</html>

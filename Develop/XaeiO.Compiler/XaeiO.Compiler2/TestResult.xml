@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2\XaeiO.Compiler2.nunit" total="1" failures="0" not-run="0" date="2008-09-21" time="16:01:31">
+  <environment nunit-version="2.4.6.0" clr-version="2.0.50727.1433" os-version="Microsoft Windows NT 5.1.2600 Service Pack 2" platform="Win32NT" cwd="C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\Resources\nunit\bin" machine-name="US-SEA-659439" user="mtenpow" user-domain="ANT" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite name="C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2\XaeiO.Compiler2.nunit" success="True" time="0.063" asserts="0">
+    <results>
+      <test-suite name="C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2\bin\Debug\XaeiO.Compiler2.exe" success="True" time="0.063" asserts="0">
+        <results>
+          <test-suite name="XaeiO" success="True" time="0.063" asserts="0">
+            <results>
+              <test-suite name="Compiler" success="True" time="0.063" asserts="0">
+                <results>
+                  <test-suite name="Collections" success="True" time="0.063" asserts="0">
+                    <results>
+                      <test-suite name="Tests" success="True" time="0.063" asserts="0">
+                        <results>
+                          <test-case name="XaeiO.Compiler.Collections.Tests.TestEqualsWithMultipleIndices" executed="True" success="True" time="0.063" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

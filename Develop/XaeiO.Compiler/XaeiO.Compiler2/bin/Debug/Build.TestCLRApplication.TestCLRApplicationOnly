@@ -1,0 +1,5 @@
+#!/bin/sh
+./XaeiO.Compiler2.exe --TargetArchitecture JavaScript --TargetSubArchitecture Mozilla --TargetSubArchitectureVersion 3.0 --OutputPath ./Build/ --Assembly ../../../../../Tests/TestCLRApplication/TestCLRApplication/bin/debug/TestCLRApplication.exe --Reference ../../../../../Core/XaeiOS.Core/OSCorlib/bin/Debug/OSCorlib.dll --Reference ../../../../../Core/XaeiOS.Core/XaeiOS.Kernel/bin/Debug/XaeiOS.Kernel.dll;
+cd Build/JavaScript/;
+./Link.TestCLRApplication;
+cd ../..;

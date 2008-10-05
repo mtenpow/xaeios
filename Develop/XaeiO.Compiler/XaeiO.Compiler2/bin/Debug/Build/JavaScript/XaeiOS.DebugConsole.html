@@ -1,0 +1,186 @@
+<html>
+<head>
+    <title>XaeiOS.DebugConsole</title>
+    <script language="JavaScript">
+        function Write(logArea, s)
+        {
+	        var elm = document.createElement("SPAN");
+	        elm.innerHTML = s.replace(/\n/g,"<BR />");
+	        logArea.appendChild(elm);
+	        var scrollTimeoutId = logArea._scrollTimeoutId;
+	        if(scrollTimeoutId == null && logArea.scrollTop != logArea.scrollHeight)
+	        {
+	            var closure = { Element: logArea };
+	            logArea._scrollTimeoutId = setTimeout(function() {
+	                closure.Element.scrollTop = closure.Element.scrollHeight;
+	                closure.Element._scrollTimeoutId = null;
+	            }, 100);
+	        }
+        }
+        function ConsoleWrite(s)
+        {
+            Write(document.getElementById("console-area"), s);
+        }
+        function ConsoleWriteLine(s)
+        {
+            ConsoleWrite(s + "\n");
+        }
+        function LogWrite(type, s)
+        {
+            if(type == "TRACE" && !window.TRACE)
+            {
+                return;
+            }
+            if(type == "DEBUG" && !window.DEBUG)
+            {
+                return;
+            }
+            Write(document.getElementById("debug-area"), "[" + type + " @ " + (new Date().toString()) + "] - " + s + "\n");
+        }
+        function ToggleTrace()
+        {
+            SetTrace(!window.TRACE);
+        }
+        function SetTrace(value)
+        {
+            window.TRACE = value;
+            document.getElementById("trace-status").innerHTML = "Trace " + (value ? "On" : "Off");
+                LogWrite("INFO", "TRACE option " + (value ? "On" : "Off"));
+        }
+        function ToggleDebug()
+        {
+            SetDebug(!window.DEBUG);
+        }
+        function SetDebug(value)
+        {
+            window.DEBUG = value;
+            document.getElementById("debug-status").innerHTML = "Debug " + (value ? "On" : "Off");
+                LogWrite("INFO", "DEBUG option " + (value ? "On" : "Off"));
+        }
+        
+        window.onload = function()
+        {
+            var module = window.location.hash;
+            module = module.substr(1); // remove leading "#"
+            if(module.indexOf("?") != -1)
+            {
+                module = module.split("?")[0];
+            }
+            
+            // parse args
+            var args = {};
+            var queryIndex = window.location.href.indexOf("?");
+            if(queryIndex != -1 && queryIndex < window.location.href.length-1)
+            {
+                var queryString = window.location.href.substr(queryIndex + 1);
+                queryString = queryString.replace(window.location.hash, "");
+                var parts = queryString.split("&");
+                for(var i=0;i<parts.length;i++)
+                {
+                    var arg = parts[i].split("=");
+                    if(arg.length == 2)
+                    {
+                        args[arg[0]] = arg[1];
+                    }
+                }
+            }
+            
+            // checks args for module
+            if(!module) {
+                module = args.module;
+            }
+            
+            if(!module)
+            {
+                LogWrite("INFO", "No XaeiOS module specified to load");
+                return;
+            }
+            
+            
+            
+            // setup logging
+            SetDebug(args.debug == "true");
+            SetTrace(args.trace == "true");
+            
+            var moduleScriptElement = document.createElement("SCRIPT");
+            moduleScriptElement.setAttribute("src", module);
+            document.body.appendChild(moduleScriptElement);
+            
+            LogWrite("INFO", "Loading XaeiOS module: " + module);
+            var counter = 0;
+            var intervalId = setInterval(function() {
+                counter++;
+                if(!window.__module__)
+                {
+                    if(counter > 5 * 60000)
+                    {
+                        clearInterval(intervalId);
+                        LogWrite("INFO", "Loading XaeiOS module " + module + " failed");
+                    }
+                    return;
+                }
+                document.title = module;
+                clearInterval(intervalId);
+                        LogWrite("INFO", "Loading XaeiOS module " + module + " succeeded");
+                __module__.Initialize();
+                __module__.Boot();
+            }, 200);
+        }
+    </script>
+
+    <style type="text/css">
+        body, table, tr, td
+        {
+            font: bold 8pt Tahoma, sans-serif;
+            color: white;
+        }
+        input
+        {
+            font: bold 8pt Tahoma, sans-serif;
+            color: black;
+        }
+    </style>
+</head>
+<body style="background: black;overflow:auto;">
+    <div id="process-viewer-area" style="padding: 5px; font: bold 8pt Tahoma; background-color: Black;
+        color: lightblue; width: 98%; height: 220px; overflow: auto;">
+    </div>
+    <input type="button" value="Debugger" onclick="debugger;" />
+    <input type="button" value="Toggle debug" onclick="ToggleDebug()" />
+    <span id="debug-status"></span>
+    <input type="button" value="Toggle trace" onclick="ToggleTrace()" />
+    <span id="trace-status"></span>
+    <hr />
+    <table style="height:400px;width:98%;" cellpadding="5" cellspacing="5">
+        <tr style="height: 20px; color: white;">
+            <td width="60%">
+                CONSOLE:
+            </td>
+            <td width="40%">
+                LOG:
+            </td>
+        </tr>
+        <tr>
+            <td width="50%">
+                <div id="console-area" style="padding: 5px; font: bold 8pt Tahoma; background-color: Black;
+                    color: White; width: 100%; height: 400px; overflow: auto;">
+                </div>
+            </td>
+            <td width="50%">
+                <div id="debug-area" style="padding: 5px; font: bold 8pt Tahoma; background-color: Black;
+                    color: Yellow; width: 100%; height: 400px; overflow: auto;">
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4756141-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Narrative JavaScript: API Reference</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<style>
+	.class_title { border-bottom: 1px solid; }
+	h3 { margin: 5px 0; padding: 0; font-weight: normal; font-size: 1.4em; font-family: monospace; font-style: italic;  }
+	p { padding-left: 20px; }
+	pre { padding-left: 20px; }
+	b { display: block; }
+	</style>
+</head>
+<body>
+
+<div id="page">
+	<div id="header">
+		<h1><a href="index.html">Narrative JavaScript</a></h1>
+	</div>
+
+	<hr class="hrhide" />
+	
+	<div id="sidebar">
+		<ul>
+			<li><h2>NJS Contents</h2>
+				<ul>
+					<li><a href="index.html" title="Home">Home</a></li>
+					<li><a href="overview.html" title="Overview">Overview</a></li>
+					<li><a href="code.html"  title="Coding">Coding</a></li>
+					<li><a href="example.html" title="Example">Example</a></li>
+					<li><a href="compile.html" title="Compilation">Compilation</a></li>
+					<li><a href="reference.html" title="Reference">API Reference</a></li>
+				</ul>
+			</li>
+			<li><h2>Author</h2>
+				<ul>
+					<li><a href="http://www.neilmix.com/" title="neilmix.com">Neil Mix</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="content" class="narrowcolumn" style="margin:0px; ">
+	
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="compile.html">compilation</a></div>
+		</div>
+	
+		<div class="post">
+
+			<h2 class="class_title">API Reference: functions</h2>
+			<h3>spawn->([call])</h3>
+			<p>
+			Launches a new thread of execution, returning a future (see ResultNotifier)
+			representing its result.  Use spawn() to kick of the execution of a method containing
+			the yielding operator.
+			</p>
+			<p>
+			<b>parameters:</b>
+			<tt>call</tt> &mdash; the result of a method call.  If the method
+			call is yielding, it returns a special value that spawn recognizes
+			and converts into a future.  If the method call is not yielding,
+			the value is simply used to fulfill the returned ResultNotifier.
+			<p>
+			<p>
+			<b>returns:</b>
+			A ResultNotifier that is (eventually) fulfilled with the return
+			value of the launched thread.
+			</p>
+			<p>
+			<b>example:</b>
+			display a new value every second for 10 seconds:
+<pre>
+    function update(n) {
+        for(var i = 0; i < n; i++) {
+            document.getElementById("counter").innerHTML = i;
+            sleep->(1000);
+        }
+        return n;
+    }
+    
+    var future = spawn(update(10));
+</pre>
+			</p>
+			
+			<h3>sleep->([milliseconds])</h3>
+			<p>
+			Yields execution for the specified number of milliseconds.
+			</p>
+			<p>
+			<b>parameters:</b>
+			<tt>milliseconds</tt> &mdash; the number of milleseconds to wait before
+			resuming execution.
+			</p>
+			<p>
+			<b>example:</b>
+<pre>
+    while (!checkState()) {
+        sleep->(100);
+    }
+</pre>
+			</p>
+
+			<h3>fetch->([url], [timeout])</h3>
+			<p>
+			Uses XmlHttp to retrieve a URL and yields execution until the
+			document has been loaded.
+			</p>
+			<p>
+			<b>parameters:</b>
+			<tt>url</tt> &mdash; the URL to fetch.<br>
+			<tt>timeout</tt> &mdash; the amount of time (in milliseconds) to wait 
+			before returning null.<br>
+			</p>
+			<p>
+			<b>returns:</b> a string containing the document contents, or null if an error occurs.
+			</p>
+			<p>
+			<b>example:</b>
+<pre>
+    var document = fetch->("http://www.google.com/");
+</pre>
+			</p>
+			
+			<h2 class="class_title">API Reference: EventNotifier</h2>
+			<h3>callback = new EventNotifier([id]);</h3>
+			<p>
+			Creates a new event notifier.  An event notifier is a function
+			that can be used as a callback for any JavaScript event.
+			</p>
+			<p>
+			<b>parameters:</b> <tt>id</tt> &mdash; (optional) a value that is
+			returned from wait->() when an event is fired for this notifier.
+			See the wait->() method for more information.
+			</p>
+			<p>
+			<b>example:</b>
+<pre>
+    var elem = document.getElementById("myButton");
+    elem.onclick = new EventNotifier();
+    elem.onclick.wait->();
+</pre>
+
+			<h3>notifier.wait->([timeout])</h3>
+			<p>
+			Yields execution until the notifier is called.  In environments
+			that implement the <tt>setTimeout()</tt> method, the optional
+			timeout parameter may be specified to indicate that the call should
+			unblock if the notifier hasn't been called within the specified
+			time period.
+			</p>
+			<p>
+			<b>parameters:</b> <tt>timeout</tt> &mdash; (optional) the number of milliseconds
+			before NJS_TIMEOUT is thrown.  If not specified, <tt>wait->()</tt> will 
+			wait forever for an event to fire.
+			</p>
+			<p>
+			<b>returns:</b> If an id was provided when the notifier was constructed,
+			returns that id.  Otherwise, returns the value that is passed into
+			the notifier when it is fired.  If no value is provided when the notifier
+			is fired, wait->() will return the global event object if it exists,
+			or finally null if none of the previous values exists.
+			</p>
+			</p>
+			<p>
+			<b>throws:</b> <tt>NJS_TIMEOUT</tt> if the specified time
+			period has passed before the notifier is called<br>
+			<br>
+			<tt>NJS_INTERRUPT</tt>
+			if the <tt>interrupt()</tt> method is called on the identifier.<br>
+			<br>(If exception support is turned off when compiling, exceptions will be
+			returned rather than thrown.)
+			<p>
+			<b>example:</b>
+			The most common, simple usage:
+<pre>
+    // do some work
+    notifier.wait->();
+    // do more work
+</pre>
+<p>
+			More advanced usage:
+</p>
+<pre>
+    // do some work
+    try {
+        var args = notifier.wait->(3000);
+    } catch(e if e == NJS_TIMEOUT) {
+        // handle timeout
+    } catch(e if e == NJS_INTERRUPT) {
+        // handle interrupt
+    }
+    // do more work
+</pre>
+			</p>
+
+			<h2 class="class_title">API Reference: ResultNotifier</h2>
+			<h3>var promise = new ResultNotifier();</h3>
+			<p>
+			Creates a new result notifier.  Result notifiers are containers for
+			a single value that will be provided at a later time.  As such, they
+			can be used as <i>promises</i> or <i>futures</i>.
+			</p>
+			<p>			
+			<h3>notifier.fulfill->([value])</h3>
+			<p>
+			Sets the value for this notifier.  If value is in turn a notifier,
+			this notifier automatically chains the return of value->() to the
+			result of the parameter notifier.
+			</p>
+			<p>
+			<b>parameters:</b> 
+			the value for this notifier.
+			</p>
+			<p>
+			<b>throws:</b>
+			an exception if a value has already by provided for this notifier.
+			</p>
+
+			<h3>notifier.hasValue()</h3>
+			<p>
+			Returns true if the notifier has a value, false otherwise.
+			</p>
+			
+			<h3>notifier.value->([timeout])</h3>
+			<p>
+			Returns the value for this notifier.  If called with the yielding
+			operator, blocks until the value is provided.  If called without
+			the yielding operator, returns the notifier's value if one has already 
+			has already been provided, otherwise throws an exception.
+			</p>
+			<p>
+			<b>parameters:</b> <tt>timeout</tt> &mdash; (optional) the number of milliseconds
+			before NJS_TIMEOUT is thrown.  If not specified, <tt>wait->()</tt> will 
+			wait forever for an event to fire.
+			</p>
+			<p>
+			<b>example:</b>
+			with yielding:
+<pre>
+    var n = spawn(asynchOperation());
+    var value = n.value->();
+</pre>
+			<p>
+			without yielding:
+			</p>
+<pre>
+	if (n.hasValue()) {
+		var value = n.value();
+	}
+</pre>
+
+			<h2 class="class_title">API Reference: QueueNotifier</h2>
+			<h3>var mailbox = new QueueNotifier</h3>
+			<p>
+			Creates a new queue notifier.  QueueNotifiers are useful for 
+			producer/consumer relationships, where there are one or more producers
+			that push() values into the notifier, and one or more consumers that
+			shift->() values out of the notifier.
+			</p>
+			<p>
+			<b>example:</b>
+			Using the notifier chaining properties (see below), we can spawn
+			multiple threads and wait for the first one that finishes:
+<pre>
+    var n = new QueueNotifier();
+    n.push( spawn(thread(1)) );
+    n.push( spawn(thread(2)) );
+    n.push( spawn(thread(3)) );
+
+    var value = n.shift->();
+    // value is from whichever thread finished first.
+</pre>
+			</p>
+
+			<h3>n.push([value])</h3>
+			<p>
+			Puts a value into the queue.  If value is a notifier, placement
+			in the queue is deferred until the notifier yields a value.
+			</p>
+			
+			<h3>n.shift->([timeout])</h3>
+			<p>
+			Pulls a value off of the queue.  If no value is currently available,
+			blocks until a value becomes available.
+			</p>
+			<p>
+			<b>parameters:</b> <tt>timeout</tt> &mdash; (optional) the number of milliseconds
+			before NJS_TIMEOUT is thrown.  If not specified, <tt>wait->()</tt> will 
+			wait forever for an event to fire.
+			</p>
+			
+			<h3>n.size()</h3>
+			<p>
+			Returns the number of elements currently in the queue.
+			</p>
+		</div>
+	</div>
+
+	<div id="footer">
+	Narrative JavaScript was created by <a href="http://www.neilmix.com/">Neil Mix</a><br />
+	<a href="http://www.azeemazeez.com/stuff/themes/" title="White as Milk theme for Wordpress">White as Milk</a> graphic design by <a href="http://www.azeemazeez.com">Azeem Azeez</a>.<br />
+	</div>
+</div>
+
+
+
+</body>
+</html>

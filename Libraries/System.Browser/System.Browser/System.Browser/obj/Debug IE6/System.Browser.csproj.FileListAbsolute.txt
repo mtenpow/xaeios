@@ -1,0 +1,13 @@
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\bin\Debug\System.Browser.dll
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\bin\Debug\System.Browser.pdb
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\obj\Debug IE6\ResolveAssemblyReference.cache
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\obj\Debug IE6\System.Browser.dll
+C:\Codebase\XaeiO\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\obj\Debug IE6\System.Browser.pdb
+C:\Codebase\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\bin\Debug\System.Browser.dll
+C:\Codebase\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\bin\Debug\System.Browser.pdb
+C:\Codebase\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\bin\Debug\OSCorlib.pdb
+C:\Codebase\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\obj\Debug IE6\ResolveAssemblyReference.cache
+C:\Codebase\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\obj\Debug IE6\System.Browser.dll
+C:\Codebase\XaeiOS\Libraries\System.Browser\System.Browser\System.Browser\obj\Debug IE6\System.Browser.pdb

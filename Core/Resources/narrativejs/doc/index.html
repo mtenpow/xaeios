@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Narrative JavaScript</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+</head>
+<body>
+
+<div id="page">
+	<div id="header">
+		<h1><a href="index.html">Narrative JavaScript</a></h1>
+	</div>
+
+	<hr class="hrhide" />
+	
+	<div id="sidebar">
+		<ul>
+			<li><h2>NJS Contents</h2>
+				<ul>
+					<li><a href="index.html" title="Home">Home</a></li>
+					<li><a href="overview.html" title="Overview">Overview</a></li>
+					<li><a href="code.html"  title="Coding">Coding</a></li>
+					<li><a href="example.html" title="Example">Example</a></li>
+					<li><a href="compile.html" title="Compilation">Compilation</a></li>
+					<li><a href="reference.html" title="Reference">API Reference</a></li>
+				</ul>
+			</li>
+			<li><h2>Author</h2>
+				<ul>
+					<li><a href="http://www.neilmix.com/" title="neilmix.com">Neil Mix</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="content" class="narrowcolumn" style="margin:0px; ">
+	
+	
+		<div class="navigation">
+			<div class="alignright"> <a href="overview.html">overview</a> &raquo;</div>
+		</div>
+	
+		<div class="post">
+	
+			<p>
+			Narrative JavaScript is a small extension to the JavaScript language that enables
+			blocking capabilities for asynchronous event callbacks.  This makes 
+			asynchronous code refreshingly readable and comprehensible.
+			</p>
+
+			<h2>Why?</h2>
+			<p>
+			In JavaScript your code can't simply wait until an event
+			has fired -- the event must always be handled by a separate, asynchronous
+			event handler. Sometimes this is fine, but it often forces what ought
+			to be a simple sequence of statements into gnarly contortions. Narrative
+			JavaScript provides a yielding operator for functions
+			which block until the firing of an event. The function yields
+			execution until the callback is fired, and then resumes execution
+			at the point where it yielded.  This allows
+			you to write hard-to-read asynchronous event handling in simple, linear,
+			readable code.
+			</p>
+			<p>
+			This library is the result of years of personal experience coding and debugging 
+			mind-warping, impossibly complicated callback-based "AJAX" applications. 
+			It is the author's hope that this library may reduce this pain for others.
+			</p>
+
+			<h2>How it Works</h2>
+			<p>
+			Narrative JavaScript consists of a compiler and a runtime library. You write 
+			your code code as linear Narrative JavaScript (using the yielding operator) and 
+			the compiler will parse and translate the code into normal (asynchronous) JavaScript. You 
+			then deploy the compiled code along with a runtime library. 
+			</p>
+			<p>
+			Since generated code is often difficult to read, great care is taken
+			to make Narrative JavaScript as debugging friendly as possible:
+			line numbering of the source code is kept intact in the compiled code,
+			stack ordering is preserved, and exception support does not 
+			result in unnecessary catching and re-throwing of exceptions.
+			</p>
+			<p>
+			The Narrative JavaScript parser is based off of Brendan Eich's 
+			<a href="http://lxr.mozilla.org/mozilla/source/js/narcissus/">narcissus</a>,
+			a JavaScript parser written in JavaScript for the Mozilla project.
+			</p>
+
+			<h2>Project Status</h2>
+			<p>
+			Narrative JavaScript is currently in Beta.  New as of the Beta release:
+			<ul>
+			<li>Client side load-and-compile API based on XHR</li>
+			<li>Formal threading API</li>
+			<li>Java-based compiler using Rhino</li>
+			<li>bug fixes</li>
+			</ul>
+			<h2>Download</h2>
+			<p>
+			<a href="http://www.neilmix.com/narrativejs/narrativejs-beta1.zip">download Narrative JavaScript</a>
+			</p>
+			
+			<h2>Documentation and Reference</h2>
+			<ul>
+				<li><a href="overview.html">Overview</a></li>
+				<li><a href="code.html">Coding</a></li>
+				<li><a href="example.html">Example</a></li>
+				<li><a href="compile.html">Compilation</a></li>
+				<li><a href="reference.html">API Reference</a></li>
+			</ul>
+			
+			<h2>Mailing List</h2>
+			<p>
+			You can sign up for a Narrative JavaScript mailing list at 
+			<a href="http://groups.google.com/group/narrativejs">http://groups.google.com/group/narrativejs</a>,
+			or you can send an email to narrativejs -at- googlegroups -dot- com.  The mailing list is an
+			open forum for support, feature requests, bug reports, or general Narrative JavaScript discussion.
+			All are welcome to join.
+			</p>
+
+			<h2>License</h2>
+			<p>
+			Narrative JavaScript is released under a combination 
+			<a href="http://www.mozilla.org/MPL/">MPL/GPL/LGPL tri-license</a>.
+			</p>
+		</div>
+	</div>
+	
+	<div id="footer">
+	Narrative JavaScript was created by <a href="http://www.neilmix.com/">Neil Mix</a><br />
+	<a href="http://www.azeemazeez.com/stuff/themes/" title="White as Milk theme for Wordpress">White as Milk</a> graphic design by <a href="http://www.azeemazeez.com">Azeem Azeez</a>.<br />
+	</div>
+</div>
+
+</body>
+</html>

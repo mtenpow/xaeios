@@ -1,0 +1,75 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F235D7CA-0C0B-493D-B275-D17203D1F9CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XaeiOS.Kernel</RootNamespace>
+    <AssemblyName>XaeiOS.Kernel</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <OutputType>Library</OutputType>
+    <AssemblyName>XaeiOS.Kernel</AssemblyName>
+    <RootNamespace>XaeiOS.Kernel</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <OutputType>Library</OutputType>
+    <AssemblyName>XaeiOS.Kernel</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <RootNamespace>XaeiOS.Kernel</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="XaeiOS\Kernel\XaeiOSException.cs" />
+    <Compile Include="XaeiOS\Kernel\OptimisticStackRebuildingContext.cs" />
+    <Compile Include="XaeiOS\SystemCallAttribute.cs" />
+    <Compile Include="XaeiOS\Kernel\Continuation.cs" />
+    <Compile Include="XaeiOS\Kernel\Frame.cs" />
+    <Compile Include="XaeiOS\Kernel\TaskPriorityQueue.cs" />
+    <Compile Include="XaeiOS\Kernel\Scheduler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XaeiOS\Kernel\Task.cs" />
+    <Compile Include="XaeiOS\SystemCalls.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OSCorlib\OSCorlib.csproj">
+      <Project>{A65012D8-10F7-4995-976C-0FAB52ADF0BF}</Project>
+      <Name>OSCorlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

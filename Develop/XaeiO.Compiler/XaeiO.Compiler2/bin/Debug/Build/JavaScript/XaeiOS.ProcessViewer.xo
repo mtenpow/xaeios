@@ -1,0 +1,3721 @@
+<Object><Header><![CDATA[{
+  Metadata: {
+    Name: {
+      Name: "XaeiOS.ProcessViewer",
+      Version: "1.0.0.0",
+      Culture: ""
+    },
+    EntryPoint: 27,
+    BootMethod: 42,
+    Types: [
+      {
+        Namespace: "XaeiOS.ProcessViewer",
+        Name: "ProcessViewer",
+        BaseType: 1,
+        DeclaringType: -1,
+        IsInterface: false,
+        IsAbstract: false,
+        Methods: [
+          {
+            Name: "get_UpdateInterval",
+            ReturnType: 6,
+            VTableSlot: -1,
+            CodeIndex: 0,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "set_UpdateInterval",
+            ReturnType: 7,
+            VTableSlot: -1,
+            CodeIndex: 1,
+            HasThis: true,
+            Parameters: [
+              {
+                Type: 6,
+                Name: "value",
+                Sequence: 1
+              }
+            ]
+          },
+          {
+            Name: "Start",
+            ReturnType: 7,
+            VTableSlot: -1,
+            CodeIndex: 2,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "BuildUI",
+            ReturnType: 7,
+            VTableSlot: -1,
+            CodeIndex: 3,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "BuildSIPTable",
+            ReturnType: 8,
+            VTableSlot: -1,
+            CodeIndex: 4,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "BuildThreadTable",
+            ReturnType: 8,
+            VTableSlot: -1,
+            CodeIndex: 5,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "UpdateSIPs",
+            ReturnType: 7,
+            VTableSlot: -1,
+            CodeIndex: 6,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "UpdateThreads",
+            ReturnType: 7,
+            VTableSlot: -1,
+            CodeIndex: 7,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: ".ctor",
+            ReturnType: 7,
+            VTableSlot: -1,
+            CodeIndex: 8,
+            HasThis: true,
+            Parameters: []
+          }
+        ],
+        Fields: [
+          {
+            Name: "_processViewerArea",
+            Type: 8,
+            Offset: 0
+          },
+          {
+            Name: "_mainTable",
+            Type: 8,
+            Offset: 1
+          },
+          {
+            Name: "_sipTableBody",
+            Type: 8,
+            Offset: 2
+          },
+          {
+            Name: "_threadTableBody",
+            Type: 8,
+            Offset: 3
+          },
+          {
+            Name: "_lastUpdatedElement",
+            Type: 8,
+            Offset: 4
+          },
+          {
+            Name: "_sipRows",
+            Type: 3,
+            Offset: 5
+          },
+          {
+            Name: "_threadRows",
+            Type: 3,
+            Offset: 6
+          },
+          {
+            Name: "<UpdateInterval>k__BackingField",
+            Type: 6,
+            Offset: 7
+          }
+        ],
+        StaticFields: [],
+        VTableIndex: 0
+      },
+      {
+        Namespace: "XaeiOS.ProcessViewer",
+        Name: "Program",
+        BaseType: 1,
+        DeclaringType: -1,
+        IsInterface: false,
+        IsAbstract: false,
+        Methods: [
+          {
+            Name: "Main",
+            ReturnType: 7,
+            VTableSlot: -1,
+            CodeIndex: 9,
+            HasThis: false,
+            Parameters: [
+              {
+                Type: 9,
+                Name: "args",
+                Sequence: 1
+              }
+            ]
+          },
+          {
+            Name: ".ctor",
+            ReturnType: 7,
+            VTableSlot: -1,
+            CodeIndex: 10,
+            HasThis: true,
+            Parameters: []
+          }
+        ],
+        Fields: [],
+        StaticFields: [],
+        VTableIndex: 1
+      }
+    ],
+    AssemblyReferences: [
+      {
+        Name: "OSCorlib",
+        Version: "2.0.0.0"
+      },
+      {
+        Name: "System.Browser",
+        Version: "1.0.0.0"
+      },
+      {
+        Name: "XaeiOS.Kernel",
+        Version: "1.0.0.0"
+      }
+    ],
+    TypeReferences: [
+      {
+        Namespace: "XaeiOS.ProcessViewer",
+        Name: "ProcessViewer",
+        DeclaringType: -1,
+        Assembly: -1,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Object",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS.ProcessViewer",
+        Name: "Program",
+        DeclaringType: -1,
+        Assembly: -1,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Collections.Generic",
+        Name: "List`1",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Threading",
+        Name: "ThreadPriority",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "CompilerGeneratedAttribute",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Int32",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Void",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Browser.Dom",
+        Name: "IDomElement",
+        DeclaringType: -1,
+        Assembly: 1,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Array",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS.Kernel",
+        Name: "Scheduler",
+        DeclaringType: -1,
+        Assembly: 2,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Console",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Object",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Threading",
+        Name: "Thread",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Browser.Dom",
+        Name: "DomManager",
+        DeclaringType: -1,
+        Assembly: 1,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Collections.Generic",
+        Name: "List`1",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS",
+        Name: "SIP",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS",
+        Name: "SIP",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Threading",
+        Name: "Thread",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "RuntimeHelpers",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "AttributeUsageAttribute",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "CompilerGeneratedAttribute",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS.Boot",
+        Name: "BootManager",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "var",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "String",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Int32",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "",
+        Name: "T",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: true
+      },
+      {
+        Namespace: "System",
+        Name: "String",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "Assembly",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "UIntPtr",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "Class",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Boolean",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "NativeFunction",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "ICustomAttributeProvider",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "Method",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "AttributeTargets",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      }
+    ],
+    MethodReferences: [
+      {
+        Type: 0,
+        Name: "get_UpdateInterval",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 10,
+        Name: "ConvertToManagedException",
+        HasThis: false,
+        Parameters: [
+          0
+        ]
+      },
+      {
+        Type: 0,
+        Name: "set_UpdateInterval",
+        HasThis: true,
+        Parameters: [
+          1
+        ]
+      },
+      {
+        Type: 0,
+        Name: "Start",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 11,
+        Name: "WriteLine",
+        HasThis: false,
+        Parameters: [
+          2
+        ]
+      },
+      {
+        Type: 0,
+        Name: "BuildUI",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 0,
+        Name: "UpdateSIPs",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 0,
+        Name: "UpdateThreads",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 12,
+        Name: "ToString",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 13,
+        Name: "Sleep",
+        HasThis: false,
+        Parameters: [
+          3
+        ]
+      },
+      {
+        Type: 14,
+        Name: "CreateElement",
+        HasThis: false,
+        Parameters: [
+          2
+        ]
+      },
+      {
+        Type: 0,
+        Name: "BuildSIPTable",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 0,
+        Name: "BuildThreadTable",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 15,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 16,
+        Name: "GetSIPs",
+        HasThis: false,
+        Parameters: []
+      },
+      {
+        Type: 15,
+        Name: "get_Count",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 15,
+        Name: "get_Item",
+        HasThis: true,
+        Parameters: [
+          4
+        ]
+      },
+      {
+        Type: 17,
+        Name: "get_PID",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 17,
+        Name: "get_Name",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 15,
+        Name: "Add",
+        HasThis: true,
+        Parameters: [
+          5
+        ]
+      },
+      {
+        Type: 13,
+        Name: "GetThreads",
+        HasThis: false,
+        Parameters: []
+      },
+      {
+        Type: 18,
+        Name: "get_Task",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 18,
+        Name: "get_Name",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 18,
+        Name: "get_SIP",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 18,
+        Name: "get_Priority",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 0,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 12,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 2,
+        Name: "Main",
+        HasThis: false,
+        Parameters: [
+          6
+        ]
+      },
+      {
+        Type: 2,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 12,
+        Name: "GetHashCode",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 12,
+        Name: "Equals",
+        HasThis: true,
+        Parameters: [
+          7
+        ]
+      },
+      {
+        Type: 12,
+        Name: "Finalize",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 19,
+        Name: "InitializeMetadata",
+        HasThis: false,
+        Parameters: []
+      },
+      {
+        Type: 19,
+        Name: "CreateAssembly",
+        HasThis: false,
+        Parameters: [
+          8
+        ]
+      },
+      {
+        Type: 19,
+        Name: "CreateClass",
+        HasThis: false,
+        Parameters: [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        Type: 19,
+        Name: "CreateMethod",
+        HasThis: false,
+        Parameters: [
+          16,
+          10,
+          17,
+          18
+        ]
+      },
+      {
+        Type: 19,
+        Name: "CreateConstructor",
+        HasThis: false,
+        Parameters: [
+          16,
+          10,
+          17
+        ]
+      },
+      {
+        Type: 5,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 19,
+        Name: "CreateCustomAttribute",
+        HasThis: false,
+        Parameters: [
+          19,
+          20
+        ]
+      },
+      {
+        Type: 20,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          21
+        ]
+      },
+      {
+        Type: 21,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 19,
+        Name: "CreateProperty",
+        HasThis: false,
+        Parameters: [
+          16,
+          10,
+          22,
+          23
+        ]
+      },
+      {
+        Type: 22,
+        Name: "BootModuleEntryPoint",
+        HasThis: false,
+        Parameters: []
+      }
+    ],
+    ParameterReferences: [
+      {
+        Type: 23,
+        Name: "e",
+        Sequence: 1
+      },
+      {
+        Type: 6,
+        Name: "value",
+        Sequence: 1
+      },
+      {
+        Type: 24,
+        Name: "",
+        Sequence: 1
+      },
+      {
+        Type: 6,
+        Name: "",
+        Sequence: 1
+      },
+      {
+        Type: 25,
+        Name: "index",
+        Sequence: 1
+      },
+      {
+        Type: 26,
+        Name: "item",
+        Sequence: 1
+      },
+      {
+        Type: 9,
+        Name: "args",
+        Sequence: 1
+      },
+      {
+        Type: 12,
+        Name: "o",
+        Sequence: 1
+      },
+      {
+        Type: 27,
+        Name: "name",
+        Sequence: 1
+      },
+      {
+        Type: 27,
+        Name: "ns",
+        Sequence: 1
+      },
+      {
+        Type: 27,
+        Name: "name",
+        Sequence: 2
+      },
+      {
+        Type: 28,
+        Name: "assembly",
+        Sequence: 3
+      },
+      {
+        Type: 29,
+        Name: "vtableDataPointer",
+        Sequence: 4
+      },
+      {
+        Type: 30,
+        Name: "elementClass",
+        Sequence: 5
+      },
+      {
+        Type: 31,
+        Name: "isInterface",
+        Sequence: 6
+      },
+      {
+        Type: 31,
+        Name: "isArray",
+        Sequence: 7
+      },
+      {
+        Type: 30,
+        Name: "declaringType",
+        Sequence: 1
+      },
+      {
+        Type: 32,
+        Name: "function",
+        Sequence: 3
+      },
+      {
+        Type: 25,
+        Name: "vtableSlot",
+        Sequence: 4
+      },
+      {
+        Type: 33,
+        Name: "attributeProvider",
+        Sequence: 1
+      },
+      {
+        Type: 34,
+        Name: "constructor",
+        Sequence: 2
+      },
+      {
+        Type: 35,
+        Name: "validOn",
+        Sequence: 1
+      },
+      {
+        Type: 34,
+        Name: "getMethod",
+        Sequence: 3
+      },
+      {
+        Type: 34,
+        Name: "setMethod",
+        Sequence: 4
+      }
+    ],
+    FieldReferences: [],
+    StaticConstructors: []
+  },
+  Fixups: [
+    {
+      Description: "System.Int32 XaeiOS.ProcessViewer.ProcessViewer::get_UpdateInterval() @ 37",
+      Offset: 37,
+      Type: 9,
+      Index: 0
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 1057",
+      Offset: 1020,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::set_UpdateInterval(System.Int32) @ 1546",
+      Offset: 489,
+      Type: 9,
+      Index: 2
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 2565",
+      Offset: 1019,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::Start() @ 3057",
+      Offset: 492,
+      Type: 9,
+      Index: 3
+    },
+    {
+      Description: "System.Void System.Console::WriteLine(System.String) @ 3624",
+      Offset: 567,
+      Type: 9,
+      Index: 4
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::BuildUI() @ 4077",
+      Offset: 453,
+      Type: 9,
+      Index: 5
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::UpdateSIPs() @ 4470",
+      Offset: 393,
+      Type: 9,
+      Index: 6
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::UpdateThreads() @ 4866",
+      Offset: 396,
+      Type: 9,
+      Index: 7
+    },
+    {
+      Description: "System.String System.Object::ToString() @ 5434",
+      Offset: 568,
+      Type: 65,
+      Index: 8
+    },
+    {
+      Description: "System.Void System.Threading.Thread::Sleep(System.Int32) @ 6401",
+      Offset: 967,
+      Type: 9,
+      Index: 9
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 6925",
+      Offset: 524,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::BuildUI() @ 7429",
+      Offset: 504,
+      Type: 9,
+      Index: 5
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 8609",
+      Offset: 1180,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 10035",
+      Offset: 1426,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 10898",
+      Offset: 863,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 11392",
+      Offset: 494,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 12707",
+      Offset: 1315,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 13620",
+      Offset: 913,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 15289",
+      Offset: 1669,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 15785",
+      Offset: 496,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 17143",
+      Offset: 1358,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 18122",
+      Offset: 979,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 20273",
+      Offset: 2151,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 21113",
+      Offset: 840,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 22235",
+      Offset: 1122,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 23890",
+      Offset: 1655,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement XaeiOS.ProcessViewer.ProcessViewer::BuildSIPTable() @ 24391",
+      Offset: 501,
+      Type: 9,
+      Index: 11
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 24988",
+      Offset: 597,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 26223",
+      Offset: 1235,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement XaeiOS.ProcessViewer.ProcessViewer::BuildThreadTable() @ 26715",
+      Offset: 492,
+      Type: 9,
+      Index: 12
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 27315",
+      Offset: 600,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 28616",
+      Offset: 1301,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::UpdateSIPs() @ 29123",
+      Offset: 507,
+      Type: 9,
+      Index: 6
+    },
+    {
+      Description: "System.Collections.Generic.List`1<System.Browser.Dom.IDomElement> @ 29730",
+      Offset: 607,
+      Type: 17,
+      Index: 3
+    },
+    {
+      Description: "System.Void System.Collections.Generic.List`1::.ctor() @ 29862",
+      Offset: 132,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "XaeiOS.SIP[] XaeiOS.SIP::GetSIPs() @ 30280",
+      Offset: 418,
+      Type: 9,
+      Index: 14
+    },
+    {
+      Description: "System.Int32 System.Collections.Generic.List`1::get_Count() @ 32002",
+      Offset: 1722,
+      Type: 65,
+      Index: 15
+    },
+    {
+      Description: "System.Int32 System.Collections.Generic.List`1::get_Count() @ 33337",
+      Offset: 1335,
+      Type: 65,
+      Index: 15
+    },
+    {
+      Description: "T System.Collections.Generic.List`1::get_Item(System.Int32) @ 34566",
+      Offset: 1229,
+      Type: 65,
+      Index: 16
+    },
+    {
+      Description: "T System.Collections.Generic.List`1::get_Item(System.Int32) @ 35650",
+      Offset: 1084,
+      Type: 65,
+      Index: 16
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 37079",
+      Offset: 1429,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 37587",
+      Offset: 508,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Int32 XaeiOS.SIP::get_PID() @ 38095",
+      Offset: 508,
+      Type: 9,
+      Index: 17
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 39356",
+      Offset: 1261,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.String XaeiOS.SIP::get_Name() @ 39864",
+      Offset: 508,
+      Type: 9,
+      Index: 18
+    },
+    {
+      Description: "System.Void System.Collections.Generic.List`1::Add(T) @ 41053",
+      Offset: 1189,
+      Type: 65,
+      Index: 19
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 41916",
+      Offset: 863,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::UpdateThreads() @ 42435",
+      Offset: 519,
+      Type: 9,
+      Index: 7
+    },
+    {
+      Description: "System.Int32 System.Collections.Generic.List`1::get_Count() @ 43409",
+      Offset: 974,
+      Type: 65,
+      Index: 15
+    },
+    {
+      Description: "System.Collections.Generic.List`1<System.Browser.Dom.IDomElement> @ 44424",
+      Offset: 1015,
+      Type: 17,
+      Index: 3
+    },
+    {
+      Description: "System.Void System.Collections.Generic.List`1::.ctor() @ 44556",
+      Offset: 132,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "System.Threading.Thread[] System.Threading.Thread::GetThreads() @ 45029",
+      Offset: 473,
+      Type: 9,
+      Index: 20
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 46463",
+      Offset: 1434,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 46965",
+      Offset: 502,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "XaeiOS.TaskHandle System.Threading.Thread::get_Task() @ 47435",
+      Offset: 470,
+      Type: 9,
+      Index: 21
+    },
+    {
+      Description: "System.String System.Object::ToString() @ 48086",
+      Offset: 651,
+      Type: 65,
+      Index: 8
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 49457",
+      Offset: 1371,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.String System.Threading.Thread::get_Name() @ 49958",
+      Offset: 501,
+      Type: 9,
+      Index: 22
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 50738",
+      Offset: 780,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "XaeiOS.SIP System.Threading.Thread::get_SIP() @ 51240",
+      Offset: 502,
+      Type: 9,
+      Index: 23
+    },
+    {
+      Description: "System.String System.Object::ToString() @ 52461",
+      Offset: 1221,
+      Type: 65,
+      Index: 8
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement System.Browser.Dom.DomManager::CreateElement(System.String) @ 53631",
+      Offset: 1170,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Threading.ThreadPriority System.Threading.Thread::get_Priority() @ 54133",
+      Offset: 502,
+      Type: 9,
+      Index: 24
+    },
+    {
+      Description: "System.Threading.ThreadPriority @ 54627",
+      Offset: 494,
+      Type: 17,
+      Index: 4
+    },
+    {
+      Description: "System.String System.Object::ToString() @ 54634",
+      Offset: 7,
+      Type: 65,
+      Index: 8
+    },
+    {
+      Description: "System.Threading.ThreadPriority @ 54653",
+      Offset: 19,
+      Type: 17,
+      Index: 4
+    },
+    {
+      Description: "System.Void System.Collections.Generic.List`1::Add(T) @ 55912",
+      Offset: 1259,
+      Type: 65,
+      Index: 19
+    },
+    {
+      Description: "T System.Collections.Generic.List`1::get_Item(System.Int32) @ 57003",
+      Offset: 1091,
+      Type: 65,
+      Index: 16
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 58667",
+      Offset: 1664,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::.ctor() @ 59171",
+      Offset: 504,
+      Type: 9,
+      Index: 25
+    },
+    {
+      Description: "System.Collections.Generic.List`1<System.Browser.Dom.IDomElement> @ 59758",
+      Offset: 587,
+      Type: 17,
+      Index: 3
+    },
+    {
+      Description: "System.Void System.Collections.Generic.List`1::.ctor() @ 59890",
+      Offset: 132,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "System.Collections.Generic.List`1<System.Browser.Dom.IDomElement> @ 60353",
+      Offset: 463,
+      Type: 17,
+      Index: 3
+    },
+    {
+      Description: "System.Void System.Collections.Generic.List`1::.ctor() @ 60485",
+      Offset: 132,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "System.Void System.Object::.ctor() @ 60928",
+      Offset: 443,
+      Type: 9,
+      Index: 26
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::set_UpdateInterval(System.Int32) @ 61249",
+      Offset: 321,
+      Type: 9,
+      Index: 2
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 62001",
+      Offset: 752,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.Program::Main(System.String[]) @ 62493",
+      Offset: 492,
+      Type: 9,
+      Index: 27
+    },
+    {
+      Description: "XaeiOS.ProcessViewer.ProcessViewer @ 63118",
+      Offset: 625,
+      Type: 17,
+      Index: 0
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::.ctor() @ 63219",
+      Offset: 101,
+      Type: 9,
+      Index: 25
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::Start() @ 63601",
+      Offset: 382,
+      Type: 9,
+      Index: 3
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 64330",
+      Offset: 729,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.Program::.ctor() @ 64819",
+      Offset: 489,
+      Type: 9,
+      Index: 28
+    },
+    {
+      Description: "System.Void System.Object::.ctor() @ 65344",
+      Offset: 525,
+      Type: 9,
+      Index: 26
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 65775",
+      Offset: 431,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "XaeiOS.ProcessViewer.ProcessViewer @ 5",
+      Offset: 5,
+      Type: 18,
+      Index: 0
+    },
+    {
+      Description: "System.String System.Object::ToString() @ 66",
+      Offset: 61,
+      Type: 10,
+      Index: 8
+    },
+    {
+      Description: "System.Int32 System.Object::GetHashCode() @ 124",
+      Offset: 58,
+      Type: 10,
+      Index: 29
+    },
+    {
+      Description: "System.Boolean System.Object::Equals(System.Object) @ 184",
+      Offset: 60,
+      Type: 10,
+      Index: 30
+    },
+    {
+      Description: "System.Void System.Object::Finalize() @ 254",
+      Offset: 70,
+      Type: 10,
+      Index: 31
+    },
+    {
+      Description: "XaeiOS.ProcessViewer.Program @ 309",
+      Offset: 55,
+      Type: 18,
+      Index: 2
+    },
+    {
+      Description: "System.String System.Object::ToString() @ 364",
+      Offset: 55,
+      Type: 10,
+      Index: 8
+    },
+    {
+      Description: "System.Int32 System.Object::GetHashCode() @ 422",
+      Offset: 58,
+      Type: 10,
+      Index: 29
+    },
+    {
+      Description: "System.Boolean System.Object::Equals(System.Object) @ 482",
+      Offset: 60,
+      Type: 10,
+      Index: 30
+    },
+    {
+      Description: "System.Void System.Object::Finalize() @ 552",
+      Offset: 70,
+      Type: 10,
+      Index: 31
+    },
+    {
+      Description: "XaeiOS.ProcessViewer.ProcessViewer @ 2",
+      Offset: 2,
+      Type: 20,
+      Index: 0
+    },
+    {
+      Description: "System.Object @ 10",
+      Offset: 8,
+      Type: 20,
+      Index: 1
+    },
+    {
+      Description: "XaeiOS.ProcessViewer.Program @ 75",
+      Offset: 65,
+      Type: 20,
+      Index: 2
+    },
+    {
+      Description: "System.Object @ 83",
+      Offset: 8,
+      Type: 20,
+      Index: 1
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.RuntimeHelpers::InitializeMetadata() @ 187",
+      Offset: 104,
+      Type: 12,
+      Index: 32
+    },
+    {
+      Description: "System.Runtime.Assembly System.Runtime.CompilerServices.RuntimeHelpers::CreateAssembly(System.String) @ 274",
+      Offset: 87,
+      Type: 12,
+      Index: 33
+    },
+    {
+      Description: "System.Runtime.Class System.Runtime.CompilerServices.RuntimeHelpers::CreateClass(System.String,System.String,System.Runtime.Assembly,System.UIntPtr,System.Runtime.Class,System.Boolean,System.Boolean) @ 411",
+      Offset: 137,
+      Type: 12,
+      Index: 34
+    },
+    {
+      Description: "XaeiOS.ProcessViewer.ProcessViewer @ 458",
+      Offset: 47,
+      Type: 20,
+      Index: 0
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 651",
+      Offset: 193,
+      Type: 12,
+      Index: 35
+    },
+    {
+      Description: "System.Int32 XaeiOS.ProcessViewer.ProcessViewer::get_UpdateInterval() @ 683",
+      Offset: 32,
+      Type: 12,
+      Index: 0
+    },
+    {
+      Description: "System.Runtime.Class System.Runtime.CompilerServices.RuntimeHelpers::CreateClass(System.String,System.String,System.Runtime.Assembly,System.UIntPtr,System.Runtime.Class,System.Boolean,System.Boolean) @ 829",
+      Offset: 146,
+      Type: 12,
+      Index: 34
+    },
+    {
+      Description: "System.Runtime.CompilerServices.CompilerGeneratedAttribute @ 900",
+      Offset: 71,
+      Type: 20,
+      Index: 5
+    },
+    {
+      Description: "System.Runtime.Constructor System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(System.Runtime.Class,System.String,System.NativeFunction) @ 1117",
+      Offset: 217,
+      Type: 12,
+      Index: 36
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() @ 1136",
+      Offset: 19,
+      Type: 12,
+      Index: 37
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 1259",
+      Offset: 123,
+      Type: 12,
+      Index: 38
+    },
+    {
+      Description: "System.Void System.AttributeUsageAttribute::.ctor(System.AttributeTargets) @ 1270",
+      Offset: 11,
+      Type: 12,
+      Index: 39
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 1382",
+      Offset: 112,
+      Type: 12,
+      Index: 38
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() @ 1393",
+      Offset: 11,
+      Type: 12,
+      Index: 40
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 1513",
+      Offset: 120,
+      Type: 12,
+      Index: 35
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::set_UpdateInterval(System.Int32) @ 1545",
+      Offset: 32,
+      Type: 12,
+      Index: 2
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 1683",
+      Offset: 138,
+      Type: 12,
+      Index: 38
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() @ 1694",
+      Offset: 11,
+      Type: 12,
+      Index: 40
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 1814",
+      Offset: 120,
+      Type: 12,
+      Index: 35
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::Start() @ 1833",
+      Offset: 19,
+      Type: 12,
+      Index: 3
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 1966",
+      Offset: 133,
+      Type: 12,
+      Index: 35
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::BuildUI() @ 1987",
+      Offset: 21,
+      Type: 12,
+      Index: 5
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 2122",
+      Offset: 135,
+      Type: 12,
+      Index: 35
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement XaeiOS.ProcessViewer.ProcessViewer::BuildSIPTable() @ 2149",
+      Offset: 27,
+      Type: 12,
+      Index: 11
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 2290",
+      Offset: 141,
+      Type: 12,
+      Index: 35
+    },
+    {
+      Description: "System.Browser.Dom.IDomElement XaeiOS.ProcessViewer.ProcessViewer::BuildThreadTable() @ 2320",
+      Offset: 30,
+      Type: 12,
+      Index: 12
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 2465",
+      Offset: 145,
+      Type: 12,
+      Index: 35
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::UpdateSIPs() @ 2489",
+      Offset: 24,
+      Type: 12,
+      Index: 6
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 2629",
+      Offset: 140,
+      Type: 12,
+      Index: 35
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::UpdateThreads() @ 2656",
+      Offset: 27,
+      Type: 12,
+      Index: 7
+    },
+    {
+      Description: "System.Runtime.Constructor System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(System.Runtime.Class,System.String,System.NativeFunction) @ 2799",
+      Offset: 143,
+      Type: 12,
+      Index: 36
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.ProcessViewer::.ctor() @ 2818",
+      Offset: 19,
+      Type: 12,
+      Index: 25
+    },
+    {
+      Description: "System.Runtime.Property System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(System.Runtime.Class,System.String,System.Runtime.Method,System.Runtime.Method) @ 2951",
+      Offset: 133,
+      Type: 12,
+      Index: 41
+    },
+    {
+      Description: "System.Runtime.Class System.Runtime.CompilerServices.RuntimeHelpers::CreateClass(System.String,System.String,System.Runtime.Assembly,System.UIntPtr,System.Runtime.Class,System.Boolean,System.Boolean) @ 3117",
+      Offset: 166,
+      Type: 12,
+      Index: 34
+    },
+    {
+      Description: "XaeiOS.ProcessViewer.Program @ 3158",
+      Offset: 41,
+      Type: 20,
+      Index: 2
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 3347",
+      Offset: 189,
+      Type: 12,
+      Index: 35
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.Program::Main(System.String[]) @ 3366",
+      Offset: 19,
+      Type: 12,
+      Index: 27
+    },
+    {
+      Description: "System.Runtime.Constructor System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(System.Runtime.Class,System.String,System.NativeFunction) @ 3501",
+      Offset: 135,
+      Type: 12,
+      Index: 36
+    },
+    {
+      Description: "System.Void XaeiOS.ProcessViewer.Program::.ctor() @ 3521",
+      Offset: 20,
+      Type: 12,
+      Index: 28
+    }
+  ]
+}
+]]></Header><Code Length="11"><![CDATA[function($ep,$end,$rv,$pc,$f,r0)
+// : System.Int32 XaeiOS.ProcessViewer.ProcessViewer::get_UpdateInterval()
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r0 = this[7]/*V_0.1 = this.<UpdateInterval>k__BackingField*/;
+                    return r0/*V_0.1*/;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f)
+// : System.Void XaeiOS.ProcessViewer.ProcessViewer::set_UpdateInterval(System.Int32)
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    this[7] = $f[2]/*this.<UpdateInterval>k__BackingField = value*/;
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0,r1)
+// : System.Void XaeiOS.ProcessViewer.ProcessViewer::Start()
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t),[null,null,"Process viewer building UI"])/*System.Console::WriteLine("Process viewer building UI")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    $$[].call(this,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t),[null,null])/*this.BuildUI()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    $ep = 4;
+                    $$[].call(this,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t),[null,null])/*this.UpdateSIPs()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 4:
+                {
+                    $ep = 5;
+                    $$[].call(this,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t),[null,null])/*this.UpdateThreads()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 5:
+                {
+                    $ep = 6;
+                    r1 = this[4]/*$t6 = this._lastUpdatedElement*/;
+                    r0 = new Date()/*$t8 = new System.Void System.NativeDate::.ctor()()*/;
+                    $rv = r0.$[].call(r0,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t),[null,null])/*$rv = $t8.ToString()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 6:
+                {
+                    $ep = 7;
+                    r0 = $rv/*$t9 = $rv*/;
+                    r0 = ("Last updated: " + r0)/*$t10 = System.String::Concat("Last updated: ", $t9)*/;
+                    r1.innerHTML = r0/*$t6.set_InnerHtml($t10)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 7:
+                {
+                    $ep = 3;
+                    r0 = this[7]/*V_1.1 = this.<UpdateInterval>k__BackingField*/;
+                    $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t),[null,null,r0])/*System.Threading.Thread::Sleep(V_1.1)*/;
+                    continue $ctrl;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r0,r1],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0,r1,r2,r3)
+// : System.Void XaeiOS.ProcessViewer.ProcessViewer::BuildUI()
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    r0 = document/*$t1 = System.Browser.Dom.DomManager::get_Document()*/;
+                    $rv = r0.getElementById("process-viewer-area")/*$rv = $t1.GetElementById("process-viewer-area")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    r0 = $rv/*$t3 = $rv*/;
+                    this[0] = r0/*this._processViewerArea = $t3*/;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"table"])/*$rv = System.Browser.Dom.DomManager::CreateElement("table")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    $ep = 4;
+                    r0 = $rv/*$t6 = $rv*/;
+                    this[1] = r0/*this._mainTable = $t6*/;
+                    r0 = this[1]/*$t8 = this._mainTable*/;
+                    r0.setAttribute("cellspacing","2")/*$t8.SetAttribute("cellspacing", "2")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 4:
+                {
+                    $ep = 5;
+                    r0 = this[1]/*$t13 = this._mainTable*/;
+                    r0.setAttribute("cellpadding","2")/*$t13.SetAttribute("cellpadding", "2")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 5:
+                {
+                    $ep = 6;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"tr"])/*$rv = System.Browser.Dom.DomManager::CreateElement("tr")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 6:
+                {
+                    $ep = 7;
+                    r3 = $rv/*V_0.1 = $rv*/;
+                    r3.setAttribute("valign","top")/*V_0.1.SetAttribute("valign", "top")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 7:
+                {
+                    $ep = 8;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"td"])/*$rv = System.Browser.Dom.DomManager::CreateElement("td")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 8:
+                {
+                    $ep = 9;
+                    r2 = $rv/*V_1.1 = $rv*/;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"span"])/*$rv = System.Browser.Dom.DomManager::CreateElement("span")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 9:
+                {
+                    $ep = 10;
+                    r0 = $rv/*V_2.1 = $rv*/;
+                    r0.innerHTML = "Processes:<br />----------------------------------------<br />"/*V_2.1.set_InnerHtml("Processes:<br />----------------------------------------<br />")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 10:
+                {
+                    $ep = 11;
+                    r2.appendChild(r0)/*V_1.1.AppendChild(V_2.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 11:
+                {
+                    $ep = 12;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"table"])/*$rv = System.Browser.Dom.DomManager::CreateElement("table")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 12:
+                {
+                    $ep = 13;
+                    r1 = $rv/*V_8.1 = $rv*/;
+                    r1.innerHTML = "<tr><td>ID</td><td>Name</td></tr>"/*V_8.1.set_InnerHtml("<tr><td>ID</td><td>Name</td></tr>")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 13:
+                {
+                    $ep = 14;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"tbody"])/*$rv = System.Browser.Dom.DomManager::CreateElement("tbody")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 14:
+                {
+                    $ep = 15;
+                    r0 = $rv/*$t31 = $rv*/;
+                    this[2] = r0/*this._sipTableBody = $t31*/;
+                    r0 = this[2]/*$t33 = this._sipTableBody*/;
+                    r1.appendChild(r0)/*V_8.1.AppendChild($t33)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 15:
+                {
+                    $ep = 16;
+                    r2.appendChild(r1)/*V_1.1.AppendChild(V_8.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 16:
+                {
+                    $ep = 17;
+                    r3.appendChild(r2)/*V_0.1.AppendChild(V_1.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 17:
+                {
+                    $ep = 18;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"td"])/*$rv = System.Browser.Dom.DomManager::CreateElement("td")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 18:
+                {
+                    $ep = 19;
+                    r2 = $rv/*V_1.2 = $rv*/;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"span"])/*$rv = System.Browser.Dom.DomManager::CreateElement("span")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 19:
+                {
+                    $ep = 20;
+                    r0 = $rv/*V_4.1 = $rv*/;
+                    r0.innerHTML = "Threads:<br />---------------------------------------------------------------<br />"/*V_4.1.set_InnerHtml("Threads:<br />---------------------------------------------------------------<br />")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 20:
+                {
+                    $ep = 21;
+                    r2.appendChild(r0)/*V_1.2.AppendChild(V_4.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 21:
+                {
+                    $ep = 22;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"table"])/*$rv = System.Browser.Dom.DomManager::CreateElement("table")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 22:
+                {
+                    $ep = 23;
+                    r1 = $rv/*V_6.1 = $rv*/;
+                    r1.innerHTML = "<tr><td>ID</td><td>Name</td><td>Process</td><td>Priority</td></tr>"/*V_6.1.set_InnerHtml("<tr><td>ID</td><td>Name</td><td>Process</td><td>Priority</td></tr>")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 23:
+                {
+                    $ep = 24;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"tbody"])/*$rv = System.Browser.Dom.DomManager::CreateElement("tbody")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 24:
+                {
+                    $ep = 25;
+                    r0 = $rv/*$t43 = $rv*/;
+                    this[3] = r0/*this._threadTableBody = $t43*/;
+                    r0 = this[3]/*$t45 = this._threadTableBody*/;
+                    r1.appendChild(r0)/*V_6.1.AppendChild($t45)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 25:
+                {
+                    $ep = 26;
+                    r2.appendChild(r1)/*V_1.2.AppendChild(V_6.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 26:
+                {
+                    $ep = 27;
+                    r3.appendChild(r2)/*V_0.1.AppendChild(V_1.2)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 27:
+                {
+                    $ep = 28;
+                    r0 = this[1]/*$t47 = this._mainTable*/;
+                    r0.appendChild(r3)/*$t47.AppendChild(V_0.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 28:
+                {
+                    $ep = 29;
+                    r0 = this[0]/*$t49 = this._processViewerArea*/;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"br"])/*$rv = System.Browser.Dom.DomManager::CreateElement("br")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 29:
+                {
+                    $ep = 30;
+                    r1 = $rv/*$t51 = $rv*/;
+                    r0.appendChild(r1)/*$t49.AppendChild($t51)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 30:
+                {
+                    $ep = 31;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"span"])/*$rv = System.Browser.Dom.DomManager::CreateElement("span")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 31:
+                {
+                    $ep = 32;
+                    r0 = $rv/*$t54 = $rv*/;
+                    this[4] = r0/*this._lastUpdatedElement = $t54*/;
+                    r0 = this[0]/*$t56 = this._processViewerArea*/;
+                    r1 = this[4]/*$t58 = this._lastUpdatedElement*/;
+                    r0.appendChild(r1)/*$t56.AppendChild($t58)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 32:
+                {
+                    $ep = 33;
+                    r0 = this[0]/*$t60 = this._processViewerArea*/;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t),[null,null,"br"])/*$rv = System.Browser.Dom.DomManager::CreateElement("br")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 33:
+                {
+                    $ep = 34;
+                    r1 = $rv/*$t62 = $rv*/;
+                    r0.appendChild(r1)/*$t60.AppendChild($t62)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 34:
+                {
+                    $ep = 35;
+                    r0 = this[0]/*$t64 = this._processViewerArea*/;
+                    r1 = this[1]/*$t66 = this._mainTable*/;
+                    r0.appendChild(r1)/*$t64.AppendChild($t66)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 35:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.Browser.Dom.IDomElement XaeiOS.ProcessViewer.ProcessViewer::BuildSIPTable()
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t),[null,null,"table"])/*$rv = System.Browser.Dom.DomManager::CreateElement("table")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    r0 = $rv/*V_0.1 = $rv*/;
+                    r0.innerHTML = "<tr><td>ID</td><td>Name</td></tr>"/*V_0.1.set_InnerHtml("<tr><td>ID</td><td>Name</td></tr>")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    return r0/*V_0.1*/;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.Browser.Dom.IDomElement XaeiOS.ProcessViewer.ProcessViewer::BuildThreadTable()
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t),[null,null,"table"])/*$rv = System.Browser.Dom.DomManager::CreateElement("table")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    r0 = $rv/*V_0.1 = $rv*/;
+                    r0.innerHTML = "<tr><td>ID</td><td>Name</td><td>Process</td><td>Priority</td></tr>"/*V_0.1.set_InnerHtml("<tr><td>ID</td><td>Name</td><td>Process</td><td>Priority</td></tr>")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    return r0/*V_0.1*/;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5)
+// : System.Void XaeiOS.ProcessViewer.ProcessViewer::UpdateSIPs()
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    r5 = (t=[null,null],t.$=_[],t)/*$t0 = new System.Void System.Collections.Generic.List`1<System.Browser.Dom.IDomElement>::.ctor()()*/;
+                    $$[].call(r5,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t),[null,null])/*$t0..ctor()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t),[null,null])/*$rv = XaeiOS.SIP::GetSIPs()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    r4 = $rv/*V_1.1 = $rv*/;
+                    r0 = 0/*V_2.1 = 0*/;
+                    $ep = 4;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 4:
+                {
+                    if((r0 < r4.length))
+                    {
+                        $ep = 19;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 5;
+                        if(0 > $end--)
+                        {
+                            throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 5:
+                {
+                    r0 = 0/*V_2.2 = 0*/;
+                    $ep = 6;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 6:
+                {
+                    $ep = 7;
+                    r1 = this[5]/*$t9 = this._sipRows*/;
+                    $rv = r1.$[].call(r1,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t),[null,null])/*$rv = $t9.get_Count()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 7:
+                {
+                    r1 = $rv/*$t10 = $rv*/;
+                    if((r0 < r1))
+                    {
+                        $ep = 15;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 8;
+                        if(0 > $end--)
+                        {
+                            throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 8:
+                {
+                    r0 = 0/*V_2.3 = 0*/;
+                    $ep = 9;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 9:
+                {
+                    $ep = 10;
+                    $rv = r5.$[].call(r5,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t),[null,null])/*$rv = $t0.get_Count()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 10:
+                {
+                    r1 = $rv/*$t14 = $rv*/;
+                    if((r0 < r1))
+                    {
+                        $ep = 12;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 11;
+                        if(0 > $end--)
+                        {
+                            throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 11:
+                {
+                    this[5] = r5/*this._sipRows = $t0*/;
+                    return;
+                }
+                case 12:
+                {
+                    $ep = 13;
+                    r1 = this[2]/*$t19 = this._sipTableBody*/;
+                    $rv = r5.$[].call(r5,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t),[null,null,r0])/*$rv = $t0.get_Item(V_2.9)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 13:
+                {
+                    $ep = 14;
+                    r2 = $rv/*$t20 = $rv*/;
+                    r1.appendChild(r2)/*$t19.AppendChild($t20)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 14:
+                {
+                    r0 = (r0 + 1)/*V_2.4 = V_2.9 Add 1*/;
+                    $ep = 9;
+                    continue $ctrl;
+                }
+                case 15:
+                {
+                    $ep = 16;
+                    r1 = this[5]/*$t24 = this._sipRows*/;
+                    $rv = r1.$[].call(r1,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t),[null,null,r0])/*$rv = $t24.get_Item(V_2.8)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 16:
+                {
+                    $ep = 17;
+                    r2 = $rv/*V_6.1 = $rv*/;
+                    $rv = r2.parentNode/*$rv = V_6.1.get_ParentNode()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 17:
+                {
+                    $ep = 18;
+                    r1 = $rv/*$t26 = $rv*/;
+                    r1.removeChild(r2)/*$t26.RemoveChild(V_6.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 18:
+                {
+                    r0 = (r0 + 1)/*V_2.5 = V_2.8 Add 1*/;
+                    $ep = 6;
+                    continue $ctrl;
+                }
+                case 19:
+                {
+                    $ep = 20;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t),[null,null,"tr"])/*$rv = System.Browser.Dom.DomManager::CreateElement("tr")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 20:
+                {
+                    $ep = 21;
+                    r3 = $rv/*V_4.1 = $rv*/;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t),[null,null,"td"])/*$rv = System.Browser.Dom.DomManager::CreateElement("td")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 21:
+                {
+                    $ep = 22;
+                    r2 = $rv/*V_5.1 = $rv*/;
+                    $rv = $$[].call(r4[r0],0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t),[null,null])/*$rv = V_1.1[V_2.7].get_PID()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 22:
+                {
+                    $ep = 23;
+                    r1 = $rv/*V_7.1 = $rv*/;
+                    r1 = r1.toString()/*$t35 = V_7.1.ToString()*/;
+                    r2.innerHTML = r1/*V_5.1.set_InnerHtml($t35)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 23:
+                {
+                    $ep = 24;
+                    r3.appendChild(r2)/*V_4.1.AppendChild(V_5.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 24:
+                {
+                    $ep = 25;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t),[null,null,"td"])/*$rv = System.Browser.Dom.DomManager::CreateElement("td")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 25:
+                {
+                    $ep = 26;
+                    r2 = $rv/*V_5.2 = $rv*/;
+                    $rv = $$[].call(r4[r0],0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t),[null,null])/*$rv = V_1.1[V_2.7].get_Name()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 26:
+                {
+                    $ep = 27;
+                    r1 = $rv/*$t38 = $rv*/;
+                    r2.innerHTML = r1/*V_5.2.set_InnerHtml($t38)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 27:
+                {
+                    $ep = 28;
+                    r3.appendChild(r2)/*V_4.1.AppendChild(V_5.2)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 28:
+                {
+                    $ep = 29;
+                    r5.$[].call(r5,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t),[null,null,r3])/*$t0.Add(V_4.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 29:
+                {
+                    r0 = (r0 + 1)/*V_2.6 = V_2.7 Add 1*/;
+                    $ep = 4;
+                    continue $ctrl;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r1,r2,r3,r0,r4,r5],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4)
+// : System.Void XaeiOS.ProcessViewer.ProcessViewer::UpdateThreads()
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r0 = 0/*V_0.1 = 0*/;
+                    $ep = 2;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    r1 = this[6]/*$t2 = this._threadRows*/;
+                    $rv = r1.$[].call(r1,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null])/*$rv = $t2.get_Count()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    r1 = $rv/*$t3 = $rv*/;
+                    if((r0 < r1))
+                    {
+                        $ep = 34;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 4;
+                        if(0 > $end--)
+                        {
+                            throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 4:
+                {
+                    $ep = 5;
+                    r1 = (t=[null,null],t.$=_[],t)/*$t7 = new System.Void System.Collections.Generic.List`1<System.Browser.Dom.IDomElement>::.ctor()()*/;
+                    $$[].call(r1,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null])/*$t7..ctor()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 5:
+                {
+                    $ep = 6;
+                    this[6] = r1/*this._threadRows = $t7*/;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null])/*$rv = System.Threading.Thread::GetThreads()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 6:
+                {
+                    r4 = $rv/*V_2.1 = $rv*/;
+                    r0 = 0/*V_0.2 = 0*/;
+                    $ep = 7;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 7:
+                {
+                    if((r0 < r4.length))
+                    {
+                        $ep = 9;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 8;
+                        if(0 > $end--)
+                        {
+                            throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 8:
+                {
+                    return;
+                }
+                case 9:
+                {
+                    $ep = 10;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null,"tr"])/*$rv = System.Browser.Dom.DomManager::CreateElement("tr")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 10:
+                {
+                    $ep = 11;
+                    r3 = $rv/*V_4.1 = $rv*/;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null,"td"])/*$rv = System.Browser.Dom.DomManager::CreateElement("td")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 11:
+                {
+                    r2 = $rv/*V_5.1 = $rv*/;
+                    r1 = $$[].call(r4[r0])/*V_6.1 = V_2.1[V_0.6].get_Task()*/;
+                    if((r1 == null))
+                    {
+                        $ep = 14;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 12;
+                        if(0 > $end--)
+                        {
+                            throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 12:
+                {
+                    $ep = 13;
+                    $rv = r1.$[].call(r1,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null])/*$rv = V_6.1.ToString()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 13:
+                {
+                    $ep = 15;
+                    r1 = $rv/*$t23 = $rv*/;
+                    r2.innerHTML = r1/*V_5.1.set_InnerHtml($t23)*/;
+                    continue $ctrl;
+                }
+                case 14:
+                {
+                    $ep = 15;
+                    r2.innerHTML = "?"/*V_5.1.set_InnerHtml("?")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 15:
+                {
+                    $ep = 16;
+                    r3.appendChild(r2)/*V_4.1.AppendChild(V_5.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 16:
+                {
+                    $ep = 17;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null,"td"])/*$rv = System.Browser.Dom.DomManager::CreateElement("td")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 17:
+                {
+                    $ep = 18;
+                    r2 = $rv/*V_5.2 = $rv*/;
+                    r1 = $$[].call(r4[r0])/*$t26 = V_2.1[V_0.6].get_Name()*/;
+                    r2.innerHTML = r1/*V_5.2.set_InnerHtml($t26)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 18:
+                {
+                    $ep = 19;
+                    r3.appendChild(r2)/*V_4.1.AppendChild(V_5.2)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 19:
+                {
+                    $ep = 20;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null,"td"])/*$rv = System.Browser.Dom.DomManager::CreateElement("td")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 20:
+                {
+                    $ep = 21;
+                    r2 = $rv/*V_5.3 = $rv*/;
+                    $rv = $$[].call(r4[r0],0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null])/*$rv = V_2.1[V_0.6].get_SIP()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 21:
+                {
+                    r1 = $rv/*V_7.1 = $rv*/;
+                    if((r1 == null))
+                    {
+                        $ep = 22;
+                        if(0 > $end--)
+                        {
+                            throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                        }
+
+                    }
+                    else
+                    {
+                        $ep = 23;
+                        continue $ctrl;
+
+                    }
+                }
+                case 22:
+                {
+                    $ep = 25;
+                    r2.innerHTML = "?"/*V_5.3.set_InnerHtml("?")*/;
+                    continue $ctrl;
+                }
+                case 23:
+                {
+                    $ep = 24;
+                    $rv = r1.$[].call(r1,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null])/*$rv = V_7.1.ToString()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 24:
+                {
+                    $ep = 25;
+                    r1 = $rv/*$t33 = $rv*/;
+                    r2.innerHTML = r1/*V_5.3.set_InnerHtml($t33)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 25:
+                {
+                    $ep = 26;
+                    r3.appendChild(r2)/*V_4.1.AppendChild(V_5.3)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 26:
+                {
+                    $ep = 27;
+                    $rv = $$[](0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null,"td"])/*$rv = System.Browser.Dom.DomManager::CreateElement("td")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 27:
+                {
+                    $ep = 28;
+                    r2 = $rv/*V_5.4 = $rv*/;
+                    $rv = $$[].call(r4[r0],0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null])/*$rv = V_2.1[V_0.6].get_Priority()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 28:
+                {
+                    $ep = 29;
+                    r1 = $rv/*$t36 = $rv*/;
+                    $rv = (t=r1,t.$=_[],t).$[].call((t=r1,t.$=_[],t),0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null])/*$rv = box(System.Threading.ThreadPriority,$t36).ToString()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 29:
+                {
+                    $ep = 30;
+                    r1 = $rv/*$t38 = $rv*/;
+                    r2.innerHTML = r1/*V_5.4.set_InnerHtml($t38)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 30:
+                {
+                    $ep = 31;
+                    r3.appendChild(r2)/*V_4.1.AppendChild(V_5.4)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 31:
+                {
+                    $ep = 32;
+                    r1 = this[6]/*$t40 = this._threadRows*/;
+                    r1.$[].call(r1,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null,r3])/*$t40.Add(V_4.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 32:
+                {
+                    $ep = 33;
+                    r1 = this[3]/*$t42 = this._threadTableBody*/;
+                    r1.appendChild(r3)/*$t42.AppendChild(V_4.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 33:
+                {
+                    r0 = (r0 + 1)/*V_0.3 = V_0.8 Add 1*/;
+                    $ep = 7;
+                    continue $ctrl;
+                }
+                case 34:
+                {
+                    $ep = 35;
+                    r1 = this[6]/*$t48 = this._threadRows*/;
+                    $rv = r1.$[].call(r1,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t),[null,null,r0])/*$rv = $t48.get_Item(V_0.5)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 35:
+                {
+                    $ep = 36;
+                    r2 = $rv/*V_1.1 = $rv*/;
+                    $rv = r2.parentNode/*$rv = V_1.1.get_ParentNode()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 36:
+                {
+                    $ep = 37;
+                    r1 = $rv/*$t50 = $rv*/;
+                    r1.removeChild(r2)/*$t50.RemoveChild(V_1.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 37:
+                {
+                    r0 = (r0 + 1)/*V_0.4 = V_0.5 Add 1*/;
+                    $ep = 2;
+                    continue $ctrl;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r1,r2,r0,r3,r4],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.Void XaeiOS.ProcessViewer.ProcessViewer::.ctor()
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    r0 = (t=[null,null],t.$=_[],t)/*$t1 = new System.Void System.Collections.Generic.List`1<System.Browser.Dom.IDomElement>::.ctor()()*/;
+                    $$[].call(r0,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t),[null,null])/*$t1..ctor()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    this[5] = r0/*this._sipRows = $t1*/;
+                    r0 = (t=[null,null],t.$=_[],t)/*$t3 = new System.Void System.Collections.Generic.List`1<System.Browser.Dom.IDomElement>::.ctor()()*/;
+                    $$[].call(r0,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t),[null,null])/*$t3..ctor()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    $ep = 4;
+                    this[6] = r0/*this._threadRows = $t3*/;
+                    $$[].call(this)/*this..ctor()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 4:
+                {
+                    $ep = 5;
+                    $$[].call(this,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t),[null,null,500])/*this.set_UpdateInterval(500)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 5:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.Void XaeiOS.ProcessViewer.Program::Main(System.String[])
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    r0 = (t=[null,null,null,null,null,null,null,null],t.$=_[],t)/*$t0 = new System.Void XaeiOS.ProcessViewer.ProcessViewer::.ctor()()*/;
+                    $$[].call(r0,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t),[null,null])/*$t0..ctor()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    $$[].call(r0,0,$end,null,(t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t),[null,null])/*$t0.Start()*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f)
+// : System.Void XaeiOS.ProcessViewer.Program::.ctor()
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $$[].call(this)/*this..ctor()*/;
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+}]]></Code><Data Length="2"><![CDATA[
+// : XaeiOS.ProcessViewer.ProcessViewer
+{
+    f: 0,
+    0:$$[]/* System.String System.Object::ToString() */,
+    1:$$[]/* System.Int32 System.Object::GetHashCode() */,
+    2:$$[]/* System.Boolean System.Object::Equals(System.Object) */,
+    3:$$[]/* System.Void System.Object::Finalize() */
+},
+
+// : XaeiOS.ProcessViewer.Program
+{
+    f: 0,
+    0:$$[]/* System.String System.Object::ToString() */,
+    1:$$[]/* System.Int32 System.Object::GetHashCode() */,
+    2:$$[]/* System.Boolean System.Object::Equals(System.Object) */,
+    3:$$[]/* System.Void System.Object::Finalize() */
+}]]></Data><Initialization><![CDATA[_[].b = _[];// XaeiOS.ProcessViewer.ProcessViewer extends System.Object
+_[].b = _[];// XaeiOS.ProcessViewer.Program extends System.Object
+var t0 = {}/* t0 = [dynamic expression]*/;
+$$[]()/*System.Runtime.CompilerServices.RuntimeHelpers::InitializeMetadata()*/;t0[0] = $$[]("XaeiOS.ProcessViewer")/*t0[0] = System.Runtime.CompilerServices.RuntimeHelpers::CreateAssembly("XaeiOS.ProcessViewer")*/;
+t0[1] = $$[]("XaeiOS.ProcessViewer","ProcessViewer",t0[0],,null,false,false)/*t0[1] = System.Runtime.CompilerServices.RuntimeHelpers::CreateClass("XaeiOS.ProcessViewer", "ProcessViewer", t0[0], [dynamic expression], null, False, False)*/;
+t0[2] = $$[](t0[1],"get_UpdateInterval",$$[],-1)/*t0[2] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "get_UpdateInterval", [dynamic expression], -1)*/;
+t0[3] = $$[]("System.Runtime.CompilerServices","CompilerGeneratedAttribute",t0[0],,null,false,false)/*t0[3] = System.Runtime.CompilerServices.RuntimeHelpers::CreateClass("System.Runtime.CompilerServices", "CompilerGeneratedAttribute", t0[0], [dynamic expression], null, False, False)*/;
+t0[4] = $$[](t0[3],".ctor",$$[])/*t0[4] = System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(t0[3], ".ctor", [dynamic expression])*/;
+$$[](t0[3],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[3], [dynamic expression])*/;
+$$[](t0[2],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[2], [dynamic expression])*/;
+t0[5] = $$[](t0[1],"set_UpdateInterval",$$[],-1)/*t0[5] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "set_UpdateInterval", [dynamic expression], -1)*/;
+$$[](t0[5],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[5], [dynamic expression])*/;
+t0[6] = $$[](t0[1],"Start",$$[],-1)/*t0[6] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "Start", [dynamic expression], -1)*/;
+t0[7] = $$[](t0[1],"BuildUI",$$[],-1)/*t0[7] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "BuildUI", [dynamic expression], -1)*/;
+t0[8] = $$[](t0[1],"BuildSIPTable",$$[],-1)/*t0[8] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "BuildSIPTable", [dynamic expression], -1)*/;
+t0[9] = $$[](t0[1],"BuildThreadTable",$$[],-1)/*t0[9] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "BuildThreadTable", [dynamic expression], -1)*/;
+t0[10] = $$[](t0[1],"UpdateSIPs",$$[],-1)/*t0[10] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "UpdateSIPs", [dynamic expression], -1)*/;
+t0[11] = $$[](t0[1],"UpdateThreads",$$[],-1)/*t0[11] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "UpdateThreads", [dynamic expression], -1)*/;
+t0[12] = $$[](t0[1],".ctor",$$[])/*t0[12] = System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(t0[1], ".ctor", [dynamic expression])*/;
+t0[13] = $$[](t0[1],"UpdateInterval",t0[2],t0[5])/*t0[13] = System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(t0[1], "UpdateInterval", t0[2], t0[5])*/;
+t0[14] = $$[]("XaeiOS.ProcessViewer","Program",t0[0],,null,false,false)/*t0[14] = System.Runtime.CompilerServices.RuntimeHelpers::CreateClass("XaeiOS.ProcessViewer", "Program", t0[0], [dynamic expression], null, False, False)*/;
+t0[15] = $$[](t0[14],"Main",$$[],-1)/*t0[15] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[14], "Main", [dynamic expression], -1)*/;
+t0[16] = $$[](t0[14],".ctor",$$[])/*t0[16] = System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(t0[14], ".ctor", [dynamic expression])*/;
+]]></Initialization></Object>

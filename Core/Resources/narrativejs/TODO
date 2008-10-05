@@ -1,0 +1,5 @@
+- BUG: Narcissus extends Array.prototype
+- DESIGN: figure out way to avoid exception rethrowing? (dynamic guard clause?)
+- optimize for code size
+- examples
+- Release: 1.0

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Narrative JavaScript: Compilation</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<style>
+	textarea { width:100%; height:200px; }
+	</style>
+</head>
+<body>
+
+<div id="page">
+	<div id="header">
+		<h1><a href="index.html">Narrative JavaScript</a></h1>
+	</div>
+
+	<hr class="hrhide" />
+	
+	<div id="sidebar">
+		<ul>
+			<li><h2>NJS Contents</h2>
+				<ul>
+					<li><a href="index.html" title="Home">Home</a></li>
+					<li><a href="overview.html" title="Overview">Overview</a></li>
+					<li><a href="code.html"  title="Coding">Coding</a></li>
+					<li><a href="example.html" title="Example">Example</a></li>
+					<li><a href="compile.html" title="Compilation">Compilation</a></li>
+					<li><a href="reference.html" title="Reference">API Reference</a></li>
+				</ul>
+			</li>
+			<li><h2>Author</h2>
+				<ul>
+					<li><a href="http://www.neilmix.com/" title="neilmix.com">Neil Mix</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="content" class="narrowcolumn" style="margin:0px; ">
+	
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="example.html">example</a></div>
+			<div class="alignright"> <a href="reference.html">reference</a> &raquo;</div>
+		</div>
+	
+		<div class="post">
+
+			<h2>Runtime Compilation</h2>
+			<p>
+			The easiest way to compile Narrative JavaScript is to load, parse,
+			and compile code dynamically on the client-side.  To do this, start 
+			by including the deploy/njs_compile.js script in your 
+			web page.  This script contains the entire Narrative JavaScript
+			library (including the compiler):
+<pre>
+    &lt;script src="../deploy/njs_compile.js"&gt;&lt;/script&gt;
+</pre>
+			Next, load and compile your scripts:
+<pre>
+    &lt;script&gt;NjsCompiler.load("my_script_file.njs");&lt;/script&gt;
+</pre>
+			That's it! You're ready to go.
+			</p>
+			
+			<h2>Build Time Compilation</h2>
+			<p>
+			Dynamically loading and compiling scripts at runtime may incur
+			significant performance overhead depending on the size of the
+			scripts you compile.  In addition, it may be harder to debug
+			such scripts on some platforms.
+			</p>
+			<p>
+			For these reasons the Narrative JavaScript distribution includes
+			a java command-line compiler based on Rhino.  You can use the
+			following command to compile your .njs files:
+			<pre>
+    java -classpath js.jar:narrativejs.jar \
+         com.neilmix.narrativejs.CompilerMain \
+         file1.njs file2.njs
+			</pre>
+			This will create compiled script files named file1.js and file2.js in the
+			same directory as the .njs file.  (The js.jar and narrativejs.jar 
+			files can be found in the lib/ directory
+			of the Narrative JavaScript distribution.)
+			</p>
+			<p>
+			When compiling scripts from the command-line, you no longer need
+			to load the entire Narrative JavaScript library into your web
+			page.  Instead, you need only include much smaller njs_runtime.js:
+<pre>
+    &lt;script src="../deploy/njs_runtime.js"&gt;&lt;/script&gt;
+</pre>
+			</p>
+			
+			<h2>Compiler Options</h2>
+			<p>
+			<i>exceptions=[on|off|true|false|1|0|yes|no]</i>
+			</p>
+			<p>
+			Turns on or off support for exception handling within yielding
+			methods.  The default is "on", which is appropriate for most
+			environments.  Some environments don't support or have poor support
+			for exception handling; in such cases it is advisable to turn
+			this flag off.
+			</p>
+			
+			<h2>Try it Out</h2>
+			<p>
+			Enter some Narrative JavaScript code here:<br>
+			<textarea id="input"></textarea><br>
+			<input id="exceptions" type=checkbox checked value="on"> exception support<br>
+			<button onclick="compile()">Compile</button>
+			</p>
+			<p>
+			Compiled code:<br>
+			<textarea id="output"></textarea>
+			</p>
+			<script src="../deploy/njs_compile.js"></script>
+			<script>
+			function compile() {
+				var input = document.getElementById("input").value;
+				var exceptions = document.getElementById("exceptions").checked ? "true" : "false";
+				var compiler = new NjsCompiler({exceptions: exceptions});
+				try {
+					var output = compiler.compile(input, "input");
+					document.getElementById("output").value = output;
+				} catch(e) {
+					document.getElementById("output").value = "ERROR: line " + e.lineNumber + ": " + e.message;
+				}
+			}
+			</script>
+			
+			<h2>Compiler API</h2>
+			<p>
+			If the above options aren't flexible enough for you, you can
+			access the compiler API directly.  Start by loading njs_compile.js
+			into your JavaScript environment.  Then simply create and invoke a 
+			new compiler:
+			<pre>
+    var compiler = new NjsCompiler(options);
+    try {
+    	// options is a hash table of name/value pairs corresponding to
+    	// the command-line options for the compiler.
+        var output_code = compiler.compile(input_code, filename)
+    } catch(e) {
+        // e is a JavaScript Error object
+        // do error notification here
+    }
+			</pre>
+			</p>
+		</div>
+	</div>
+	
+	<div id="footer">
+	Narrative JavaScript was created by <a href="http://www.neilmix.com/">Neil Mix</a><br />
+	<a href="http://www.azeemazeez.com/stuff/themes/" title="White as Milk theme for Wordpress">White as Milk</a> graphic design by <a href="http://www.azeemazeez.com">Azeem Azeez</a>.<br />
+	</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,5590 @@
+<Object><Header><![CDATA[{
+  Metadata: {
+    Name: {
+      Name: "Tenpow.Photos",
+      Version: "1.0.0.0",
+      Culture: ""
+    },
+    EntryPoint: 0,
+    BootMethod: 63,
+    Types: [
+      {
+        Namespace: "Tenpow.Photos",
+        Name: "Program",
+        BaseType: 1,
+        DeclaringType: -1,
+        IsInterface: false,
+        IsAbstract: false,
+        Methods: [
+          {
+            Name: "Main",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 0,
+            HasThis: false,
+            Parameters: [
+              {
+                Type: 15,
+                Name: "args",
+                Sequence: 1
+              }
+            ]
+          },
+          {
+            Name: "ExportedShowNextPhoto",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 1,
+            HasThis: false,
+            Parameters: []
+          },
+          {
+            Name: "ExportedShowPreviousPhoto",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 2,
+            HasThis: false,
+            Parameters: []
+          },
+          {
+            Name: "ExportDelegate",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: -1,
+            HasThis: false,
+            Parameters: [
+              {
+                Type: 8,
+                Name: "name",
+                Sequence: 1
+              },
+              {
+                Type: 16,
+                Name: "d",
+                Sequence: 2
+              }
+            ]
+          },
+          {
+            Name: "<Main>b__0",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 3,
+            HasThis: false,
+            Parameters: []
+          },
+          {
+            Name: "<Main>b__1",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 4,
+            HasThis: false,
+            Parameters: [
+              {
+                Type: 17,
+                Name: "data",
+                Sequence: 1
+              }
+            ]
+          },
+          {
+            Name: ".ctor",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 5,
+            HasThis: true,
+            Parameters: []
+          }
+        ],
+        Fields: [],
+        StaticFields: [
+          {
+            Name: "_slideshow",
+            Type: 3,
+            DataIndex: 1
+          },
+          {
+            Name: "_slideshowPid",
+            Type: 17,
+            DataIndex: 2
+          },
+          {
+            Name: "CS$<>9__CachedAnonymousMethodDelegate2",
+            Type: 4,
+            DataIndex: 3
+          },
+          {
+            Name: "CS$<>9__CachedAnonymousMethodDelegate3",
+            Type: 6,
+            DataIndex: 4
+          }
+        ],
+        VTableIndex: 0
+      },
+      {
+        Namespace: "",
+        Name: "SlideshowSignal",
+        BaseType: 18,
+        DeclaringType: 0,
+        IsInterface: false,
+        IsAbstract: false,
+        Methods: [],
+        Fields: [
+          {
+            Name: "value__",
+            Type: 17,
+            Offset: 0
+          }
+        ],
+        StaticFields: [
+          {
+            Name: "ShowNextPhoto",
+            Type: 11,
+            DataIndex: 6
+          },
+          {
+            Name: "ShowPreviousPhoto",
+            Type: 11,
+            DataIndex: 7
+          }
+        ],
+        VTableIndex: 5
+      },
+      {
+        Namespace: "Tenpow.Photos",
+        Name: "Photo",
+        BaseType: 1,
+        DeclaringType: -1,
+        IsInterface: false,
+        IsAbstract: false,
+        Methods: [
+          {
+            Name: "get_Url",
+            ReturnType: 8,
+            VTableSlot: -1,
+            CodeIndex: 6,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "set_Url",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 7,
+            HasThis: true,
+            Parameters: [
+              {
+                Type: 8,
+                Name: "value",
+                Sequence: 1
+              }
+            ]
+          },
+          {
+            Name: "get_Caption",
+            ReturnType: 8,
+            VTableSlot: -1,
+            CodeIndex: 8,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "set_Caption",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 9,
+            HasThis: true,
+            Parameters: [
+              {
+                Type: 8,
+                Name: "value",
+                Sequence: 1
+              }
+            ]
+          },
+          {
+            Name: "ToString",
+            ReturnType: 8,
+            VTableSlot: 0,
+            CodeIndex: 10,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: ".ctor",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 11,
+            HasThis: true,
+            Parameters: [
+              {
+                Type: 8,
+                Name: "url",
+                Sequence: 1
+              },
+              {
+                Type: 8,
+                Name: "caption",
+                Sequence: 2
+              }
+            ]
+          }
+        ],
+        Fields: [
+          {
+            Name: "<Url>k__BackingField",
+            Type: 8,
+            Offset: 0
+          },
+          {
+            Name: "<Caption>k__BackingField",
+            Type: 8,
+            Offset: 1
+          }
+        ],
+        StaticFields: [],
+        VTableIndex: 8
+      },
+      {
+        Namespace: "Tenpow.Photos",
+        Name: "PhotoSlideshow",
+        BaseType: 1,
+        DeclaringType: -1,
+        IsInterface: false,
+        IsAbstract: false,
+        Methods: [
+          {
+            Name: "get_Photos",
+            ReturnType: 15,
+            VTableSlot: -1,
+            CodeIndex: 12,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "set_Photos",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 13,
+            HasThis: true,
+            Parameters: [
+              {
+                Type: 15,
+                Name: "value",
+                Sequence: 1
+              }
+            ]
+          },
+          {
+            Name: "StartSlideshow",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 14,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "ShowPhoto",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 15,
+            HasThis: true,
+            Parameters: [
+              {
+                Type: 17,
+                Name: "index",
+                Sequence: 1
+              }
+            ]
+          },
+          {
+            Name: "ShowNextPhoto",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 16,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "ShowPreviousPhoto",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 17,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "DoShowNextPhoto",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 18,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "DoShowPreviousPhoto",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 19,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "ResetSlideshowLoop",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 20,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: "SlideshowLoop",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 21,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: ".ctor",
+            ReturnType: 14,
+            VTableSlot: -1,
+            CodeIndex: 22,
+            HasThis: true,
+            Parameters: [
+              {
+                Type: 15,
+                Name: "photos",
+                Sequence: 1
+              },
+              {
+                Type: 17,
+                Name: "slideshowInterval",
+                Sequence: 2
+              }
+            ]
+          }
+        ],
+        Fields: [
+          {
+            Name: "_currentPhotoIndex",
+            Type: 17,
+            Offset: 0
+          },
+          {
+            Name: "_slideshowThread",
+            Type: 19,
+            Offset: 1
+          },
+          {
+            Name: "_slideshowStarted",
+            Type: 20,
+            Offset: 2
+          },
+          {
+            Name: "_slideshowInterval",
+            Type: 17,
+            Offset: 3
+          },
+          {
+            Name: "<Photos>k__BackingField",
+            Type: 15,
+            Offset: 4
+          }
+        ],
+        StaticFields: [],
+        VTableIndex: 9
+      }
+    ],
+    AssemblyReferences: [
+      {
+        Name: "OSCorlib",
+        Version: "2.0.0.0"
+      },
+      {
+        Name: "XaeiOS.Kernel",
+        Version: "1.0.0.0"
+      }
+    ],
+    TypeReferences: [
+      {
+        Namespace: "Tenpow.Photos",
+        Name: "Program",
+        DeclaringType: -1,
+        Assembly: -1,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Object",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "Tenpow.Photos",
+        Name: "Photo",
+        DeclaringType: -1,
+        Assembly: -1,
+        IsGeneric: false
+      },
+      {
+        Namespace: "Tenpow.Photos",
+        Name: "PhotoSlideshow",
+        DeclaringType: -1,
+        Assembly: -1,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Threading",
+        Name: "ThreadStart",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS.Process",
+        Name: "SIP",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS.Process",
+        Name: "CustomSignalHandler",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Exception",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "String",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "ArgumentOutOfRangeException",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "ArgumentException",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "",
+        Name: "SlideshowSignal",
+        DeclaringType: 0,
+        Assembly: -1,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "XaeiOSMethodImplAttribute",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "CompilerGeneratedAttribute",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Void",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Array",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "NativeVoidDelegate",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Int32",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Enum",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Threading",
+        Name: "Thread",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Boolean",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Delegate",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS.Process",
+        Name: "SIP",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS.Kernel",
+        Name: "Scheduler",
+        DeclaringType: -1,
+        Assembly: 1,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS.Process",
+        Name: "SignalDaemon",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "RuntimeHelpers",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Console",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Object",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Exception",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "ArgumentOutOfRangeException",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Threading",
+        Name: "Thread",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "ArgumentException",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "AttributeUsageAttribute",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "XaeiOSMethodImplAttribute",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "CompilerGeneratedAttribute",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS.Boot",
+        Name: "BootManager",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "NativeFunction",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Threading",
+        Name: "ThreadStart",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Threading",
+        Name: "ThreadPriority",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "String",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS.Process",
+        Name: "CustomSignalHandler",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "var",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS.Process",
+        Name: "Signal",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "VTable",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Int32",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "Assembly",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "UIntPtr",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "Class",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Boolean",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "MethodImplOptions",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "Method",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "ICustomAttributeProvider",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "AttributeTargets",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "MethodImplOptions",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      }
+    ],
+    MethodReferences: [
+      {
+        Type: 0,
+        Name: "Main",
+        HasThis: false,
+        Parameters: [
+          0
+        ]
+      },
+      {
+        Type: 21,
+        Name: "InternalCreate",
+        HasThis: false,
+        Parameters: [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        Type: 0,
+        Name: "<Main>b__0",
+        HasThis: false,
+        Parameters: []
+      },
+      {
+        Type: 22,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        Type: 0,
+        Name: "<Main>b__1",
+        HasThis: false,
+        Parameters: [
+          7
+        ]
+      },
+      {
+        Type: 22,
+        Name: "add_CustomSignal",
+        HasThis: true,
+        Parameters: [
+          8
+        ]
+      },
+      {
+        Type: 22,
+        Name: "Start",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 22,
+        Name: "get_ID",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 23,
+        Name: "ConvertToManagedException",
+        HasThis: false,
+        Parameters: [
+          9
+        ]
+      },
+      {
+        Type: 0,
+        Name: "ExportedShowNextPhoto",
+        HasThis: false,
+        Parameters: []
+      },
+      {
+        Type: 24,
+        Name: "SendSignal",
+        HasThis: false,
+        Parameters: [
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        Type: 0,
+        Name: "ExportedShowPreviousPhoto",
+        HasThis: false,
+        Parameters: []
+      },
+      {
+        Type: 25,
+        Name: "CreateArray",
+        HasThis: false,
+        Parameters: [
+          13,
+          14
+        ]
+      },
+      {
+        Type: 2,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          15,
+          16
+        ]
+      },
+      {
+        Type: 3,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          17,
+          18
+        ]
+      },
+      {
+        Type: 24,
+        Name: "Start",
+        HasThis: false,
+        Parameters: []
+      },
+      {
+        Type: 3,
+        Name: "ShowPhoto",
+        HasThis: true,
+        Parameters: [
+          19
+        ]
+      },
+      {
+        Type: 3,
+        Name: "StartSlideshow",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 3,
+        Name: "ShowNextPhoto",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 3,
+        Name: "ShowPreviousPhoto",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 8,
+        Name: "Concat",
+        HasThis: false,
+        Parameters: [
+          20,
+          21
+        ]
+      },
+      {
+        Type: 26,
+        Name: "WriteLine",
+        HasThis: false,
+        Parameters: [
+          22
+        ]
+      },
+      {
+        Type: 0,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 27,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 2,
+        Name: "get_Url",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 2,
+        Name: "set_Url",
+        HasThis: true,
+        Parameters: [
+          23
+        ]
+      },
+      {
+        Type: 2,
+        Name: "get_Caption",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 2,
+        Name: "set_Caption",
+        HasThis: true,
+        Parameters: [
+          23
+        ]
+      },
+      {
+        Type: 2,
+        Name: "ToString",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 3,
+        Name: "get_Photos",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 3,
+        Name: "set_Photos",
+        HasThis: true,
+        Parameters: [
+          24
+        ]
+      },
+      {
+        Type: 28,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          25
+        ]
+      },
+      {
+        Type: 19,
+        Name: "get_CurrentThread",
+        HasThis: false,
+        Parameters: []
+      },
+      {
+        Type: 3,
+        Name: "SlideshowLoop",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 8,
+        Name: "Concat",
+        HasThis: false,
+        Parameters: [
+          26
+        ]
+      },
+      {
+        Type: 29,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          25
+        ]
+      },
+      {
+        Type: 3,
+        Name: "DoShowNextPhoto",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 3,
+        Name: "ResetSlideshowLoop",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 3,
+        Name: "DoShowPreviousPhoto",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 30,
+        Name: "Abort",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 8,
+        Name: "Concat",
+        HasThis: false,
+        Parameters: [
+          20,
+          21,
+          27
+        ]
+      },
+      {
+        Type: 19,
+        Name: "Sleep",
+        HasThis: false,
+        Parameters: [
+          10
+        ]
+      },
+      {
+        Type: 31,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          25
+        ]
+      },
+      {
+        Type: 27,
+        Name: "ToString",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 27,
+        Name: "GetHashCode",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 27,
+        Name: "Equals",
+        HasThis: true,
+        Parameters: [
+          28
+        ]
+      },
+      {
+        Type: 27,
+        Name: "Finalize",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 25,
+        Name: "InitializeMetadata",
+        HasThis: false,
+        Parameters: []
+      },
+      {
+        Type: 25,
+        Name: "CreateAssembly",
+        HasThis: false,
+        Parameters: [
+          29
+        ]
+      },
+      {
+        Type: 25,
+        Name: "CreateClass",
+        HasThis: false,
+        Parameters: [
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ]
+      },
+      {
+        Type: 25,
+        Name: "CreateMethod",
+        HasThis: false,
+        Parameters: [
+          37,
+          31,
+          3,
+          38
+        ]
+      },
+      {
+        Type: 12,
+        Name: "get_Options",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 12,
+        Name: "get_Implementation",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 12,
+        Name: "set_Implementation",
+        HasThis: true,
+        Parameters: [
+          39
+        ]
+      },
+      {
+        Type: 25,
+        Name: "CreateConstructor",
+        HasThis: false,
+        Parameters: [
+          37,
+          31,
+          3
+        ]
+      },
+      {
+        Type: 12,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          40
+        ]
+      },
+      {
+        Type: 25,
+        Name: "CreateProperty",
+        HasThis: false,
+        Parameters: [
+          37,
+          31,
+          41,
+          42
+        ]
+      },
+      {
+        Type: 25,
+        Name: "CreateCustomAttribute",
+        HasThis: false,
+        Parameters: [
+          43,
+          44
+        ]
+      },
+      {
+        Type: 32,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          45
+        ]
+      },
+      {
+        Type: 33,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          46
+        ]
+      },
+      {
+        Type: 0,
+        Name: "ExportDelegate",
+        HasThis: false,
+        Parameters: [
+          47,
+          48
+        ]
+      },
+      {
+        Type: 13,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 34,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 35,
+        Name: "BootModuleEntryPoint",
+        HasThis: false,
+        Parameters: []
+      }
+    ],
+    ParameterReferences: [
+      {
+        Type: 15,
+        Name: "args",
+        Sequence: 1
+      },
+      {
+        Type: 21,
+        Name: "d",
+        Sequence: 1
+      },
+      {
+        Type: 27,
+        Name: "target",
+        Sequence: 2
+      },
+      {
+        Type: 36,
+        Name: "function",
+        Sequence: 3
+      },
+      {
+        Type: 37,
+        Name: "threadStart",
+        Sequence: 1
+      },
+      {
+        Type: 38,
+        Name: "priority",
+        Sequence: 2
+      },
+      {
+        Type: 39,
+        Name: "name",
+        Sequence: 3
+      },
+      {
+        Type: 17,
+        Name: "data",
+        Sequence: 1
+      },
+      {
+        Type: 40,
+        Name: "value",
+        Sequence: 1
+      },
+      {
+        Type: 41,
+        Name: "e",
+        Sequence: 1
+      },
+      {
+        Type: 17,
+        Name: "",
+        Sequence: 1
+      },
+      {
+        Type: 42,
+        Name: "",
+        Sequence: 2
+      },
+      {
+        Type: 17,
+        Name: "",
+        Sequence: 3
+      },
+      {
+        Type: 43,
+        Name: "elementTypeVTable",
+        Sequence: 1
+      },
+      {
+        Type: 44,
+        Name: "length",
+        Sequence: 2
+      },
+      {
+        Type: 8,
+        Name: "url",
+        Sequence: 1
+      },
+      {
+        Type: 8,
+        Name: "caption",
+        Sequence: 2
+      },
+      {
+        Type: 15,
+        Name: "photos",
+        Sequence: 1
+      },
+      {
+        Type: 17,
+        Name: "slideshowInterval",
+        Sequence: 2
+      },
+      {
+        Type: 17,
+        Name: "index",
+        Sequence: 1
+      },
+      {
+        Type: 1,
+        Name: "",
+        Sequence: 1
+      },
+      {
+        Type: 1,
+        Name: "",
+        Sequence: 2
+      },
+      {
+        Type: 8,
+        Name: "",
+        Sequence: 1
+      },
+      {
+        Type: 8,
+        Name: "value",
+        Sequence: 1
+      },
+      {
+        Type: 15,
+        Name: "value",
+        Sequence: 1
+      },
+      {
+        Type: 39,
+        Name: "message",
+        Sequence: 1
+      },
+      {
+        Type: 15,
+        Name: "",
+        Sequence: 1
+      },
+      {
+        Type: 1,
+        Name: "",
+        Sequence: 3
+      },
+      {
+        Type: 27,
+        Name: "o",
+        Sequence: 1
+      },
+      {
+        Type: 39,
+        Name: "name",
+        Sequence: 1
+      },
+      {
+        Type: 39,
+        Name: "ns",
+        Sequence: 1
+      },
+      {
+        Type: 39,
+        Name: "name",
+        Sequence: 2
+      },
+      {
+        Type: 45,
+        Name: "assembly",
+        Sequence: 3
+      },
+      {
+        Type: 46,
+        Name: "vtableDataPointer",
+        Sequence: 4
+      },
+      {
+        Type: 47,
+        Name: "elementClass",
+        Sequence: 5
+      },
+      {
+        Type: 48,
+        Name: "isInterface",
+        Sequence: 6
+      },
+      {
+        Type: 48,
+        Name: "isArray",
+        Sequence: 7
+      },
+      {
+        Type: 47,
+        Name: "declaringType",
+        Sequence: 1
+      },
+      {
+        Type: 44,
+        Name: "vtableSlot",
+        Sequence: 4
+      },
+      {
+        Type: 39,
+        Name: "value",
+        Sequence: 1
+      },
+      {
+        Type: 49,
+        Name: "options",
+        Sequence: 1
+      },
+      {
+        Type: 50,
+        Name: "getMethod",
+        Sequence: 3
+      },
+      {
+        Type: 50,
+        Name: "setMethod",
+        Sequence: 4
+      },
+      {
+        Type: 51,
+        Name: "attributeProvider",
+        Sequence: 1
+      },
+      {
+        Type: 50,
+        Name: "constructor",
+        Sequence: 2
+      },
+      {
+        Type: 52,
+        Name: "validOn",
+        Sequence: 1
+      },
+      {
+        Type: 53,
+        Name: "",
+        Sequence: 1
+      },
+      {
+        Type: 8,
+        Name: "name",
+        Sequence: 1
+      },
+      {
+        Type: 16,
+        Name: "d",
+        Sequence: 2
+      }
+    ],
+    FieldReferences: [
+      {
+        Type: 0,
+        Name: "CS$<>9__CachedAnonymousMethodDelegate2",
+        IsStatic: true
+      },
+      {
+        Type: 0,
+        Name: "CS$<>9__CachedAnonymousMethodDelegate3",
+        IsStatic: true
+      },
+      {
+        Type: 0,
+        Name: "_slideshowPid",
+        IsStatic: true
+      },
+      {
+        Type: 0,
+        Name: "_slideshow",
+        IsStatic: true
+      }
+    ],
+    StaticConstructors: []
+  },
+  Fixups: [
+    {
+      Description: "System.Void Tenpow.Photos.Program::Main(System.String[]) @ 43",
+      Offset: 43,
+      Type: 9,
+      Index: 0
+    },
+    {
+      Description: "System.Threading.ThreadStart Tenpow.Photos.Program::CS$<>9__CachedAnonymousMethodDelegate2 @ 561",
+      Offset: 518,
+      Type: 33,
+      Index: 0
+    },
+    {
+      Description: "System.Threading.ThreadStart @ 1198",
+      Offset: 637,
+      Type: 17,
+      Index: 4
+    },
+    {
+      Description: "System.Void System.Delegate::InternalCreate(System.Delegate,System.Object,System.NativeFunction) @ 1385",
+      Offset: 187,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::<Main>b__0() @ 1398",
+      Offset: 13,
+      Type: 9,
+      Index: 2
+    },
+    {
+      Description: "System.Threading.ThreadStart Tenpow.Photos.Program::CS$<>9__CachedAnonymousMethodDelegate2 @ 1707",
+      Offset: 309,
+      Type: 33,
+      Index: 0
+    },
+    {
+      Description: "System.Threading.ThreadStart Tenpow.Photos.Program::CS$<>9__CachedAnonymousMethodDelegate2 @ 2101",
+      Offset: 394,
+      Type: 33,
+      Index: 0
+    },
+    {
+      Description: "XaeiOS.Process.SIP @ 2205",
+      Offset: 104,
+      Type: 17,
+      Index: 5
+    },
+    {
+      Description: "System.Void XaeiOS.Process.SIP::.ctor(System.Threading.ThreadStart,System.Threading.ThreadPriority,System.String) @ 2478",
+      Offset: 273,
+      Type: 9,
+      Index: 3
+    },
+    {
+      Description: "XaeiOS.Process.CustomSignalHandler Tenpow.Photos.Program::CS$<>9__CachedAnonymousMethodDelegate3 @ 2860",
+      Offset: 382,
+      Type: 33,
+      Index: 1
+    },
+    {
+      Description: "XaeiOS.Process.CustomSignalHandler @ 3541",
+      Offset: 681,
+      Type: 17,
+      Index: 6
+    },
+    {
+      Description: "System.Void System.Delegate::InternalCreate(System.Delegate,System.Object,System.NativeFunction) @ 3735",
+      Offset: 194,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::<Main>b__1(System.Int32) @ 3748",
+      Offset: 13,
+      Type: 9,
+      Index: 4
+    },
+    {
+      Description: "XaeiOS.Process.CustomSignalHandler Tenpow.Photos.Program::CS$<>9__CachedAnonymousMethodDelegate3 @ 4058",
+      Offset: 310,
+      Type: 33,
+      Index: 1
+    },
+    {
+      Description: "XaeiOS.Process.CustomSignalHandler Tenpow.Photos.Program::CS$<>9__CachedAnonymousMethodDelegate3 @ 4369",
+      Offset: 311,
+      Type: 33,
+      Index: 1
+    },
+    {
+      Description: "System.Void XaeiOS.Process.SIP::add_CustomSignal(XaeiOS.Process.CustomSignalHandler) @ 4467",
+      Offset: 98,
+      Type: 9,
+      Index: 5
+    },
+    {
+      Description: "System.Void XaeiOS.Process.SIP::Start() @ 4851",
+      Offset: 384,
+      Type: 9,
+      Index: 6
+    },
+    {
+      Description: "System.Int32 XaeiOS.Process.SIP::get_ID() @ 5223",
+      Offset: 372,
+      Type: 9,
+      Index: 7
+    },
+    {
+      Description: "System.Int32 Tenpow.Photos.Program::_slideshowPid @ 5609",
+      Offset: 386,
+      Type: 33,
+      Index: 2
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 6051",
+      Offset: 442,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::ExportedShowNextPhoto() @ 6513",
+      Offset: 462,
+      Type: 9,
+      Index: 9
+    },
+    {
+      Description: "System.Int32 Tenpow.Photos.Program::_slideshowPid @ 6602",
+      Offset: 89,
+      Type: 33,
+      Index: 2
+    },
+    {
+      Description: "System.Void XaeiOS.Process.SignalDaemon::SendSignal(System.Int32,XaeiOS.Process.Signal,System.Int32) @ 6658",
+      Offset: 56,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::ExportedShowPreviousPhoto() @ 6761",
+      Offset: 103,
+      Type: 9,
+      Index: 11
+    },
+    {
+      Description: "System.Int32 Tenpow.Photos.Program::_slideshowPid @ 6854",
+      Offset: 93,
+      Type: 33,
+      Index: 2
+    },
+    {
+      Description: "System.Void XaeiOS.Process.SignalDaemon::SendSignal(System.Int32,XaeiOS.Process.Signal,System.Int32) @ 6910",
+      Offset: 56,
+      Type: 9,
+      Index: 10
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::<Main>b__0() @ 7037",
+      Offset: 127,
+      Type: 9,
+      Index: 2
+    },
+    {
+      Description: "System.Array System.Runtime.CompilerServices.RuntimeHelpers::CreateArray(System.Runtime.VTable,System.Int32) @ 7574",
+      Offset: 537,
+      Type: 9,
+      Index: 12
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 7578",
+      Offset: 4,
+      Type: 17,
+      Index: 2
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 7653",
+      Offset: 75,
+      Type: 17,
+      Index: 2
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String) @ 7848",
+      Offset: 195,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 8404",
+      Offset: 556,
+      Type: 17,
+      Index: 2
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String) @ 8623",
+      Offset: 219,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 9227",
+      Offset: 604,
+      Type: 17,
+      Index: 2
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String) @ 9445",
+      Offset: 218,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 10047",
+      Offset: 602,
+      Type: 17,
+      Index: 2
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String) @ 10209",
+      Offset: 162,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 10699",
+      Offset: 490,
+      Type: 17,
+      Index: 2
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String) @ 10886",
+      Offset: 187,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 11426",
+      Offset: 540,
+      Type: 17,
+      Index: 2
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String) @ 11631",
+      Offset: 205,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 12207",
+      Offset: 576,
+      Type: 17,
+      Index: 2
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String) @ 12381",
+      Offset: 174,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 12895",
+      Offset: 514,
+      Type: 17,
+      Index: 2
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String) @ 13089",
+      Offset: 194,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 13644",
+      Offset: 555,
+      Type: 17,
+      Index: 2
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String) @ 13878",
+      Offset: 234,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "Tenpow.Photos.PhotoSlideshow @ 14514",
+      Offset: 636,
+      Type: 17,
+      Index: 3
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::.ctor(Tenpow.Photos.Photo[],System.Int32) @ 14680",
+      Offset: 166,
+      Type: 9,
+      Index: 14
+    },
+    {
+      Description: "Tenpow.Photos.PhotoSlideshow Tenpow.Photos.Program::_slideshow @ 15061",
+      Offset: 381,
+      Type: 33,
+      Index: 3
+    },
+    {
+      Description: "System.Void XaeiOS.Process.SignalDaemon::Start() @ 15136",
+      Offset: 75,
+      Type: 9,
+      Index: 15
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::ExportedShowNextPhoto() @ 15467",
+      Offset: 331,
+      Type: 9,
+      Index: 9
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::ExportedShowPreviousPhoto() @ 16077",
+      Offset: 610,
+      Type: 9,
+      Index: 11
+    },
+    {
+      Description: "Tenpow.Photos.PhotoSlideshow Tenpow.Photos.Program::_slideshow @ 16702",
+      Offset: 625,
+      Type: 33,
+      Index: 3
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ShowPhoto(System.Int32) @ 16772",
+      Offset: 70,
+      Type: 9,
+      Index: 16
+    },
+    {
+      Description: "Tenpow.Photos.PhotoSlideshow Tenpow.Photos.Program::_slideshow @ 17144",
+      Offset: 372,
+      Type: 33,
+      Index: 3
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::StartSlideshow() @ 17214",
+      Offset: 70,
+      Type: 9,
+      Index: 17
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 17917",
+      Offset: 703,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::<Main>b__1(System.Int32) @ 18397",
+      Offset: 480,
+      Type: 9,
+      Index: 4
+    },
+    {
+      Description: "Tenpow.Photos.PhotoSlideshow Tenpow.Photos.Program::_slideshow @ 19525",
+      Offset: 1128,
+      Type: 33,
+      Index: 3
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ShowNextPhoto() @ 19594",
+      Offset: 69,
+      Type: 9,
+      Index: 18
+    },
+    {
+      Description: "Tenpow.Photos.PhotoSlideshow Tenpow.Photos.Program::_slideshow @ 20419",
+      Offset: 825,
+      Type: 33,
+      Index: 3
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ShowPreviousPhoto() @ 20489",
+      Offset: 70,
+      Type: 9,
+      Index: 19
+    },
+    {
+      Description: "System.String System.String::Concat(System.Object,System.Object) @ 20738",
+      Offset: 249,
+      Type: 9,
+      Index: 20
+    },
+    {
+      Description: "System.Void System.Console::WriteLine(System.String) @ 21240",
+      Offset: 502,
+      Type: 9,
+      Index: 21
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 21941",
+      Offset: 701,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::.ctor() @ 22415",
+      Offset: 474,
+      Type: 9,
+      Index: 22
+    },
+    {
+      Description: "System.Void System.Object::.ctor() @ 22906",
+      Offset: 491,
+      Type: 9,
+      Index: 23
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 23324",
+      Offset: 418,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.String Tenpow.Photos.Photo::get_Url() @ 23798",
+      Offset: 474,
+      Type: 9,
+      Index: 24
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 24742",
+      Offset: 944,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::set_Url(System.String) @ 25216",
+      Offset: 474,
+      Type: 9,
+      Index: 25
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 26159",
+      Offset: 943,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.String Tenpow.Photos.Photo::get_Caption() @ 26633",
+      Offset: 474,
+      Type: 9,
+      Index: 26
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 27585",
+      Offset: 952,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::set_Caption(System.String) @ 28059",
+      Offset: 474,
+      Type: 9,
+      Index: 27
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 29010",
+      Offset: 951,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.String Tenpow.Photos.Photo::ToString() @ 29487",
+      Offset: 477,
+      Type: 9,
+      Index: 28
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 30906",
+      Offset: 1419,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String) @ 31383",
+      Offset: 477,
+      Type: 9,
+      Index: 13
+    },
+    {
+      Description: "System.Void System.Object::.ctor() @ 31929",
+      Offset: 546,
+      Type: 9,
+      Index: 23
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::set_Url(System.String) @ 31983",
+      Offset: 54,
+      Type: 9,
+      Index: 25
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::set_Caption(System.String) @ 32343",
+      Offset: 360,
+      Type: 9,
+      Index: 27
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 33045",
+      Offset: 702,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "Tenpow.Photos.Photo[] Tenpow.Photos.PhotoSlideshow::get_Photos() @ 33519",
+      Offset: 474,
+      Type: 9,
+      Index: 29
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 34486",
+      Offset: 967,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::set_Photos(Tenpow.Photos.Photo[]) @ 34960",
+      Offset: 474,
+      Type: 9,
+      Index: 30
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 35926",
+      Offset: 966,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::StartSlideshow() @ 36400",
+      Offset: 474,
+      Type: 9,
+      Index: 17
+    },
+    {
+      Description: "System.Exception @ 37570",
+      Offset: 1170,
+      Type: 17,
+      Index: 7
+    },
+    {
+      Description: "System.Void System.Exception::.ctor(System.String) @ 37719",
+      Offset: 149,
+      Type: 9,
+      Index: 31
+    },
+    {
+      Description: "System.Threading.Thread System.Threading.Thread::get_CurrentThread() @ 38248",
+      Offset: 529,
+      Type: 9,
+      Index: 32
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::SlideshowLoop() @ 38743",
+      Offset: 495,
+      Type: 9,
+      Index: 33
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 39440",
+      Offset: 697,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ShowPhoto(System.Int32) @ 39929",
+      Offset: 489,
+      Type: 9,
+      Index: 16
+    },
+    {
+      Description: "System.Array System.Runtime.CompilerServices.RuntimeHelpers::CreateArray(System.Runtime.VTable,System.Int32) @ 43181",
+      Offset: 3252,
+      Type: 9,
+      Index: 12
+    },
+    {
+      Description: "System.String @ 43185",
+      Offset: 4,
+      Type: 17,
+      Index: 8
+    },
+    {
+      Description: "System.Array System.Runtime.CompilerServices.RuntimeHelpers::CreateArray(System.Runtime.VTable,System.Int32) @ 46506",
+      Offset: 3321,
+      Type: 9,
+      Index: 12
+    },
+    {
+      Description: "System.Object @ 46510",
+      Offset: 4,
+      Type: 17,
+      Index: 1
+    },
+    {
+      Description: "System.String System.String::Concat(System.Object[]) @ 46982",
+      Offset: 472,
+      Type: 9,
+      Index: 34
+    },
+    {
+      Description: "System.String System.String::Concat(System.Object,System.Object) @ 47764",
+      Offset: 782,
+      Type: 9,
+      Index: 20
+    },
+    {
+      Description: "System.Void System.Console::WriteLine(System.String) @ 48255",
+      Offset: 491,
+      Type: 9,
+      Index: 21
+    },
+    {
+      Description: "System.ArgumentOutOfRangeException @ 48748",
+      Offset: 493,
+      Type: 17,
+      Index: 9
+    },
+    {
+      Description: "System.Void System.ArgumentOutOfRangeException::.ctor(System.String) @ 48896",
+      Offset: 148,
+      Type: 9,
+      Index: 35
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 49572",
+      Offset: 676,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ShowNextPhoto() @ 50058",
+      Offset: 486,
+      Type: 9,
+      Index: 18
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::DoShowNextPhoto() @ 50594",
+      Offset: 536,
+      Type: 9,
+      Index: 36
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ResetSlideshowLoop() @ 50953",
+      Offset: 359,
+      Type: 9,
+      Index: 37
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 51649",
+      Offset: 696,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ShowPreviousPhoto() @ 52120",
+      Offset: 471,
+      Type: 9,
+      Index: 19
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::DoShowPreviousPhoto() @ 52660",
+      Offset: 540,
+      Type: 9,
+      Index: 38
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ResetSlideshowLoop() @ 53023",
+      Offset: 363,
+      Type: 9,
+      Index: 37
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 53719",
+      Offset: 696,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::DoShowNextPhoto() @ 54199",
+      Offset: 480,
+      Type: 9,
+      Index: 36
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ShowPhoto(System.Int32) @ 55856",
+      Offset: 1657,
+      Type: 9,
+      Index: 16
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 56569",
+      Offset: 713,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::DoShowPreviousPhoto() @ 57055",
+      Offset: 486,
+      Type: 9,
+      Index: 38
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ShowPhoto(System.Int32) @ 58748",
+      Offset: 1693,
+      Type: 9,
+      Index: 16
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 59455",
+      Offset: 707,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ResetSlideshowLoop() @ 59935",
+      Offset: 480,
+      Type: 9,
+      Index: 37
+    },
+    {
+      Description: "System.Void System.Threading.Thread::Abort() @ 61168",
+      Offset: 1233,
+      Type: 9,
+      Index: 39
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 61854",
+      Offset: 686,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::SlideshowLoop() @ 62331",
+      Offset: 477,
+      Type: 9,
+      Index: 33
+    },
+    {
+      Description: "System.String System.String::Concat(System.Object,System.Object,System.Object) @ 63265",
+      Offset: 934,
+      Type: 9,
+      Index: 40
+    },
+    {
+      Description: "System.Void System.Threading.Thread::Sleep(System.Int32) @ 63925",
+      Offset: 660,
+      Type: 9,
+      Index: 41
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::DoShowNextPhoto() @ 64296",
+      Offset: 371,
+      Type: 9,
+      Index: 36
+    },
+    {
+      Description: "System.String System.String::Concat(System.Object,System.Object) @ 64979",
+      Offset: 683,
+      Type: 9,
+      Index: 20
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 65893",
+      Offset: 914,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::.ctor(Tenpow.Photos.Photo[],System.Int32) @ 66370",
+      Offset: 477,
+      Type: 9,
+      Index: 14
+    },
+    {
+      Description: "System.Void System.Object::.ctor() @ 67066",
+      Offset: 696,
+      Type: 9,
+      Index: 23
+    },
+    {
+      Description: "System.ArgumentException @ 67970",
+      Offset: 904,
+      Type: 17,
+      Index: 10
+    },
+    {
+      Description: "System.Void System.ArgumentException::.ctor(System.String) @ 68124",
+      Offset: 154,
+      Type: 9,
+      Index: 42
+    },
+    {
+      Description: "System.ArgumentException @ 69197",
+      Offset: 1073,
+      Type: 17,
+      Index: 10
+    },
+    {
+      Description: "System.Void System.ArgumentException::.ctor(System.String) @ 69358",
+      Offset: 161,
+      Type: 9,
+      Index: 42
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::set_Photos(Tenpow.Photos.Photo[]) @ 69825",
+      Offset: 467,
+      Type: 9,
+      Index: 30
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 70616",
+      Offset: 791,
+      Type: 9,
+      Index: 8
+    },
+    {
+      Description: "Tenpow.Photos.Program @ 5",
+      Offset: 5,
+      Type: 18,
+      Index: 0
+    },
+    {
+      Description: "System.String System.Object::ToString() @ 53",
+      Offset: 48,
+      Type: 10,
+      Index: 43
+    },
+    {
+      Description: "System.Int32 System.Object::GetHashCode() @ 111",
+      Offset: 58,
+      Type: 10,
+      Index: 44
+    },
+    {
+      Description: "System.Boolean System.Object::Equals(System.Object) @ 171",
+      Offset: 60,
+      Type: 10,
+      Index: 45
+    },
+    {
+      Description: "System.Void System.Object::Finalize() @ 241",
+      Offset: 70,
+      Type: 10,
+      Index: 46
+    },
+    {
+      Description: "Tenpow.Photos.Program/SlideshowSignal @ 645",
+      Offset: 404,
+      Type: 18,
+      Index: 11
+    },
+    {
+      Description: "System.String System.Object::ToString() @ 709",
+      Offset: 64,
+      Type: 10,
+      Index: 43
+    },
+    {
+      Description: "System.Int32 System.Object::GetHashCode() @ 767",
+      Offset: 58,
+      Type: 10,
+      Index: 44
+    },
+    {
+      Description: "System.Boolean System.Object::Equals(System.Object) @ 827",
+      Offset: 60,
+      Type: 10,
+      Index: 45
+    },
+    {
+      Description: "System.Void System.Object::Finalize() @ 897",
+      Offset: 70,
+      Type: 10,
+      Index: 46
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 1156",
+      Offset: 259,
+      Type: 18,
+      Index: 2
+    },
+    {
+      Description: "System.String Tenpow.Photos.Photo::ToString() @ 1202",
+      Offset: 46,
+      Type: 10,
+      Index: 28
+    },
+    {
+      Description: "System.Int32 System.Object::GetHashCode() @ 1266",
+      Offset: 64,
+      Type: 10,
+      Index: 44
+    },
+    {
+      Description: "System.Boolean System.Object::Equals(System.Object) @ 1326",
+      Offset: 60,
+      Type: 10,
+      Index: 45
+    },
+    {
+      Description: "System.Void System.Object::Finalize() @ 1396",
+      Offset: 70,
+      Type: 10,
+      Index: 46
+    },
+    {
+      Description: "Tenpow.Photos.PhotoSlideshow @ 1451",
+      Offset: 55,
+      Type: 18,
+      Index: 3
+    },
+    {
+      Description: "System.String System.Object::ToString() @ 1506",
+      Offset: 55,
+      Type: 10,
+      Index: 43
+    },
+    {
+      Description: "System.Int32 System.Object::GetHashCode() @ 1564",
+      Offset: 58,
+      Type: 10,
+      Index: 44
+    },
+    {
+      Description: "System.Boolean System.Object::Equals(System.Object) @ 1624",
+      Offset: 60,
+      Type: 10,
+      Index: 45
+    },
+    {
+      Description: "System.Void System.Object::Finalize() @ 1694",
+      Offset: 70,
+      Type: 10,
+      Index: 46
+    },
+    {
+      Description: "Tenpow.Photos.Program @ 2",
+      Offset: 2,
+      Type: 20,
+      Index: 0
+    },
+    {
+      Description: "System.Object @ 10",
+      Offset: 8,
+      Type: 20,
+      Index: 1
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 62",
+      Offset: 52,
+      Type: 20,
+      Index: 2
+    },
+    {
+      Description: "System.Object @ 70",
+      Offset: 8,
+      Type: 20,
+      Index: 1
+    },
+    {
+      Description: "Tenpow.Photos.PhotoSlideshow @ 120",
+      Offset: 50,
+      Type: 20,
+      Index: 3
+    },
+    {
+      Description: "System.Object @ 128",
+      Offset: 8,
+      Type: 20,
+      Index: 1
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.RuntimeHelpers::InitializeMetadata() @ 232",
+      Offset: 104,
+      Type: 12,
+      Index: 47
+    },
+    {
+      Description: "System.Runtime.Assembly System.Runtime.CompilerServices.RuntimeHelpers::CreateAssembly(System.String) @ 319",
+      Offset: 87,
+      Type: 12,
+      Index: 48
+    },
+    {
+      Description: "System.Runtime.Class System.Runtime.CompilerServices.RuntimeHelpers::CreateClass(System.String,System.String,System.Runtime.Assembly,System.UIntPtr,System.Runtime.Class,System.Boolean,System.Boolean) @ 442",
+      Offset: 123,
+      Type: 12,
+      Index: 49
+    },
+    {
+      Description: "Tenpow.Photos.Program @ 476",
+      Offset: 34,
+      Type: 20,
+      Index: 0
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 656",
+      Offset: 180,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::Main(System.String[]) @ 674",
+      Offset: 18,
+      Type: 12,
+      Index: 0
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 806",
+      Offset: 132,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::ExportedShowNextPhoto() @ 841",
+      Offset: 35,
+      Type: 12,
+      Index: 9
+    },
+    {
+      Description: "System.Runtime.Class System.Runtime.CompilerServices.RuntimeHelpers::CreateClass(System.String,System.String,System.Runtime.Assembly,System.UIntPtr,System.Runtime.Class,System.Boolean,System.Boolean) @ 990",
+      Offset: 149,
+      Type: 12,
+      Index: 49
+    },
+    {
+      Description: "System.Runtime.CompilerServices.XaeiOSMethodImplAttribute @ 1060",
+      Offset: 70,
+      Type: 20,
+      Index: 12
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 1276",
+      Offset: 216,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Runtime.CompilerServices.MethodImplOptions System.Runtime.CompilerServices.XaeiOSMethodImplAttribute::get_Options() @ 1301",
+      Offset: 25,
+      Type: 12,
+      Index: 51
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 1440",
+      Offset: 139,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.String System.Runtime.CompilerServices.XaeiOSMethodImplAttribute::get_Implementation() @ 1472",
+      Offset: 32,
+      Type: 12,
+      Index: 52
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 1618",
+      Offset: 146,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.XaeiOSMethodImplAttribute::set_Implementation(System.String) @ 1650",
+      Offset: 32,
+      Type: 12,
+      Index: 53
+    },
+    {
+      Description: "System.Runtime.Constructor System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(System.Runtime.Class,System.String,System.NativeFunction) @ 1796",
+      Offset: 146,
+      Type: 12,
+      Index: 54
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.XaeiOSMethodImplAttribute::.ctor(System.Runtime.CompilerServices.MethodImplOptions) @ 1815",
+      Offset: 19,
+      Type: 12,
+      Index: 55
+    },
+    {
+      Description: "System.Runtime.Property System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(System.Runtime.Class,System.String,System.Runtime.Method,System.Runtime.Method) @ 1946",
+      Offset: 131,
+      Type: 12,
+      Index: 56
+    },
+    {
+      Description: "System.Runtime.Property System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(System.Runtime.Class,System.String,System.Runtime.Method,System.Runtime.Method) @ 2095",
+      Offset: 149,
+      Type: 12,
+      Index: 56
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 2252",
+      Offset: 157,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.AttributeUsageAttribute::.ctor(System.AttributeTargets) @ 2263",
+      Offset: 11,
+      Type: 12,
+      Index: 58
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 2375",
+      Offset: 112,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.XaeiOSMethodImplAttribute::.ctor(System.Runtime.CompilerServices.MethodImplOptions) @ 2386",
+      Offset: 11,
+      Type: 12,
+      Index: 59
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 2507",
+      Offset: 121,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::ExportedShowPreviousPhoto() @ 2546",
+      Offset: 39,
+      Type: 12,
+      Index: 11
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 2692",
+      Offset: 146,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.XaeiOSMethodImplAttribute::.ctor(System.Runtime.CompilerServices.MethodImplOptions) @ 2704",
+      Offset: 12,
+      Type: 12,
+      Index: 59
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 2826",
+      Offset: 122,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::ExportDelegate(System.String,System.NativeVoidDelegate) @ 2854",
+      Offset: 28,
+      Type: 12,
+      Index: 60
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 2989",
+      Offset: 135,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.XaeiOSMethodImplAttribute::.ctor(System.Runtime.CompilerServices.MethodImplOptions) @ 3001",
+      Offset: 12,
+      Type: 12,
+      Index: 59
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 3123",
+      Offset: 122,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::<Main>b__0() @ 3147",
+      Offset: 24,
+      Type: 12,
+      Index: 2
+    },
+    {
+      Description: "System.Runtime.Class System.Runtime.CompilerServices.RuntimeHelpers::CreateClass(System.String,System.String,System.Runtime.Assembly,System.UIntPtr,System.Runtime.Class,System.Boolean,System.Boolean) @ 3287",
+      Offset: 140,
+      Type: 12,
+      Index: 49
+    },
+    {
+      Description: "System.Runtime.CompilerServices.CompilerGeneratedAttribute @ 3358",
+      Offset: 71,
+      Type: 20,
+      Index: 13
+    },
+    {
+      Description: "System.Runtime.Constructor System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(System.Runtime.Class,System.String,System.NativeFunction) @ 3577",
+      Offset: 219,
+      Type: 12,
+      Index: 54
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() @ 3597",
+      Offset: 20,
+      Type: 12,
+      Index: 61
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 3722",
+      Offset: 125,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.AttributeUsageAttribute::.ctor(System.AttributeTargets) @ 3734",
+      Offset: 12,
+      Type: 12,
+      Index: 58
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 3847",
+      Offset: 113,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() @ 3859",
+      Offset: 12,
+      Type: 12,
+      Index: 62
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 3981",
+      Offset: 122,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::<Main>b__1(System.Int32) @ 4005",
+      Offset: 24,
+      Type: 12,
+      Index: 4
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 4136",
+      Offset: 131,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() @ 4148",
+      Offset: 12,
+      Type: 12,
+      Index: 62
+    },
+    {
+      Description: "System.Runtime.Constructor System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(System.Runtime.Class,System.String,System.NativeFunction) @ 4270",
+      Offset: 122,
+      Type: 12,
+      Index: 54
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Program::.ctor() @ 4289",
+      Offset: 19,
+      Type: 12,
+      Index: 22
+    },
+    {
+      Description: "System.Runtime.Class System.Runtime.CompilerServices.RuntimeHelpers::CreateClass(System.String,System.String,System.Runtime.Assembly,System.UIntPtr,System.Runtime.Class,System.Boolean,System.Boolean) @ 4422",
+      Offset: 133,
+      Type: 12,
+      Index: 49
+    },
+    {
+      Description: "Tenpow.Photos.Program/SlideshowSignal @ 4451",
+      Offset: 29,
+      Type: 20,
+      Index: 11
+    },
+    {
+      Description: "System.Runtime.Class System.Runtime.CompilerServices.RuntimeHelpers::CreateClass(System.String,System.String,System.Runtime.Assembly,System.UIntPtr,System.Runtime.Class,System.Boolean,System.Boolean) @ 4628",
+      Offset: 177,
+      Type: 12,
+      Index: 49
+    },
+    {
+      Description: "Tenpow.Photos.Photo @ 4660",
+      Offset: 32,
+      Type: 20,
+      Index: 2
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 4840",
+      Offset: 180,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.String Tenpow.Photos.Photo::get_Url() @ 4862",
+      Offset: 22,
+      Type: 12,
+      Index: 24
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 4991",
+      Offset: 129,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() @ 5003",
+      Offset: 12,
+      Type: 12,
+      Index: 62
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 5125",
+      Offset: 122,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::set_Url(System.String) @ 5147",
+      Offset: 22,
+      Type: 12,
+      Index: 25
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 5276",
+      Offset: 129,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() @ 5288",
+      Offset: 12,
+      Type: 12,
+      Index: 62
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 5410",
+      Offset: 122,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.String Tenpow.Photos.Photo::get_Caption() @ 5436",
+      Offset: 26,
+      Type: 12,
+      Index: 26
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 5569",
+      Offset: 133,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() @ 5581",
+      Offset: 12,
+      Type: 12,
+      Index: 62
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 5703",
+      Offset: 122,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::set_Caption(System.String) @ 5729",
+      Offset: 26,
+      Type: 12,
+      Index: 27
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 5862",
+      Offset: 133,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() @ 5874",
+      Offset: 12,
+      Type: 12,
+      Index: 62
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 5996",
+      Offset: 122,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.String Tenpow.Photos.Photo::ToString() @ 6019",
+      Offset: 23,
+      Type: 12,
+      Index: 28
+    },
+    {
+      Description: "System.String Tenpow.Photos.Photo::ToString() @ 6021",
+      Offset: 2,
+      Type: 68,
+      Index: 28
+    },
+    {
+      Description: "System.Runtime.Constructor System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(System.Runtime.Class,System.String,System.NativeFunction) @ 6174",
+      Offset: 153,
+      Type: 12,
+      Index: 54
+    },
+    {
+      Description: "System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String) @ 6194",
+      Offset: 20,
+      Type: 12,
+      Index: 13
+    },
+    {
+      Description: "System.Runtime.Property System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(System.Runtime.Class,System.String,System.Runtime.Method,System.Runtime.Method) @ 6328",
+      Offset: 134,
+      Type: 12,
+      Index: 56
+    },
+    {
+      Description: "System.Runtime.Property System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(System.Runtime.Class,System.String,System.Runtime.Method,System.Runtime.Method) @ 6478",
+      Offset: 150,
+      Type: 12,
+      Index: 56
+    },
+    {
+      Description: "System.Runtime.Class System.Runtime.CompilerServices.RuntimeHelpers::CreateClass(System.String,System.String,System.Runtime.Assembly,System.UIntPtr,System.Runtime.Class,System.Boolean,System.Boolean) @ 6636",
+      Offset: 158,
+      Type: 12,
+      Index: 49
+    },
+    {
+      Description: "Tenpow.Photos.PhotoSlideshow @ 6677",
+      Offset: 41,
+      Type: 20,
+      Index: 3
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 6866",
+      Offset: 189,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "Tenpow.Photos.Photo[] Tenpow.Photos.PhotoSlideshow::get_Photos() @ 6891",
+      Offset: 25,
+      Type: 12,
+      Index: 29
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 7023",
+      Offset: 132,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() @ 7035",
+      Offset: 12,
+      Type: 12,
+      Index: 62
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 7157",
+      Offset: 122,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::set_Photos(Tenpow.Photos.Photo[]) @ 7182",
+      Offset: 25,
+      Type: 12,
+      Index: 30
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 7314",
+      Offset: 132,
+      Type: 12,
+      Index: 57
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() @ 7326",
+      Offset: 12,
+      Type: 12,
+      Index: 62
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 7448",
+      Offset: 122,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::StartSlideshow() @ 7477",
+      Offset: 29,
+      Type: 12,
+      Index: 17
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 7622",
+      Offset: 145,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ShowPhoto(System.Int32) @ 7646",
+      Offset: 24,
+      Type: 12,
+      Index: 16
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 7786",
+      Offset: 140,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ShowNextPhoto() @ 7814",
+      Offset: 28,
+      Type: 12,
+      Index: 18
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 7958",
+      Offset: 144,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ShowPreviousPhoto() @ 7990",
+      Offset: 32,
+      Type: 12,
+      Index: 19
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 8138",
+      Offset: 148,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::DoShowNextPhoto() @ 8168",
+      Offset: 30,
+      Type: 12,
+      Index: 36
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 8314",
+      Offset: 146,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::DoShowPreviousPhoto() @ 8348",
+      Offset: 34,
+      Type: 12,
+      Index: 38
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 8498",
+      Offset: 150,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::ResetSlideshowLoop() @ 8531",
+      Offset: 33,
+      Type: 12,
+      Index: 37
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 8680",
+      Offset: 149,
+      Type: 12,
+      Index: 50
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::SlideshowLoop() @ 8708",
+      Offset: 28,
+      Type: 12,
+      Index: 33
+    },
+    {
+      Description: "System.Runtime.Constructor System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(System.Runtime.Class,System.String,System.NativeFunction) @ 8852",
+      Offset: 144,
+      Type: 12,
+      Index: 54
+    },
+    {
+      Description: "System.Void Tenpow.Photos.PhotoSlideshow::.ctor(Tenpow.Photos.Photo[],System.Int32) @ 8872",
+      Offset: 20,
+      Type: 12,
+      Index: 14
+    },
+    {
+      Description: "System.Runtime.Property System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(System.Runtime.Class,System.String,System.Runtime.Method,System.Runtime.Method) @ 9006",
+      Offset: 134,
+      Type: 12,
+      Index: 56
+    }
+  ]
+}
+]]></Header><Code Length="23"><![CDATA[function($ep,$end,$rv,$pc,$f,r0,r1,r2)
+// : System.Void Tenpow.Photos.Program::Main(System.String[])
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r0,r1,r2]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r1 = _[]/*$t0 = Tenpow.Photos.Program.CS$<>9__CachedAnonymousMethodDelegate2*/;
+                    if(r1)
+                    {
+                        $ep = 4;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 2;
+                        if(0 > $end--)
+                        {
+                            throw [$ep,$end,$rv,$pc,$f,r0,r1,r2]/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    r0 = {$:_[],0:null,1:null,2:null,3:null}/*$t3 = new System.Void System.Threading.ThreadStart::.ctor(System.Object,System.IntPtr)(null, Tenpow.Photos.Program::<Main>b__0)*/;
+                    $$[](r0,null,$$[])/*$t3..ctor(null, Tenpow.Photos.Program::<Main>b__0)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2]/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    _[] = r0/*Tenpow.Photos.Program.CS$<>9__CachedAnonymousMethodDelegate2 = $t3*/;
+                    $ep = 4;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2]/*[Continuation]*/;
+
+                    }
+                }
+                case 4:
+                {
+                    $ep = 5;
+                    r0 = _[]/*$t4 = Tenpow.Photos.Program.CS$<>9__CachedAnonymousMethodDelegate2*/;
+                    r2 = {$:_[],0:null,1:null,2:null,3:0,4:0,5:null,6:null,7:null,8:null,9:null,10:0,11:null,12:null,13:null}/*$t7 = new System.Void XaeiOS.Process.SIP::.ctor(System.Threading.ThreadStart,System.Threading.ThreadPriority,System.String)($t4, 3, "Tenpow.Photos")*/;
+                    $$[].call(r2,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1,r2],[null,null,r0,3,"Tenpow.Photos"])/*$t7..ctor($t4, 3, "Tenpow.Photos")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2]/*[Continuation]*/;
+
+                    }
+                }
+                case 5:
+                {
+                    r0 = _[]/*$t8 = Tenpow.Photos.Program.CS$<>9__CachedAnonymousMethodDelegate3*/;
+                    r1 = r2/*$ts0 = $t7*/;
+                    if(r0)
+                    {
+                        $ep = 8;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 6;
+                        if(0 > $end--)
+                        {
+                            throw [$ep,$end,$rv,$pc,$f,r0,r1,r2]/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 6:
+                {
+                    $ep = 7;
+                    r0 = {$:_[],0:null,1:null,2:null,3:null}/*$t11 = new System.Void XaeiOS.Process.CustomSignalHandler::.ctor(System.Object,System.IntPtr)(null, Tenpow.Photos.Program::<Main>b__1)*/;
+                    $$[](r0,null,$$[])/*$t11..ctor(null, Tenpow.Photos.Program::<Main>b__1)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2]/*[Continuation]*/;
+
+                    }
+                }
+                case 7:
+                {
+                    _[] = r0/*Tenpow.Photos.Program.CS$<>9__CachedAnonymousMethodDelegate3 = $t11*/;
+                    r1 = r2/*$ts0 = $t7*/;
+                    $ep = 8;
+                    continue $ctrl;
+                }
+                case 8:
+                {
+                    $ep = 9;
+                    r0 = _[]/*$t12 = Tenpow.Photos.Program.CS$<>9__CachedAnonymousMethodDelegate3*/;
+                    $$[].call(r1,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1,r2],[null,null,r0])/*$ts0.add_CustomSignal($t12)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2]/*[Continuation]*/;
+
+                    }
+                }
+                case 9:
+                {
+                    $ep = 10;
+                    $$[].call(r2,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1,r2],[null,null])/*$t7.Start()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2]/*[Continuation]*/;
+
+                    }
+                }
+                case 10:
+                {
+                    $ep = 11;
+                    $rv = $$[].call(r2,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1,r2],[null,null])/*$rv = $t7.get_ID()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2]/*[Continuation]*/;
+
+                    }
+                }
+                case 11:
+                {
+                    r0 = $rv/*$t13 = $rv*/;
+                    _[] = r0/*Tenpow.Photos.Program._slideshowPid = $t13*/;
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r0,r1,r2]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function()
+ // : System.Void Tenpow.Photos.Program::ExportedShowNextPhoto()
+{
+    var r0;
+    r0 = _[]/*$t0 = Tenpow.Photos.Program._slideshowPid*/;
+    $$[](r0,16,1)/*XaeiOS.Process.SignalDaemon::SendSignal($t0, 16, 1)*/;
+    return;
+
+},
+function()
+ // : System.Void Tenpow.Photos.Program::ExportedShowPreviousPhoto()
+{
+    var r0;
+    r0 = _[]/*$t0 = Tenpow.Photos.Program._slideshowPid*/;
+    $$[](r0,16,2)/*XaeiOS.Process.SignalDaemon::SendSignal($t0, 16, 2)*/;
+    return;
+
+},
+function($ep,$end,$rv,$pc,$f,r0,r1)
+// : System.Void Tenpow.Photos.Program::<Main>b__0()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    r1 = $$[](_[],9)/*V_1.1 = new Tenpow.Photos.Photo[9]*/;
+                    r0 = {$:_[],0:null,1:null}/*$t5 = new System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String)("Photos/michaelten-pow.jpg", "My two sisters, Kaya and Alicia, and me")*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1],[null,null,"Photos/michaelten-pow.jpg","My two sisters, Kaya and Alicia, and me"])/*$t5..ctor("Photos/michaelten-pow.jpg", "My two sisters, Kaya and Alicia, and me")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    r1[0] = r0/*V_1.1[0] = $t5*/;
+                    r0 = {$:_[],0:null,1:null}/*$t9 = new System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String)("Photos/lounging_at_pool.jpg", "Lounging by the pool at the Planet Hollywood Hotel, Las Vegas")*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1],[null,null,"Photos/lounging_at_pool.jpg","Lounging by the pool at the Planet Hollywood Hotel, Las Vegas"])/*$t9..ctor("Photos/lounging_at_pool.jpg", "Lounging by the pool at the Planet Hollywood Hotel, Las Vegas")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    $ep = 4;
+                    r1[1] = r0/*V_1.1[1] = $t9*/;
+                    r0 = {$:_[],0:null,1:null}/*$t13 = new System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String)("Photos/coaster.jpg", "Autumn and me on the roller coaster at New York, New York, Las Vegas")*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1],[null,null,"Photos/coaster.jpg","Autumn and me on the roller coaster at New York, New York, Las Vegas"])/*$t13..ctor("Photos/coaster.jpg", "Autumn and me on the roller coaster at New York, New York, Las Vegas")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 4:
+                {
+                    $ep = 5;
+                    r1[2] = r0/*V_1.1[2] = $t13*/;
+                    r0 = {$:_[],0:null,1:null}/*$t17 = new System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String)("Photos/just_michael.jpg", "Just me")*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1],[null,null,"Photos/just_michael.jpg","Just me"])/*$t17..ctor("Photos/just_michael.jpg", "Just me")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 5:
+                {
+                    $ep = 6;
+                    r1[3] = r0/*V_1.1[3] = $t17*/;
+                    r0 = {$:_[],0:null,1:null}/*$t21 = new System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String)("Photos/paris_vegas.jpg", "Autumn and me at Paris, Las Vegas")*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1],[null,null,"Photos/paris_vegas.jpg","Autumn and me at Paris, Las Vegas"])/*$t21..ctor("Photos/paris_vegas.jpg", "Autumn and me at Paris, Las Vegas")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 6:
+                {
+                    $ep = 7;
+                    r1[4] = r0/*V_1.1[4] = $t21*/;
+                    r0 = {$:_[],0:null,1:null}/*$t25 = new System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String)("Photos/checking_in.jpg", "Checking into the Planet Hollywood Hotel, Las Vegas")*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1],[null,null,"Photos/checking_in.jpg","Checking into the Planet Hollywood Hotel, Las Vegas"])/*$t25..ctor("Photos/checking_in.jpg", "Checking into the Planet Hollywood Hotel, Las Vegas")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 7:
+                {
+                    $ep = 8;
+                    r1[5] = r0/*V_1.1[5] = $t25*/;
+                    r0 = {$:_[],0:null,1:null}/*$t29 = new System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String)("Photos/autumn_and_michael.jpg", "Autumn and me")*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1],[null,null,"Photos/autumn_and_michael.jpg","Autumn and me"])/*$t29..ctor("Photos/autumn_and_michael.jpg", "Autumn and me")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 8:
+                {
+                    $ep = 9;
+                    r1[6] = r0/*V_1.1[6] = $t29*/;
+                    r0 = {$:_[],0:null,1:null}/*$t33 = new System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String)("Photos/wii_at_earls.jpg", "Playing Wii Sports Golf at Earl's house")*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1],[null,null,"Photos/wii_at_earls.jpg","Playing Wii Sports Golf at Earl's house"])/*$t33..ctor("Photos/wii_at_earls.jpg", "Playing Wii Sports Golf at Earl's house")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 9:
+                {
+                    $ep = 10;
+                    r1[7] = r0/*V_1.1[7] = $t33*/;
+                    r0 = {$:_[],0:null,1:null}/*$t37 = new System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String)("Photos/packed_jeep.jpg", "My Jeep packed full of my cousin Michelle's belongings.  I was helping her move.")*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1],[null,null,"Photos/packed_jeep.jpg","My Jeep packed full of my cousin Michelle's belongings.  I was helping her move."])/*$t37..ctor("Photos/packed_jeep.jpg", "My Jeep packed full of my cousin Michelle's belongings.  I was helping her move.")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 10:
+                {
+                    $ep = 11;
+                    r1[8] = r0/*V_1.1[8] = $t37*/;
+                    r0 = {$:_[],0:0,1:null,2:0,3:0,4:null}/*$t39 = new System.Void Tenpow.Photos.PhotoSlideshow::.ctor(Tenpow.Photos.Photo[],System.Int32)(V_1.1, 10000)*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1],[null,null,r1,10000])/*$t39..ctor(V_1.1, 10000)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 11:
+                {
+                    $ep = 12;
+                    _[] = r0/*Tenpow.Photos.Program._slideshow = $t39*/;
+                    $$[]()/*XaeiOS.Process.SignalDaemon::Start()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 12:
+                {
+                    $ep = 13;
+                    r0 = $$[]/*$t43 = new System.Void System.NativeVoidDelegate::.ctor(System.Object,System.IntPtr)(null, Tenpow.Photos.Program::ExportedShowNextPhoto)*/;
+                    /*$t43..ctor(null, Tenpow.Photos.Program::ExportedShowNextPhoto)*/if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 13:
+                {
+                    $ep = 14;
+                    window["ShowNextPhoto"] = r0/*Tenpow.Photos.Program::ExportDelegate("ShowNextPhoto", $t43)*/;
+                    r0 = $$[]/*$t47 = new System.Void System.NativeVoidDelegate::.ctor(System.Object,System.IntPtr)(null, Tenpow.Photos.Program::ExportedShowPreviousPhoto)*/;
+                    /*$t47..ctor(null, Tenpow.Photos.Program::ExportedShowPreviousPhoto)*/if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 14:
+                {
+                    $ep = 15;
+                    window["ShowPreviousPhoto"] = r0/*Tenpow.Photos.Program::ExportDelegate("ShowPreviousPhoto", $t47)*/;
+                    r0 = _[]/*$t48 = Tenpow.Photos.Program._slideshow*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1],[null,null,0])/*$t48.ShowPhoto(0)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 15:
+                {
+                    $ep = 16;
+                    r0 = _[]/*$t50 = Tenpow.Photos.Program._slideshow*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1],[null,null])/*$t50.StartSlideshow()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 16:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r0,r1]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.Void Tenpow.Photos.Program::<Main>b__1(System.Int32)
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r0 = (!($f[2] == 1))/*V_1.1 = BooleanNot data ValueEquality 1*/;
+                    if(r0)
+                    {
+                        $ep = 3;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 2;
+                        if(0 > $end--)
+                        {
+                            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 7;
+                    r0 = _[]/*$t7 = Tenpow.Photos.Program._slideshow*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0],[null,null])/*$t7.ShowNextPhoto()*/;
+                    continue $ctrl;
+                }
+                case 3:
+                {
+                    r0 = (!($f[2] == 2))/*V_1.2 = BooleanNot data ValueEquality 2*/;
+                    if(r0)
+                    {
+                        $ep = 5;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 4;
+                        if(0 > $end--)
+                        {
+                            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 4:
+                {
+                    $ep = 7;
+                    r0 = _[]/*$t14 = Tenpow.Photos.Program._slideshow*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0],[null,null])/*$t14.ShowPreviousPhoto()*/;
+                    continue $ctrl;
+                }
+                case 5:
+                {
+                    $ep = 6;
+                    $rv = $$[](0,$end,null,[$ep,$end,$rv,$pc,$f,r0],[null,null,"Received unknown signal ",new Number($f[2])])/*$rv = System.String::Concat("Received unknown signal ", box(System.Int32,data))*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 6:
+                {
+                    $ep = 7;
+                    r0 = $rv/*$t18 = $rv*/;
+                    $$[](0,$end,null,[$ep,$end,$rv,$pc,$f,r0],[null,null,r0])/*System.Console::WriteLine($t18)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 7:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r0]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f)
+// : System.Void Tenpow.Photos.Program::.ctor()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $$[].call(this)/*this..ctor()*/;
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.String Tenpow.Photos.Photo::get_Url()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r0 = this[0]/*V_0.1 = this.<Url>k__BackingField*/;
+                    return r0/*V_0.1*/;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r0]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f)
+// : System.Void Tenpow.Photos.Photo::set_Url(System.String)
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    this[0] = $f[2]/*this.<Url>k__BackingField = value*/;
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.String Tenpow.Photos.Photo::get_Caption()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r0 = this[1]/*V_0.1 = this.<Caption>k__BackingField*/;
+                    return r0/*V_0.1*/;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r0]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f)
+// : System.Void Tenpow.Photos.Photo::set_Caption(System.String)
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    this[1] = $f[2]/*this.<Caption>k__BackingField = value*/;
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0,r1)
+// : System.String Tenpow.Photos.Photo::ToString()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    r1 = this[0]/*V_2.1 = this.<Url>k__BackingField*/;
+                    r0 = this[1]/*V_1.1 = this.<Caption>k__BackingField*/;
+                    r0 = ["Url: ", r1, ", Caption: ", r0].join('')/*V_0.1 = System.String::Concat("Url: ", V_2.1, ", Caption: ", V_1.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1]/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    return r0/*V_0.1*/;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r0,r1]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f)
+// : System.Void Tenpow.Photos.Photo::.ctor(System.String,System.String)
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    $$[].call(this)/*this..ctor()*/;
+                    $$[].call(this,0,$end,null,[$ep,$end,$rv,$pc,$f],[null,null,$f[2]])/*this.set_Url(url)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    $$[].call(this,0,$end,null,[$ep,$end,$rv,$pc,$f],[null,null,$f[3]])/*this.set_Caption(caption)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : Tenpow.Photos.Photo[] Tenpow.Photos.PhotoSlideshow::get_Photos()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r0 = this[4]/*V_0.1 = this.<Photos>k__BackingField*/;
+                    return r0/*V_0.1*/;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r0]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f)
+// : System.Void Tenpow.Photos.PhotoSlideshow::set_Photos(Tenpow.Photos.Photo[])
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    this[4] = $f[2]/*this.<Photos>k__BackingField = value*/;
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.Void Tenpow.Photos.PhotoSlideshow::StartSlideshow()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r0 = this[2]/*$t1 = this._slideshowStarted*/;
+                    r0 = (!r0)/*V_0.1 = BooleanNot $t1*/;
+                    if(r0)
+                    {
+                        $ep = 4;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 2;
+                        if(0 > $end--)
+                        {
+                            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    r0 = {$:_[],0:null,1:null,2:null,3:null}/*$t6 = new System.Void System.Exception::.ctor(System.String)("Slideshow already started")*/;
+                    $$[].call(r0,"Slideshow already started")/*$t6..ctor("Slideshow already started")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    throw r0/*$t6*/;
+                }
+                case 4:
+                {
+                    $ep = 5;
+                    this[2] = 1/*this._slideshowStarted = 1*/;
+                    $rv = $$[](0,$end,null,[$ep,$end,$rv,$pc,$f,r0],[null,null])/*$rv = System.Threading.Thread::get_CurrentThread()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 5:
+                {
+                    $ep = 6;
+                    r0 = $rv/*$t10 = $rv*/;
+                    this[1] = r0/*this._slideshowThread = $t10*/;
+                    $$[].call(this,0,$end,null,[$ep,$end,$rv,$pc,$f,r0],[null,null])/*this.SlideshowLoop()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 6:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r0]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4)
+// : System.Void Tenpow.Photos.PhotoSlideshow::ShowPhoto(System.Int32)
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r0 = this[4]/*V_15.1 = this.<Photos>k__BackingField*/;
+                    r0 = ($f[2] > r0.length)/*$t5 = index GreaterThan (System.Int32)V_15.1.Length*/;
+                    if(r0)
+                    {
+                        $ep = 3;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 2;
+                        if(0 > $end--)
+                        {
+                            throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 2:
+                {
+                    r0 = (!($f[2] < 0))/*$ts0 = BooleanNot index LessThan 0*/;
+                    $ep = 4;
+                    continue $ctrl;
+                }
+                case 3:
+                {
+                    r0 = 0/*$ts0 = 0*/;
+                    $ep = 4;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 4:
+                {
+                    r0 = r0/*V_5.1 = $ts0*/;
+                    if(r0)
+                    {
+                        $ep = 5;
+                        if(0 > $end--)
+                        {
+                            throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                        }
+
+                    }
+                    else
+                    {
+                        $ep = 18;
+                        continue $ctrl;
+
+                    }
+                }
+                case 5:
+                {
+                    $ep = 6;
+                    this[0] = $f[2]/*this._currentPhotoIndex = index*/;
+                    r4 = this[4]/*V_14.1 = this.<Photos>k__BackingField*/;
+                    r3 = document/*V_1.1 = System.Browser.Dom.DomManager::get_Document()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 6:
+                {
+                    $ep = 7;
+                    $rv = r3.getElementById("photo-container")/*$rv = V_1.1.GetElementById("photo-container")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 7:
+                {
+                    $ep = 8;
+                    r2 = $rv/*V_2.1 = $rv*/;
+                    r1 = $$[](_[],9)/*V_6.1 = new System.String[9]*/;
+                    r1[0] = "<a href=\""/*V_6.1[0] = "<a href=""*/;
+                    r0 = r4[$f[2]][0]/*V_13.1 = V_14.1[index].<Url>k__BackingField*/;
+                    r1[1] = r0/*V_6.1[1] = V_13.1*/;
+                    r1[2] = "\"><img src=\""/*V_6.1[2] = ""><img src=""*/;
+                    r0 = r4[$f[2]][0]/*V_12.1 = V_14.1[index].<Url>k__BackingField*/;
+                    r1[3] = r0/*V_6.1[3] = V_12.1*/;
+                    r1[4] = "\" alt=\""/*V_6.1[4] = "" alt=""*/;
+                    r0 = r4[$f[2]][1]/*V_11.1 = V_14.1[index].<Caption>k__BackingField*/;
+                    r1[5] = r0/*V_6.1[5] = V_11.1*/;
+                    r1[6] = "\" border=\"0\" title=\""/*V_6.1[6] = "" border="0" title=""*/;
+                    r0 = r4[$f[2]][1]/*V_10.1 = V_14.1[index].<Caption>k__BackingField*/;
+                    r1[7] = r0/*V_6.1[7] = V_10.1*/;
+                    r1[8] = "\" /></a>"/*V_6.1[8] = "" /></a>"*/;
+                    r0 = r1.join('')/*$t44 = System.String::Concat(V_6.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 8:
+                {
+                    $ep = 9;
+                    r2.innerHTML = r0/*V_2.1.set_InnerHtml($t44)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 9:
+                {
+                    $ep = 10;
+                    $rv = r3.getElementById("photo-caption")/*$rv = V_1.1.GetElementById("photo-caption")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 10:
+                {
+                    $ep = 11;
+                    r1 = $rv/*V_3.1 = $rv*/;
+                    r0 = r4[$f[2]][1]/*V_9.1 = V_14.1[index].<Caption>k__BackingField*/;
+                    r0 = ("<b>" + r0 + "</b>")/*$t50 = System.String::Concat("<b>", V_9.1, "</b>")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 11:
+                {
+                    $ep = 12;
+                    r1.innerHTML = r0/*V_3.1.set_InnerHtml($t50)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 12:
+                {
+                    $ep = 13;
+                    $rv = r3.getElementById("photo-index")/*$rv = V_1.1.GetElementById("photo-index")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 13:
+                {
+                    $ep = 14;
+                    r2 = $rv/*V_4.1 = $rv*/;
+                    r1 = $$[](_[],4)/*V_7.1 = new System.Object[4]*/;
+                    r1[0] = "Photo "/*V_7.1[0] = "Photo "*/;
+                    r1[1] = new Number(($f[2] + 1))/*V_7.1[1] = box(System.Int32,index Add 1)*/;
+                    r1[2] = " of "/*V_7.1[2] = " of "*/;
+                    r0 = this[4]/*V_8.1 = this.<Photos>k__BackingField*/;
+                    r1[3] = new Number(r0.length)/*V_7.1[3] = box(System.Int32,(System.Int32)V_8.1.Length)*/;
+                    $rv = $$[](0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4],[null,null,r1])/*$rv = System.String::Concat(V_7.1)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 14:
+                {
+                    $ep = 15;
+                    r0 = $rv/*$t70 = $rv*/;
+                    r2.innerHTML = r0/*V_4.1.set_InnerHtml($t70)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 15:
+                {
+                    $ep = 16;
+                    $rv = $$[](0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4],[null,null,"Showing photo ",r4[$f[2]]])/*$rv = System.String::Concat("Showing photo ", V_14.1[index])*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 16:
+                {
+                    $ep = 17;
+                    r0 = $rv/*$t72 = $rv*/;
+                    $$[](0,$end,null,[$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4],[null,null,r0])/*System.Console::WriteLine($t72)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 17:
+                {
+                    return;
+                }
+                case 18:
+                {
+                    $ep = 19;
+                    r0 = {$:_[],0:null,1:null,2:null,3:null}/*$t14 = new System.Void System.ArgumentOutOfRangeException::.ctor(System.String)("index")*/;
+                    $$[].call(r0,"index")/*$t14..ctor("index")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*[Continuation]*/;
+
+                    }
+                }
+                case 19:
+                {
+                    throw r0/*$t14*/;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r0,r1,r2,r3,r4]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f)
+// : System.Void Tenpow.Photos.PhotoSlideshow::ShowNextPhoto()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    $$[].call(this,0,$end,null,[$ep,$end,$rv,$pc,$f],[null,null])/*this.DoShowNextPhoto()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    $$[].call(this,0,$end,null,[$ep,$end,$rv,$pc,$f],[null,null])/*this.ResetSlideshowLoop()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f)
+// : System.Void Tenpow.Photos.PhotoSlideshow::ShowPreviousPhoto()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    $$[].call(this,0,$end,null,[$ep,$end,$rv,$pc,$f],[null,null])/*this.DoShowPreviousPhoto()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    $$[].call(this,0,$end,null,[$ep,$end,$rv,$pc,$f],[null,null])/*this.ResetSlideshowLoop()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f]/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r1,r2,r0)
+// : System.Void Tenpow.Photos.PhotoSlideshow::DoShowNextPhoto()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r1,r2,r0]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r2 = this[0]/*$t1 = this._currentPhotoIndex*/;
+                    r0 = (r2 + 1)/*V_0.1 = $t1 Add 1*/;
+                    r1 = this[4]/*V_2.1 = this.<Photos>k__BackingField*/;
+                    r1 = ((r2 + 1) < r1.length)/*V_1.1 = $t1 Add 1 LessThan (System.Int32)V_2.1.Length*/;
+                    if(r1)
+                    {
+                        $ep = 3;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 2;
+                        if(0 > $end--)
+                        {
+                            throw [$ep,$end,$rv,$pc,$f,r1,r2,r0]/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 2:
+                {
+                    r0 = 0/*V_0.2 = 0*/;
+                    $ep = 3;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r1,r2,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    $ep = 4;
+                    $$[].call(this,0,$end,null,[$ep,$end,$rv,$pc,$f,r1,r2,r0],[null,null,r0])/*this.ShowPhoto(V_0.3)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r1,r2,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 4:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r1,r2,r0]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r1,r0)
+// : System.Void Tenpow.Photos.PhotoSlideshow::DoShowPreviousPhoto()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r1,r0]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r1 = this[0]/*$t1 = this._currentPhotoIndex*/;
+                    r0 = (r1 - 1)/*V_0.1 = $t1 Subtract 1*/;
+                    r1 = (!((r1 - 1) < 0))/*V_1.1 = BooleanNot $t1 Subtract 1 LessThan 0*/;
+                    if(r1)
+                    {
+                        $ep = 3;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 2;
+                        if(0 > $end--)
+                        {
+                            throw [$ep,$end,$rv,$pc,$f,r1,r0]/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 2:
+                {
+                    r1 = this[4]/*V_2.1 = this.<Photos>k__BackingField*/;
+                    r0 = (r1.length - 1)/*V_0.2 = (System.Int32)V_2.1.Length Subtract 1*/;
+                    $ep = 3;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r1,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    $ep = 4;
+                    $$[].call(this,0,$end,null,[$ep,$end,$rv,$pc,$f,r1,r0],[null,null,r0])/*this.ShowPhoto(V_0.3)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r1,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 4:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r1,r0]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.Void Tenpow.Photos.PhotoSlideshow::ResetSlideshowLoop()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r0 = this[2]/*$t1 = this._slideshowStarted*/;
+                    r0 = (!r0)/*V_0.1 = BooleanNot $t1*/;
+                    if(r0)
+                    {
+                        $ep = 3;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 2;
+                        if(0 > $end--)
+                        {
+                            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    r0 = this[1]/*$t6 = this._slideshowThread*/;
+                    $$[].call(r0,0,$end,null,[$ep,$end,$rv,$pc,$f,r0],[null,null])/*$t6.Abort()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r0]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.Void Tenpow.Photos.PhotoSlideshow::SlideshowLoop()
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $f.$ecp = 5/*Frame.ExceptionCatchPointer = 5*/;
+                    r0 = this[3]/*$t3 = this._slideshowInterval*/;
+                    $ep = 2;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    $ep = 3;
+                    $rv = $$[](0,$end,null,[$ep,$end,$rv,$pc,$f,r0],[null,null,"Sleeping for ",new Number(r0)," milliseconds"])/*$rv = System.String::Concat("Sleeping for ", box(System.Int32,$t3), " milliseconds")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 3:
+                {
+                    $ep = 4;
+                    r0 = $rv/*$t6 = $rv*/;
+                    LogWrite("INFO", r0)/*System.Diagnostics.Logging::Info($t6)*/;
+                    r0 = this[3]/*$t8 = this._slideshowInterval*/;
+                    $$[](0,$end,null,[$ep,$end,$rv,$pc,$f,r0],[null,null,r0])/*System.Threading.Thread::Sleep($t8)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 4:
+                {
+                    $ep = 1;
+                    $$[].call(this,0,$end,null,[$ep,$end,$rv,$pc,$f,r0],[null,null])/*this.DoShowNextPhoto()*/;
+                    continue $ctrl;
+                }
+                case 5:
+                {
+                    $f.$ecp = null/*Frame.ExceptionCatchPointer = null*/;
+                    r0 = $f.$e/*$t10 = $e*/;
+                    $ep = 6;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 6:
+                {
+                    $ep = 7;
+                    $f.$e = null/*Frame.Exception = null*/;
+                    $rv = $$[](0,$end,null,[$ep,$end,$rv,$pc,$f,r0],[null,null,"Caught exception: ",r0])/*$rv = System.String::Concat("Caught exception: ", $t10)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 7:
+                {
+                    $ep = 1;
+                    r0 = $rv/*$t12 = $rv*/;
+                    LogWrite("INFO", r0)/*System.Diagnostics.Logging::Info($t12)*/;
+                    continue $ctrl;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r0]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.Void Tenpow.Photos.PhotoSlideshow::.ctor(Tenpow.Photos.Photo[],System.Int32)
+{
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    this[0] = -1/*this._currentPhotoIndex = -1*/;
+                    this[2] = 0/*this._slideshowStarted = 0*/;
+                    $$[].call(this)/*this..ctor()*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    r0 = (!($f[2] == null))/*V_0.1 = BooleanNot photos ValueEquality null*/;
+                    if(r0)
+                    {
+                        $ep = 5;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 3;
+                        if(0 > $end--)
+                        {
+                            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 3:
+                {
+                    $ep = 4;
+                    r0 = {$:_[],0:null,1:null,2:null,3:null}/*$t13 = new System.Void System.ArgumentException::.ctor(System.String)("photos cannot be null")*/;
+                    $$[].call(r0,"photos cannot be null")/*$t13..ctor("photos cannot be null")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 4:
+                {
+                    throw r0/*$t13*/;
+                }
+                case 5:
+                {
+                    r0 = (!($f[2].length == 0))/*V_0.2 = BooleanNot (System.Int32)photos.Length ValueEquality 0*/;
+                    if(r0)
+                    {
+                        $ep = 8;
+                        continue $ctrl;
+
+                    }
+                    else
+                    {
+                        $ep = 6;
+                        if(0 > $end--)
+                        {
+                            throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                        }
+
+                    }
+                }
+                case 6:
+                {
+                    $ep = 7;
+                    r0 = {$:_[],0:null,1:null,2:null,3:null}/*$t24 = new System.Void System.ArgumentException::.ctor(System.String)("must supply at least 1 photo")*/;
+                    $$[].call(r0,"must supply at least 1 photo")/*$t24..ctor("must supply at least 1 photo")*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 7:
+                {
+                    throw r0/*$t24*/;
+                }
+                case 8:
+                {
+                    $ep = 9;
+                    $$[].call(this,0,$end,null,[$ep,$end,$rv,$pc,$f,r0],[null,null,$f[2]])/*this.set_Photos(photos)*/;
+                    if(0 > $end--)
+                    {
+                        throw [$ep,$end,$rv,$pc,$f,r0]/*[Continuation]*/;
+
+                    }
+                }
+                case 9:
+                {
+                    this[3] = $f[3]/*this._slideshowInterval = slideshowInterval*/;
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if($e instanceof Array)
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = [$ep,$end,$rv,$pc,$f,r0]/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+}]]></Code><Data Length="10"><![CDATA[
+// : Tenpow.Photos.Program
+{
+    f: 0,
+    0:$$[]/* System.String System.Object::ToString() */,
+    1:$$[]/* System.Int32 System.Object::GetHashCode() */,
+    2:$$[]/* System.Boolean System.Object::Equals(System.Object) */,
+    3:$$[]/* System.Void System.Object::Finalize() */
+},
+null/* Tenpow.Photos.PhotoSlideshow Tenpow.Photos.Program::_slideshow */,
+null/* System.Int32 Tenpow.Photos.Program::_slideshowPid */,
+null/* System.Threading.ThreadStart Tenpow.Photos.Program::CS$<>9__CachedAnonymousMethodDelegate2 */,
+null/* XaeiOS.Process.CustomSignalHandler Tenpow.Photos.Program::CS$<>9__CachedAnonymousMethodDelegate3 */,
+
+// : Tenpow.Photos.Program/SlideshowSignal
+{
+    f: 0,
+    0:$$[]/* System.String System.Object::ToString() */,
+    1:$$[]/* System.Int32 System.Object::GetHashCode() */,
+    2:$$[]/* System.Boolean System.Object::Equals(System.Object) */,
+    3:$$[]/* System.Void System.Object::Finalize() */
+},
+1/* Tenpow.Photos.Program/SlideshowSignal Tenpow.Photos.Program/SlideshowSignal::ShowNextPhoto */,
+2/* Tenpow.Photos.Program/SlideshowSignal Tenpow.Photos.Program/SlideshowSignal::ShowPreviousPhoto */,
+
+// : Tenpow.Photos.Photo
+{
+    f: 0,
+    0:$$[]/* System.String Tenpow.Photos.Photo::ToString() */,
+    1:$$[]/* System.Int32 System.Object::GetHashCode() */,
+    2:$$[]/* System.Boolean System.Object::Equals(System.Object) */,
+    3:$$[]/* System.Void System.Object::Finalize() */
+},
+
+// : Tenpow.Photos.PhotoSlideshow
+{
+    f: 0,
+    0:$$[]/* System.String System.Object::ToString() */,
+    1:$$[]/* System.Int32 System.Object::GetHashCode() */,
+    2:$$[]/* System.Boolean System.Object::Equals(System.Object) */,
+    3:$$[]/* System.Void System.Object::Finalize() */
+}]]></Data><Initialization><![CDATA[_[].b = _[];// Tenpow.Photos.Program extends System.Object
+_[].b = _[];// Tenpow.Photos.Photo extends System.Object
+_[].b = _[];// Tenpow.Photos.PhotoSlideshow extends System.Object
+var t0 = {}/* t0 = [dynamic expression]*/;
+$$[]()/*System.Runtime.CompilerServices.RuntimeHelpers::InitializeMetadata()*/;t0[0] = $$[]("Tenpow.Photos")/*t0[0] = System.Runtime.CompilerServices.RuntimeHelpers::CreateAssembly("Tenpow.Photos")*/;
+t0[1] = $$[]("Tenpow.Photos","Program",t0[0],,null,false,false)/*t0[1] = System.Runtime.CompilerServices.RuntimeHelpers::CreateClass("Tenpow.Photos", "Program", t0[0], [dynamic expression], null, False, False)*/;
+t0[2] = $$[](t0[1],"Main",$$[],-1)/*t0[2] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "Main", [dynamic expression], -1)*/;
+t0[3] = $$[](t0[1],"ExportedShowNextPhoto",$$[],-1)/*t0[3] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "ExportedShowNextPhoto", [dynamic expression], -1)*/;
+t0[4] = $$[]("System.Runtime.CompilerServices","XaeiOSMethodImplAttribute",t0[0],,null,false,false)/*t0[4] = System.Runtime.CompilerServices.RuntimeHelpers::CreateClass("System.Runtime.CompilerServices", "XaeiOSMethodImplAttribute", t0[0], [dynamic expression], null, False, False)*/;
+t0[5] = $$[](t0[4],"get_Options",$$[],-1)/*t0[5] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[4], "get_Options", [dynamic expression], -1)*/;
+t0[6] = $$[](t0[4],"get_Implementation",$$[],-1)/*t0[6] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[4], "get_Implementation", [dynamic expression], -1)*/;
+t0[7] = $$[](t0[4],"set_Implementation",$$[],-1)/*t0[7] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[4], "set_Implementation", [dynamic expression], -1)*/;
+t0[8] = $$[](t0[4],".ctor",$$[])/*t0[8] = System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(t0[4], ".ctor", [dynamic expression])*/;
+t0[9] = $$[](t0[4],"Options",t0[5],null)/*t0[9] = System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(t0[4], "Options", t0[5], null)*/;
+t0[10] = $$[](t0[4],"Implementation",t0[6],t0[7])/*t0[10] = System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(t0[4], "Implementation", t0[6], t0[7])*/;
+$$[](t0[4],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[4], [dynamic expression])*/;
+$$[](t0[3],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[3], [dynamic expression])*/;
+t0[11] = $$[](t0[1],"ExportedShowPreviousPhoto",$$[],-1)/*t0[11] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "ExportedShowPreviousPhoto", [dynamic expression], -1)*/;
+$$[](t0[11],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[11], [dynamic expression])*/;
+t0[12] = $$[](t0[1],"ExportDelegate",$$[],-1)/*t0[12] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "ExportDelegate", [dynamic expression], -1)*/;
+$$[](t0[12],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[12], [dynamic expression])*/;
+t0[13] = $$[](t0[1],"<Main>b__0",$$[],-1)/*t0[13] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "<Main>b__0", [dynamic expression], -1)*/;
+t0[14] = $$[]("System.Runtime.CompilerServices","CompilerGeneratedAttribute",t0[0],,null,false,false)/*t0[14] = System.Runtime.CompilerServices.RuntimeHelpers::CreateClass("System.Runtime.CompilerServices", "CompilerGeneratedAttribute", t0[0], [dynamic expression], null, False, False)*/;
+t0[15] = $$[](t0[14],".ctor",$$[])/*t0[15] = System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(t0[14], ".ctor", [dynamic expression])*/;
+$$[](t0[14],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[14], [dynamic expression])*/;
+$$[](t0[13],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[13], [dynamic expression])*/;
+t0[16] = $$[](t0[1],"<Main>b__1",$$[],-1)/*t0[16] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "<Main>b__1", [dynamic expression], -1)*/;
+$$[](t0[16],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[16], [dynamic expression])*/;
+t0[17] = $$[](t0[1],".ctor",$$[])/*t0[17] = System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(t0[1], ".ctor", [dynamic expression])*/;
+t0[18] = $$[]("","SlideshowSignal",t0[0],,null,false,false)/*t0[18] = System.Runtime.CompilerServices.RuntimeHelpers::CreateClass("", "SlideshowSignal", t0[0], [dynamic expression], null, False, False)*/;
+t0[19] = $$[]("Tenpow.Photos","Photo",t0[0],,null,false,false)/*t0[19] = System.Runtime.CompilerServices.RuntimeHelpers::CreateClass("Tenpow.Photos", "Photo", t0[0], [dynamic expression], null, False, False)*/;
+t0[20] = $$[](t0[19],"get_Url",$$[],-1)/*t0[20] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[19], "get_Url", [dynamic expression], -1)*/;
+$$[](t0[20],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[20], [dynamic expression])*/;
+t0[21] = $$[](t0[19],"set_Url",$$[],-1)/*t0[21] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[19], "set_Url", [dynamic expression], -1)*/;
+$$[](t0[21],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[21], [dynamic expression])*/;
+t0[22] = $$[](t0[19],"get_Caption",$$[],-1)/*t0[22] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[19], "get_Caption", [dynamic expression], -1)*/;
+$$[](t0[22],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[22], [dynamic expression])*/;
+t0[23] = $$[](t0[19],"set_Caption",$$[],-1)/*t0[23] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[19], "set_Caption", [dynamic expression], -1)*/;
+$$[](t0[23],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[23], [dynamic expression])*/;
+t0[24] = $$[](t0[19],"ToString",$$[],)/*t0[24] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[19], "ToString", [dynamic expression], [dynamic expression])*/;
+t0[25] = $$[](t0[19],".ctor",$$[])/*t0[25] = System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(t0[19], ".ctor", [dynamic expression])*/;
+t0[26] = $$[](t0[19],"Url",t0[20],t0[21])/*t0[26] = System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(t0[19], "Url", t0[20], t0[21])*/;
+t0[27] = $$[](t0[19],"Caption",t0[22],t0[23])/*t0[27] = System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(t0[19], "Caption", t0[22], t0[23])*/;
+t0[28] = $$[]("Tenpow.Photos","PhotoSlideshow",t0[0],,null,false,false)/*t0[28] = System.Runtime.CompilerServices.RuntimeHelpers::CreateClass("Tenpow.Photos", "PhotoSlideshow", t0[0], [dynamic expression], null, False, False)*/;
+t0[29] = $$[](t0[28],"get_Photos",$$[],-1)/*t0[29] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[28], "get_Photos", [dynamic expression], -1)*/;
+$$[](t0[29],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[29], [dynamic expression])*/;
+t0[30] = $$[](t0[28],"set_Photos",$$[],-1)/*t0[30] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[28], "set_Photos", [dynamic expression], -1)*/;
+$$[](t0[30],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[30], [dynamic expression])*/;
+t0[31] = $$[](t0[28],"StartSlideshow",$$[],-1)/*t0[31] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[28], "StartSlideshow", [dynamic expression], -1)*/;
+t0[32] = $$[](t0[28],"ShowPhoto",$$[],-1)/*t0[32] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[28], "ShowPhoto", [dynamic expression], -1)*/;
+t0[33] = $$[](t0[28],"ShowNextPhoto",$$[],-1)/*t0[33] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[28], "ShowNextPhoto", [dynamic expression], -1)*/;
+t0[34] = $$[](t0[28],"ShowPreviousPhoto",$$[],-1)/*t0[34] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[28], "ShowPreviousPhoto", [dynamic expression], -1)*/;
+t0[35] = $$[](t0[28],"DoShowNextPhoto",$$[],-1)/*t0[35] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[28], "DoShowNextPhoto", [dynamic expression], -1)*/;
+t0[36] = $$[](t0[28],"DoShowPreviousPhoto",$$[],-1)/*t0[36] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[28], "DoShowPreviousPhoto", [dynamic expression], -1)*/;
+t0[37] = $$[](t0[28],"ResetSlideshowLoop",$$[],-1)/*t0[37] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[28], "ResetSlideshowLoop", [dynamic expression], -1)*/;
+t0[38] = $$[](t0[28],"SlideshowLoop",$$[],-1)/*t0[38] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[28], "SlideshowLoop", [dynamic expression], -1)*/;
+t0[39] = $$[](t0[28],".ctor",$$[])/*t0[39] = System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(t0[28], ".ctor", [dynamic expression])*/;
+t0[40] = $$[](t0[28],"Photos",t0[29],t0[30])/*t0[40] = System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(t0[28], "Photos", t0[29], t0[30])*/;
+]]></Initialization></Object>

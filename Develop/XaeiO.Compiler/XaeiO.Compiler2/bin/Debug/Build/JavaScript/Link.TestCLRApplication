@@ -1,0 +1,2 @@
+#!/bin/sh
+../../../../../XaeiO.Linker/bin/Debug/XaeiO.Linker.exe -i OSCorlib.xo -i XaeiOS.Kernel.xo -e TestCLRApplication.xo -v -o TestCLRApplication.xm

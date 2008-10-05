@@ -1,0 +1,2 @@
+This application is compiled against mscorlib and runs on the CLR.
+You can compile the exe binary with XaeiO.Compiler2 and run the exact same application in the browser.

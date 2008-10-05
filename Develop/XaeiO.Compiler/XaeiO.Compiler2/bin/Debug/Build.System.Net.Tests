@@ -1,0 +1,5 @@
+#!/bin/sh
+./XaeiO.Compiler2.exe --Verbose --TargetArchitecture JavaScript --TargetSubArchitecture Mozilla --TargetSubArchitectureVersion 3.0 --OutputPath ./Build/ --Assembly ../../../../../Libraries/System.Net/System.Net.Tests/bin/debug/System.Net.Tests.exe --Assembly ../../../../../Core/XaeiOS.Core/OSCorlib/bin/Debug/OSCorlib.dll --Assembly ../../../../../Core/XaeiOS.Core/XaeiOS.Kernel/bin/Debug/XaeiOS.Kernel.dll --Assembly ../../../../../Libraries/System/System/bin/debug/System.dll --Assembly ../../../../../Libraries/System.Browser/System.Browser/System.Browser/bin/debug/System.Browser.dll --Assembly ../../../../../Libraries/System.Net/System.Net/bin/debug/System.Net.dll;
+cd ./Build/JavaScript;
+./Link.System.Net.Tests;
+cd ../..;

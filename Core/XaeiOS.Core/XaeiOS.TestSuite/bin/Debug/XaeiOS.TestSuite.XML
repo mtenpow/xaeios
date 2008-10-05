@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XaeiOS.TestSuite</name>
+    </assembly>
+    <members>
+        <member name="T:XaeiOS.TestSuite.Tests.DictionaryRemoveSSABugTest">
+            <summary>
+            Test fix for bug in XaeiO.Compiler2 where SSA form was not being generated correctly.
+            
+            The bug was that phi nodes were not being placed at all the proper locations.
+            </summary>
+        </member>
+        <member name="M:XaeiOS.TestSuite.Tests.DictionaryRemoveSSABugTest.Remove(System.String)">
+            <summary>
+            This method used to run forever because of the bug
+            </summary>
+        </member>
+        <member name="M:XaeiOS.TestSuite.Tests.ThreadSleepTest.#ctor(System.Int32,System.Int32)">
+            <summary>
+            A test of the Thread::Sleep method
+            </summary>
+            <param name="duration1">How long to sleep for the first time</param>
+            <param name="duration2">How long to sleep for the second time</param>
+        </member>
+        <member name="M:XaeiOS.TestSuite.Tests.DomTest.#ctor(System.Int32)">
+            <summary>
+            A test for the Document Object Model interfaces available in XaeiOS.
+            DOM element resources are automatically freed when the SIP exits.
+            </summary>
+            <param name="duration">The number of seconds the animations in the test should run for</param>
+        </member>
+    </members>
+</doc>

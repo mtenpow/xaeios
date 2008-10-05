@@ -1,0 +1,37 @@
+<html>
+<head>
+<script src="../deploy/njs_compile.js"></script>
+<script id="testCode" type="text/x-narrativejs">
+function runTests() {
+	var now = new Date().getTime();
+	sleep->(1000);
+	// sad but true: Firefox doesn't guarantee that the specified amount of
+	// time has passed.
+	assert(new Date().getTime() - now >= 900, "sleep sleeps");
+	
+	assert(fetch->("files/webtest.download.txt") == "foobar", "fetch fetches");
+	assert(fetch->("bogus") == null, "fetch returns null");	
+	assert(fetch->("../lib/rhino.jar"), "fetch times out");
+}
+
+function assert(test, message) {
+	var out = document.getElementById("out");
+	if (test) {
+		out.innerHTML += "passed: " + message + "<br>";
+	} else {
+		out.innerHTML += "FAILED: " + message + "<br>";
+	}
+}
+</script>
+</head>
+<body>
+<pre id="out">
+starting tests:
+</pre>
+<script>
+var code = new NjsCompiler().compile(document.getElementById("testCode").innerHTML);
+eval(code);
+runTests();
+</script>
+</body>
+</html>

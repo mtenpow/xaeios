@@ -1,0 +1,1311 @@
+<Object><Header><![CDATA[{
+  Metadata: {
+    Name: {
+      Name: "System",
+      Version: "2.0.0.0",
+      Culture: ""
+    },
+    EntryPoint: 0,
+    BootMethod: 0,
+    Types: [
+      {
+        Namespace: "System.Text.RegularExpressions",
+        Name: "Regex",
+        BaseType: 1,
+        DeclaringType: -1,
+        IsInterface: false,
+        IsAbstract: false,
+        Methods: [
+          {
+            Name: "IsMatch",
+            ReturnType: 4,
+            VTableSlot: -1,
+            CodeIndex: 0,
+            HasThis: false,
+            Parameters: [
+              {
+                Type: 5,
+                Name: "str",
+                Sequence: 1
+              },
+              {
+                Type: 5,
+                Name: "pattern",
+                Sequence: 2
+              }
+            ]
+          },
+          {
+            Name: ".ctor",
+            ReturnType: 6,
+            VTableSlot: -1,
+            CodeIndex: 1,
+            HasThis: true,
+            Parameters: []
+          }
+        ],
+        Fields: [],
+        StaticFields: [],
+        VTableIndex: 0
+      },
+      {
+        Namespace: "System.Text",
+        Name: "StringBuilder",
+        BaseType: 1,
+        DeclaringType: -1,
+        IsInterface: false,
+        IsAbstract: false,
+        Methods: [
+          {
+            Name: "Append",
+            ReturnType: 6,
+            VTableSlot: -1,
+            CodeIndex: 2,
+            HasThis: true,
+            Parameters: [
+              {
+                Type: 5,
+                Name: "s",
+                Sequence: 1
+              }
+            ]
+          },
+          {
+            Name: "ToString",
+            ReturnType: 5,
+            VTableSlot: 0,
+            CodeIndex: 3,
+            HasThis: true,
+            Parameters: []
+          },
+          {
+            Name: ".ctor",
+            ReturnType: 6,
+            VTableSlot: -1,
+            CodeIndex: 4,
+            HasThis: true,
+            Parameters: []
+          }
+        ],
+        Fields: [
+          {
+            Name: "_internalArray",
+            Type: 7,
+            Offset: 0
+          }
+        ],
+        StaticFields: [],
+        VTableIndex: 1
+      }
+    ],
+    AssemblyReferences: [
+      {
+        Name: "OSCorlib",
+        Version: "2.0.0.0"
+      },
+      {
+        Name: "XaeiOS.Kernel",
+        Version: "1.0.0.0"
+      }
+    ],
+    TypeReferences: [
+      {
+        Namespace: "System.Text.RegularExpressions",
+        Name: "Regex",
+        DeclaringType: -1,
+        Assembly: -1,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Object",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Text",
+        Name: "StringBuilder",
+        DeclaringType: -1,
+        Assembly: -1,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "CLRConjugateAttribute",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Boolean",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "String",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Void",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "NativeArray`1",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "XaeiOS.Kernel",
+        Name: "Scheduler",
+        DeclaringType: -1,
+        Assembly: 1,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Object",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "RuntimeHelpers",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "AttributeUsageAttribute",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime.CompilerServices",
+        Name: "CLRConjugateAttribute",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "var",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "String",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "Assembly",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "UIntPtr",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "Class",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Boolean",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "NativeFunction",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "Int32",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "Method",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System.Runtime",
+        Name: "ICustomAttributeProvider",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      },
+      {
+        Namespace: "System",
+        Name: "AttributeTargets",
+        DeclaringType: -1,
+        Assembly: 0,
+        IsGeneric: false
+      }
+    ],
+    MethodReferences: [
+      {
+        Type: 0,
+        Name: "IsMatch",
+        HasThis: false,
+        Parameters: [
+          0,
+          1
+        ]
+      },
+      {
+        Type: 8,
+        Name: "ConvertToManagedException",
+        HasThis: false,
+        Parameters: [
+          2
+        ]
+      },
+      {
+        Type: 0,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 9,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 2,
+        Name: "Append",
+        HasThis: true,
+        Parameters: [
+          3
+        ]
+      },
+      {
+        Type: 2,
+        Name: "ToString",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 2,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 9,
+        Name: "ToString",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 9,
+        Name: "GetHashCode",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 9,
+        Name: "Equals",
+        HasThis: true,
+        Parameters: [
+          4
+        ]
+      },
+      {
+        Type: 9,
+        Name: "Finalize",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 10,
+        Name: "InitializeMetadata",
+        HasThis: false,
+        Parameters: []
+      },
+      {
+        Type: 10,
+        Name: "CreateAssembly",
+        HasThis: false,
+        Parameters: [
+          5
+        ]
+      },
+      {
+        Type: 10,
+        Name: "CreateClass",
+        HasThis: false,
+        Parameters: [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        Type: 10,
+        Name: "CreateMethod",
+        HasThis: false,
+        Parameters: [
+          13,
+          7,
+          14,
+          15
+        ]
+      },
+      {
+        Type: 10,
+        Name: "CreateConstructor",
+        HasThis: false,
+        Parameters: [
+          13,
+          7,
+          14
+        ]
+      },
+      {
+        Type: 3,
+        Name: "get_ConjugateName",
+        HasThis: true,
+        Parameters: []
+      },
+      {
+        Type: 3,
+        Name: "set_ConjugateName",
+        HasThis: true,
+        Parameters: [
+          16
+        ]
+      },
+      {
+        Type: 3,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          17
+        ]
+      },
+      {
+        Type: 10,
+        Name: "CreateProperty",
+        HasThis: false,
+        Parameters: [
+          13,
+          7,
+          18,
+          19
+        ]
+      },
+      {
+        Type: 10,
+        Name: "CreateCustomAttribute",
+        HasThis: false,
+        Parameters: [
+          20,
+          21
+        ]
+      },
+      {
+        Type: 11,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          22
+        ]
+      },
+      {
+        Type: 12,
+        Name: ".ctor",
+        HasThis: true,
+        Parameters: [
+          23
+        ]
+      }
+    ],
+    ParameterReferences: [
+      {
+        Type: 5,
+        Name: "str",
+        Sequence: 1
+      },
+      {
+        Type: 5,
+        Name: "pattern",
+        Sequence: 2
+      },
+      {
+        Type: 13,
+        Name: "e",
+        Sequence: 1
+      },
+      {
+        Type: 5,
+        Name: "s",
+        Sequence: 1
+      },
+      {
+        Type: 9,
+        Name: "o",
+        Sequence: 1
+      },
+      {
+        Type: 14,
+        Name: "name",
+        Sequence: 1
+      },
+      {
+        Type: 14,
+        Name: "ns",
+        Sequence: 1
+      },
+      {
+        Type: 14,
+        Name: "name",
+        Sequence: 2
+      },
+      {
+        Type: 15,
+        Name: "assembly",
+        Sequence: 3
+      },
+      {
+        Type: 16,
+        Name: "vtableDataPointer",
+        Sequence: 4
+      },
+      {
+        Type: 17,
+        Name: "elementClass",
+        Sequence: 5
+      },
+      {
+        Type: 18,
+        Name: "isInterface",
+        Sequence: 6
+      },
+      {
+        Type: 18,
+        Name: "isArray",
+        Sequence: 7
+      },
+      {
+        Type: 17,
+        Name: "declaringType",
+        Sequence: 1
+      },
+      {
+        Type: 19,
+        Name: "function",
+        Sequence: 3
+      },
+      {
+        Type: 20,
+        Name: "vtableSlot",
+        Sequence: 4
+      },
+      {
+        Type: 14,
+        Name: "value",
+        Sequence: 1
+      },
+      {
+        Type: 14,
+        Name: "conjugateName",
+        Sequence: 1
+      },
+      {
+        Type: 21,
+        Name: "getMethod",
+        Sequence: 3
+      },
+      {
+        Type: 21,
+        Name: "setMethod",
+        Sequence: 4
+      },
+      {
+        Type: 22,
+        Name: "attributeProvider",
+        Sequence: 1
+      },
+      {
+        Type: 21,
+        Name: "constructor",
+        Sequence: 2
+      },
+      {
+        Type: 23,
+        Name: "validOn",
+        Sequence: 1
+      },
+      {
+        Type: 5,
+        Name: "",
+        Sequence: 1
+      }
+    ],
+    FieldReferences: [],
+    StaticConstructors: []
+  },
+  Fixups: [
+    {
+      Description: "System.Boolean System.Text.RegularExpressions.Regex::IsMatch(System.String,System.String) @ 37",
+      Offset: 37,
+      Type: 9,
+      Index: 0
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 1066",
+      Offset: 1029,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void System.Text.RegularExpressions.Regex::.ctor() @ 1555",
+      Offset: 489,
+      Type: 9,
+      Index: 2
+    },
+    {
+      Description: "System.Void System.Object::.ctor() @ 2088",
+      Offset: 533,
+      Type: 9,
+      Index: 3
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 2519",
+      Offset: 431,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void System.Text.StringBuilder::Append(System.String) @ 3008",
+      Offset: 489,
+      Type: 9,
+      Index: 4
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 4307",
+      Offset: 1299,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.String System.Text.StringBuilder::ToString() @ 4799",
+      Offset: 492,
+      Type: 9,
+      Index: 5
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 6153",
+      Offset: 1354,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Void System.Text.StringBuilder::.ctor() @ 6645",
+      Offset: 492,
+      Type: 9,
+      Index: 6
+    },
+    {
+      Description: "System.Void System.Object::.ctor() @ 7170",
+      Offset: 525,
+      Type: 9,
+      Index: 3
+    },
+    {
+      Description: "XaeiOS.Kernel.XaeiOSException XaeiOS.Kernel.Scheduler::ConvertToManagedException(System.var) @ 7776",
+      Offset: 606,
+      Type: 9,
+      Index: 1
+    },
+    {
+      Description: "System.Text.RegularExpressions.Regex @ 5",
+      Offset: 5,
+      Type: 18,
+      Index: 0
+    },
+    {
+      Description: "System.String System.Object::ToString() @ 68",
+      Offset: 63,
+      Type: 10,
+      Index: 7
+    },
+    {
+      Description: "System.Int32 System.Object::GetHashCode() @ 126",
+      Offset: 58,
+      Type: 10,
+      Index: 8
+    },
+    {
+      Description: "System.Boolean System.Object::Equals(System.Object) @ 186",
+      Offset: 60,
+      Type: 10,
+      Index: 9
+    },
+    {
+      Description: "System.Void System.Object::Finalize() @ 256",
+      Offset: 70,
+      Type: 10,
+      Index: 10
+    },
+    {
+      Description: "System.Text.StringBuilder @ 311",
+      Offset: 55,
+      Type: 18,
+      Index: 2
+    },
+    {
+      Description: "System.String System.Text.StringBuilder::ToString() @ 363",
+      Offset: 52,
+      Type: 10,
+      Index: 5
+    },
+    {
+      Description: "System.Int32 System.Object::GetHashCode() @ 433",
+      Offset: 70,
+      Type: 10,
+      Index: 8
+    },
+    {
+      Description: "System.Boolean System.Object::Equals(System.Object) @ 493",
+      Offset: 60,
+      Type: 10,
+      Index: 9
+    },
+    {
+      Description: "System.Void System.Object::Finalize() @ 563",
+      Offset: 70,
+      Type: 10,
+      Index: 10
+    },
+    {
+      Description: "System.Text.RegularExpressions.Regex @ 2",
+      Offset: 2,
+      Type: 20,
+      Index: 0
+    },
+    {
+      Description: "System.Object @ 10",
+      Offset: 8,
+      Type: 20,
+      Index: 1
+    },
+    {
+      Description: "System.Text.StringBuilder @ 77",
+      Offset: 67,
+      Type: 20,
+      Index: 2
+    },
+    {
+      Description: "System.Object @ 85",
+      Offset: 8,
+      Type: 20,
+      Index: 1
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.RuntimeHelpers::InitializeMetadata() @ 186",
+      Offset: 101,
+      Type: 12,
+      Index: 11
+    },
+    {
+      Description: "System.Runtime.Assembly System.Runtime.CompilerServices.RuntimeHelpers::CreateAssembly(System.String) @ 273",
+      Offset: 87,
+      Type: 12,
+      Index: 12
+    },
+    {
+      Description: "System.Runtime.Class System.Runtime.CompilerServices.RuntimeHelpers::CreateClass(System.String,System.String,System.Runtime.Assembly,System.UIntPtr,System.Runtime.Class,System.Boolean,System.Boolean) @ 382",
+      Offset: 109,
+      Type: 12,
+      Index: 13
+    },
+    {
+      Description: "System.Text.RegularExpressions.Regex @ 431",
+      Offset: 49,
+      Type: 20,
+      Index: 0
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 626",
+      Offset: 195,
+      Type: 12,
+      Index: 14
+    },
+    {
+      Description: "System.Boolean System.Text.RegularExpressions.Regex::IsMatch(System.String,System.String) @ 647",
+      Offset: 21,
+      Type: 12,
+      Index: 0
+    },
+    {
+      Description: "System.Runtime.Constructor System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(System.Runtime.Class,System.String,System.NativeFunction) @ 782",
+      Offset: 135,
+      Type: 12,
+      Index: 15
+    },
+    {
+      Description: "System.Void System.Text.RegularExpressions.Regex::.ctor() @ 801",
+      Offset: 19,
+      Type: 12,
+      Index: 2
+    },
+    {
+      Description: "System.Runtime.Class System.Runtime.CompilerServices.RuntimeHelpers::CreateClass(System.String,System.String,System.Runtime.Assembly,System.UIntPtr,System.Runtime.Class,System.Boolean,System.Boolean) @ 932",
+      Offset: 131,
+      Type: 12,
+      Index: 13
+    },
+    {
+      Description: "System.Runtime.CompilerServices.CLRConjugateAttribute @ 998",
+      Offset: 66,
+      Type: 20,
+      Index: 3
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 1210",
+      Offset: 212,
+      Type: 12,
+      Index: 14
+    },
+    {
+      Description: "System.String System.Runtime.CompilerServices.CLRConjugateAttribute::get_ConjugateName() @ 1241",
+      Offset: 31,
+      Type: 12,
+      Index: 16
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 1386",
+      Offset: 145,
+      Type: 12,
+      Index: 14
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CLRConjugateAttribute::set_ConjugateName(System.String) @ 1417",
+      Offset: 31,
+      Type: 12,
+      Index: 17
+    },
+    {
+      Description: "System.Runtime.Constructor System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(System.Runtime.Class,System.String,System.NativeFunction) @ 1562",
+      Offset: 145,
+      Type: 12,
+      Index: 15
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CLRConjugateAttribute::.ctor(System.String) @ 1581",
+      Offset: 19,
+      Type: 12,
+      Index: 18
+    },
+    {
+      Description: "System.Runtime.Property System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(System.Runtime.Class,System.String,System.Runtime.Method,System.Runtime.Method) @ 1712",
+      Offset: 131,
+      Type: 12,
+      Index: 19
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 1866",
+      Offset: 154,
+      Type: 12,
+      Index: 20
+    },
+    {
+      Description: "System.Void System.AttributeUsageAttribute::.ctor(System.AttributeTargets) @ 1877",
+      Offset: 11,
+      Type: 12,
+      Index: 21
+    },
+    {
+      Description: "System.Runtime.CustomAttribute System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(System.Runtime.ICustomAttributeProvider,System.Runtime.Method) @ 1989",
+      Offset: 112,
+      Type: 12,
+      Index: 20
+    },
+    {
+      Description: "System.Void System.Runtime.CompilerServices.CLRConjugateAttribute::.ctor(System.String) @ 2000",
+      Offset: 11,
+      Type: 12,
+      Index: 22
+    },
+    {
+      Description: "System.Runtime.Class System.Runtime.CompilerServices.RuntimeHelpers::CreateClass(System.String,System.String,System.Runtime.Assembly,System.UIntPtr,System.Runtime.Class,System.Boolean,System.Boolean) @ 2120",
+      Offset: 120,
+      Type: 12,
+      Index: 13
+    },
+    {
+      Description: "System.Text.StringBuilder @ 2158",
+      Offset: 38,
+      Type: 20,
+      Index: 2
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 2343",
+      Offset: 185,
+      Type: 12,
+      Index: 14
+    },
+    {
+      Description: "System.Void System.Text.StringBuilder::Append(System.String) @ 2363",
+      Offset: 20,
+      Type: 12,
+      Index: 4
+    },
+    {
+      Description: "System.Runtime.Method System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(System.Runtime.Class,System.String,System.NativeFunction,System.Int32) @ 2499",
+      Offset: 136,
+      Type: 12,
+      Index: 14
+    },
+    {
+      Description: "System.String System.Text.StringBuilder::ToString() @ 2521",
+      Offset: 22,
+      Type: 12,
+      Index: 5
+    },
+    {
+      Description: "System.String System.Text.StringBuilder::ToString() @ 2523",
+      Offset: 2,
+      Type: 68,
+      Index: 5
+    },
+    {
+      Description: "System.Runtime.Constructor System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(System.Runtime.Class,System.String,System.NativeFunction) @ 2675",
+      Offset: 152,
+      Type: 12,
+      Index: 15
+    },
+    {
+      Description: "System.Void System.Text.StringBuilder::.ctor() @ 2694",
+      Offset: 19,
+      Type: 12,
+      Index: 6
+    }
+  ]
+}
+]]></Header><Code Length="5"><![CDATA[function($ep,$end,$rv,$pc,$f,r0)
+// : System.Boolean System.Text.RegularExpressions.Regex::IsMatch(System.String,System.String)
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    r0 = $f[2].match($f[3])/*$t2 = str.Match(pattern)*/;
+                    return r0/*$t2*/;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f)
+// : System.Void System.Text.RegularExpressions.Regex::.ctor()
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $$[].call(this)/*this..ctor()*/;
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.Void System.Text.StringBuilder::Append(System.String)
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    r0 = this[0]/*$t1 = this._internalArray*/;
+                    r0.push($f[2])/*$t1.Push(s)*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.String System.Text.StringBuilder::ToString()
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $ep = 2;
+                    r0 = this[0]/*$t1 = this._internalArray*/;
+                    $rv = r0.join("")/*$rv = $t1.Join("")*/;
+                    if(0 > $end--)
+                    {
+                        throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+                    }
+                }
+                case 2:
+                {
+                    r0 = $rv/*$t3 = $rv*/;
+                    return r0/*$t3*/;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+},
+function($ep,$end,$rv,$pc,$f,r0)
+// : System.Void System.Text.StringBuilder::.ctor()
+{
+    var t;
+    if(($ep == 0))
+    {
+        $f[0] = this/*Frame[This] = this*/;
+        $f[1] = arguments.callee/*Frame[Function] = [dynamic expression]*/;
+        $ep = 1;
+
+    }
+    $ctrl:
+    do
+    {
+        if(0 > $end--)
+        {
+            throw (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*[Continuation]*/;
+
+        }
+        try
+        {
+            switch($ep)
+            {
+                case 1:
+                {
+                    $$[].call(this)/*this..ctor()*/;
+                    r0 = new Array()/*$t2 = new System.Void System.NativeArray`1<System.String>::.ctor()()*/;
+                    this[0] = r0/*this._internalArray = $t2*/;
+                    return;
+                }
+                default:
+                {
+                    throw new Error("Invalid execution pointer")/*[dynamic expression]*/;
+                }
+
+            }
+
+
+        }
+        catch($e)
+        {
+            if((($e != null) && ($e.$ == null)))
+            {
+                throw $e/*$e*/;
+
+            }
+            $e = $$[]($e)/*$e = XaeiOS.Kernel.Scheduler::ConvertToManagedException($e)*/;
+            if(($e[0] == null))
+            {
+                $e[0] = (t=[$ep,$end,$rv,$pc,$f,r0],t.$=null,t)/*$e._throwContext = [Continuation]*/;
+
+            }
+            if((!$f.$ecp))
+            {
+                throw $e/*$e*/;
+
+            }
+            $ep = $f.$ecp;
+            $f.$e = $e/*Frame.Exception = $e*/;
+
+        }
+
+
+    } while (true);
+
+
+}]]></Code><Data Length="2"><![CDATA[
+// : System.Text.RegularExpressions.Regex
+{
+    f: 0,
+    0:$$[]/* System.String System.Object::ToString() */,
+    1:$$[]/* System.Int32 System.Object::GetHashCode() */,
+    2:$$[]/* System.Boolean System.Object::Equals(System.Object) */,
+    3:$$[]/* System.Void System.Object::Finalize() */
+},
+
+// : System.Text.StringBuilder
+{
+    f: 0,
+    0:$$[]/* System.String System.Text.StringBuilder::ToString() */,
+    1:$$[]/* System.Int32 System.Object::GetHashCode() */,
+    2:$$[]/* System.Boolean System.Object::Equals(System.Object) */,
+    3:$$[]/* System.Void System.Object::Finalize() */
+}]]></Data><Initialization><![CDATA[_[].b = _[];// System.Text.RegularExpressions.Regex extends System.Object
+_[].b = _[];// System.Text.StringBuilder extends System.Object
+var t0 = {}/* t0 = [dynamic expression]*/;
+$$[]()/*System.Runtime.CompilerServices.RuntimeHelpers::InitializeMetadata()*/;t0[0] = $$[]("System")/*t0[0] = System.Runtime.CompilerServices.RuntimeHelpers::CreateAssembly("System")*/;
+t0[1] = $$[]("System.Text.RegularExpressions","Regex",t0[0],,null,false,false)/*t0[1] = System.Runtime.CompilerServices.RuntimeHelpers::CreateClass("System.Text.RegularExpressions", "Regex", t0[0], [dynamic expression], null, False, False)*/;
+t0[2] = $$[](t0[1],"IsMatch",$$[],-1)/*t0[2] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[1], "IsMatch", [dynamic expression], -1)*/;
+t0[3] = $$[](t0[1],".ctor",$$[])/*t0[3] = System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(t0[1], ".ctor", [dynamic expression])*/;
+t0[4] = $$[]("System.Runtime.CompilerServices","CLRConjugateAttribute",t0[0],,null,false,false)/*t0[4] = System.Runtime.CompilerServices.RuntimeHelpers::CreateClass("System.Runtime.CompilerServices", "CLRConjugateAttribute", t0[0], [dynamic expression], null, False, False)*/;
+t0[5] = $$[](t0[4],"get_ConjugateName",$$[],-1)/*t0[5] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[4], "get_ConjugateName", [dynamic expression], -1)*/;
+t0[6] = $$[](t0[4],"set_ConjugateName",$$[],-1)/*t0[6] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[4], "set_ConjugateName", [dynamic expression], -1)*/;
+t0[7] = $$[](t0[4],".ctor",$$[])/*t0[7] = System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(t0[4], ".ctor", [dynamic expression])*/;
+t0[8] = $$[](t0[4],"ConjugateName",t0[5],t0[6])/*t0[8] = System.Runtime.CompilerServices.RuntimeHelpers::CreateProperty(t0[4], "ConjugateName", t0[5], t0[6])*/;
+$$[](t0[4],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[4], [dynamic expression])*/;
+$$[](t0[1],$$[].m)/*System.Runtime.CompilerServices.RuntimeHelpers::CreateCustomAttribute(t0[1], [dynamic expression])*/;
+t0[9] = $$[]("System.Text","StringBuilder",t0[0],,null,false,false)/*t0[9] = System.Runtime.CompilerServices.RuntimeHelpers::CreateClass("System.Text", "StringBuilder", t0[0], [dynamic expression], null, False, False)*/;
+t0[10] = $$[](t0[9],"Append",$$[],-1)/*t0[10] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[9], "Append", [dynamic expression], -1)*/;
+t0[11] = $$[](t0[9],"ToString",$$[],)/*t0[11] = System.Runtime.CompilerServices.RuntimeHelpers::CreateMethod(t0[9], "ToString", [dynamic expression], [dynamic expression])*/;
+t0[12] = $$[](t0[9],".ctor",$$[])/*t0[12] = System.Runtime.CompilerServices.RuntimeHelpers::CreateConstructor(t0[9], ".ctor", [dynamic expression])*/;
+]]></Initialization></Object>

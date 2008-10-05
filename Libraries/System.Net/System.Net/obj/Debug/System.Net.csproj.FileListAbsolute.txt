@@ -1,0 +1,10 @@
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net\bin\Debug\System.Net.dll
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net\bin\Debug\System.Net.pdb
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net\bin\Debug\System.Browser.dll
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net\bin\Debug\System.dll
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net\bin\Debug\System.Browser.pdb
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net\bin\Debug\System.pdb
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net\obj\Debug\ResolveAssemblyReference.cache
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net\obj\Debug\System.Net.dll
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net\obj\Debug\System.Net.pdb

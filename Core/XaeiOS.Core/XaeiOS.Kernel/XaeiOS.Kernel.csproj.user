@@ -1,0 +1,11 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <UseContracts>False</UseContracts>
+    <Verify>False</Verify>
+    <ReferenceTypesAreNonNullByDefault>False</ReferenceTypesAreNonNullByDefault>
+    <ProgramVerifierCommandLineOptions>
+    </ProgramVerifierCommandLineOptions>
+    <DisabledContractFeatures>
+    </DisabledContractFeatures>
+  </PropertyGroup>
+</Project>

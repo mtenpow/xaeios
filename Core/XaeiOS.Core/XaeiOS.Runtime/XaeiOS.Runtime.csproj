@@ -1,0 +1,81 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{979ED276-85EA-4F23-920D-0DCD97BE5374}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XaeiOS</RootNamespace>
+    <AssemblyName>XaeiOS.Runtime</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <OutputType>Library</OutputType>
+    <AssemblyName>XaeiOS.Runtime</AssemblyName>
+    <RootNamespace>XaeiOS</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <OutputType>Library</OutputType>
+    <AssemblyName>XaeiOS.Runtime</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <RootNamespace>XaeiOS</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="XaeiOS\Runtime\AppDomain.cs" />
+    <Compile Include="XaeiOS\Runtime\AppDomainManager.cs" />
+    <Compile Include="XaeiOS\Runtime\Assembly.cs" />
+    <Compile Include="XaeiOS\Runtime\AssemblyLoader.cs" />
+    <Compile Include="XaeiOS\Runtime\Install\InstallationManifest.cs" />
+    <Compile Include="XaeiOS\Runtime\Install\Installer.cs" />
+    <Compile Include="XaeiOS\Runtime\MethodDefinition.cs" />
+    <Compile Include="XaeiOS\Runtime\RuntimeManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OSCorlib\OSCorlib.csproj">
+      <Project>{A65012D8-10F7-4995-976C-0FAB52ADF0BF}</Project>
+      <Name>OSCorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XaeiOS.Kernel\XaeiOS.Kernel.csproj">
+      <Project>{F235D7CA-0C0B-493D-B275-D17203D1F9CC}</Project>
+      <Name>XaeiOS.Kernel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

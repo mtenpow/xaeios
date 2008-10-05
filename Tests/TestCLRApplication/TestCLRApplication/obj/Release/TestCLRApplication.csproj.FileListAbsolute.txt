@@ -1,0 +1,6 @@
+C:\Codebase\XaeiOS\Tests\TestCLRApplication\TestCLRApplication\bin\Release\TestCLRApplication.exe
+C:\Codebase\XaeiOS\Tests\TestCLRApplication\TestCLRApplication\bin\Release\TestCLRApplication.pdb
+C:\Codebase\XaeiOS\Tests\TestCLRApplication\TestCLRApplication\obj\Release\TestCLRApplication.exe
+C:\Codebase\XaeiOS\Tests\TestCLRApplication\TestCLRApplication\obj\Release\TestCLRApplication.pdb
+C:\Codebase\XaeiOS\Tests\TestCLRApplication\TestCLRApplication\bin\Debug\TestCLRApplication.exe
+C:\Codebase\XaeiOS\Tests\TestCLRApplication\TestCLRApplication\bin\Debug\TestCLRApplication.pdb

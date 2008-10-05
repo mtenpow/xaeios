@@ -1,0 +1,13 @@
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\bin\Debug\XaeiOS.TestSuite.XML
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\bin\Debug\XaeiOS.TestSuite.exe
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\bin\Debug\XaeiOS.TestSuite.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\bin\Debug\System.Browser.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\bin\Debug\System.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\bin\Debug\System.Browser.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\bin\Debug\System.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\obj\Debug\XaeiOS.TestSuite.exe
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\obj\Debug\XaeiOS.TestSuite.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\bin\Debug\OSCorlib.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.TestSuite\bin\Debug\XaeiOS.ProcessViewer.pdb

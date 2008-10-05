@@ -1,0 +1,1 @@
+../../../../../XaeiO.Linker/bin/Debug/XaeiO.Linker.exe -i OSCorlib.xo -i XaeiOS.Kernel.xo -i System.Browser.xo -i XaeiOS.ProcessViewer.xo -e Tenpow.Site.xo -v -o Tenpow.Site.xm

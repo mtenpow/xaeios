@@ -1,0 +1,12 @@
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Tests\bin\Debug\System.Net.Tests.exe
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Tests\bin\Debug\System.Net.Tests.pdb
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Tests\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Tests\bin\Debug\System.Browser.dll
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Tests\bin\Debug\System.dll
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Tests\bin\Debug\System.Net.dll
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Tests\bin\Debug\System.Browser.pdb
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Tests\bin\Debug\System.Net.pdb
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Tests\bin\Debug\System.pdb
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Tests\obj\Debug\System.Net.Tests.exe
+C:\Codebase\XaeiOS\Libraries\System.Net\System.Net.Tests\obj\Debug\System.Net.Tests.pdb

@@ -1,0 +1,139 @@
+7/24/06
+
+This document describes some specifics of the Alpha2 release of Narrative JavaScript, and fleshes out some thoughts about a different implementation strategy.
+
+----------------------------------------
+
+I've been contemplating how yield and resume are implemented in Narrative JavaScript, and I'm starting to think that there's an alternative strategy that will prove more elegant and natural at the expense of slightly more implementation complexity.
+
+In order to discuss how narrativejs may reimplement its yield/resume algorithms, let's first discuss the problem space and review how the current code generation process works.
+
+The narrativejs compiler works as follows: it finds function declarations that use the -> operator (i.e. contain yielding method calls) within the body, and then it rewrites these functions by doing the following:
+- reorganize the function body to act like a state machine
+- bundle all local context data into a referenceable object
+- modify all local data references to operate on the context object
+- modify yielding method calls so that the context is appended to the callee's parameter list
+
+At runtime, the contexts that are passed into successive yielding method calls are linked together, thus forming a runtime representation of the current stack.  It's this context data that's used to resume execution (at the point just after execution yielded) upon asynchronous callback.
+
+A thread is resumed by setting a return value at the top of the context chain and calling the method corresponding to the top context object.  (Remember, the methods have been rewritten to be state machines.  This means that we can jump into the middle of a method simply by supplying the correct context data as an argument.)  When that method "returns", it repeats the steps just described: grab the next lower frame context, set a return value, and call the corresponding method.
+
+For example, if we have functions A, B, and C, where A calls B->() and B calls C->(), here's a moment by moment view of the stack prior to yield:
+
+  1. A
+  2. A B      // A calls B->()
+  3. A B C    // B calls C->()
+  4. [yield]
+
+Then, when we resume, the stack begins at the "top" and goes to the "bottom":
+
+  1. [resume]
+  2. C
+  3. C B    // C resumed B
+  4. C B A  // B resumed A
+
+This process of chaining context jump-points together is very similar to continuation-passing-style coding (although as Chris Double has pointed out it's not quite the same because these aren't true continuations).  Take note that when we resume, the stack is reversed from it's original direction.  I call this "stack inversion," and its existence lies at the center of this discussion.  Also note that the diagrams above aren't quite technically correct, but we'll get back to that later.
+
+This CPS-like process is a fine implementation, and it works reasonably well enough.  However, there are 3 potentially troubling problems:
+
+* Problem 1: It is easy to run out of stack space using narrativejs.
+
+This can happen if you resume without yielding -- the stack just continues forever upward.  For example, assume method C above didn't yield to the runtime, and A had been coded such that it called back into B multiple times.  The stack would just keep growing:
+
+  1. A
+  2. A B            // A called B->()
+  3. A B C          // B called C->()
+  4. A B C B        // C resumed B
+  5. A B C B A      // B resumed A
+  6. A B C B A B    // A looped, called B->() again
+  7. A B C B A B C  // B called C->()
+  etc.
+
+* Problem 2: Native stack traces don't include the correct caller.
+
+Since the stack is inverted when we resume, a native stack trace (such as you might see in a debugger) won't show the caller method that was present prior to yield.  Instead, you see callee methods that are now complete.  The correct caller data is present in the runtime via the context object chain, but that's not helpful for debugging.  So while narrativejs improves code clarity, it unfortunately does not help (and even hinders) code debuggability.
+
+* Problem 3: Methods that don't yield behave differently than methods that do.
+
+As pointed out by Joe and Kris on the narrativejs mailing list, a method called via -> that does not in fact yield will result in premature thread termination.  This is because of how the CPS-like transform works: yielding methods "return" by calling their caller, whereas regular methods simply return as normal.  The compiler doesn't check for the situation where a non-yielding method is called with ->, therefore its return is treated as a yield, and the thread is never resumed.
+
+Solution?
+---------
+
+At the heart of all three of the problems above is the fact that the narrativejs implementation results in stack inversion as described earlier.  If yielding resumed with the stack in its upright position, I think it would be possible to generate the code such that none of these problems would exist.
+
+How would this be possible?  Well, my first thought is to resume execution by crawling to the head of the context chain, call its corresponding method, and rely on the state-machine qualities of each method to result in no-op re-calling of each method in the chain, thus re-establishing the stack that existed prior to yield.  For example:
+
+  1.  A
+  2.  A B
+  3.  A B C
+  4.  [yield]
+  5.  [resume]
+  6.  A        // no-op -- state machine jumps directly to B->()
+  7.  A B      // no-op -- state machine jumps directly to C->()
+  8.  A B C    // resumes C after the yield point
+  9.  A B      // C returns, resuming B
+  10. A        // B returns, resuming A
+
+So in other words, the stack would be re-established by calling methods in order of the context chain, but the actual resume of each frame would happen on the way back down, on *return*.  (As opposed to typical CPS and the current implementation, which resumes on *call*.)
+
+Since resume would now happen on return, calling up into a non-yielding method can be made safe: prior to a -> method call, the context is configured to resume as normal when the callee returns. On the other hand, yielding now becomes an explicit action that modifies the context so that it doesn't resume until later.  (I find this mind-bending.  I had to chew on it for a while to get it.)
+
+My first knee-jerk reaction to this idea is, "yuck, now we're performing way more stack operations that we were before. I'm not sure about the performance overhead of this algorithm."  It seems like a reasonable argument at first glance -- not only do you call A, B, and C to get to the yield point, but you have to do the exact same thing to resume after the yield point.
+
+But my knee-jerk reaction is unwarranted.  Upon further examination it's easy to see that there's no extra overhead involved in resuming the stack from the bottom going up.
+
+At this point we need to digress into a brief discussion of tail recursion.  Continuation passing style was originally conceived and implemented in languages that support proper tail recursion.  For those who don't remember this concept from their way-back college days: tail recursive languages remove portions of the stack that are determined to be complete.  In other words, if when leaving a frame the runtime is able to determine that no operations will be executed once the frame is returned to, the runtime can (and will) safely remove that frame from the stack.  In this way a language implementation can optimize for stack space.  For example, in a tail recursive language our stack progression would look like this:
+
+  1. A
+  2. B   // A is discarded
+  3. C   // B is discarded
+  4. [yield]
+  5. [resume]
+  6. C
+  7. B   // C is discarded
+  8. A   // B is discarded
+
+In addition to less stack space, this also helps efficiency in that you have fewer return operations, which means you have fewer overall stack manipulations.
+
+JavaScript 1 does not support proper tail recursion.  This means that any method call *always* results in 2 stack manipulations: when calling, add the method to the stack, and then the frame is removed on return.  This makes a big difference in how we must think about the yield and resume process.
+
+Let's return to our original diagrams, the ones I said weren't quite technically correct.  The reason they weren't correct is because they don't show the return operations corresponding with each method call.  So let's revisit the stack progression in narrativejs as it exists now, with stack inversion.  This time, we'll include the return operations (each stack change that doesn't really cause any meaningful code to be executed is marked as "no-op"):
+
+  1.  A
+  2.  A B        // A calls B->()
+  3.  A B C      // B calls C->(), C yields
+  4.  A B        // C returned (no-op)
+  5.  A          // B returned (no-op)
+  6.  [yield]    // A returned (no-op)
+  7.  [resume]  
+  8.  C          // resume C
+  9.  C B        // resume B
+  10. C B A      // resume A
+  11. C B        // A returned (no-op)
+  12. C          // B returned (no-op)
+  13.            // C returned (no-op)
+
+Now, let's compare with an algorithm that doesn't invert the stack:
+
+  1.  A
+  2.  A B        // A calls B->()
+  3.  A B C      // B calls C->(), C yields
+  4.  A B        // C returned (no-op)
+  5.  A          // B returned (no-op)
+  6.  [yield]    // A returned (no-op)
+  7.  [resume]
+  8.  A          // re-establish A on the stack (no-op)
+  9.  A B        // re-establish B on the stack (no-op)
+  10. A B C      // re-establish C on the stack (C resumes)
+  11. A B        // C returned (B resumes)
+  12. A          // B returned (A resumes)
+  13.            // A returned (no-op)
+
+There's no difference in the number of operations!  Unless I'm missing something, It's unintuitive but true: CPS transform provides no benefits and a few drawbacks when used in a language missing tail-recursive.
+
+This right-side-up algorithm is different enough from CPS that I wouldn't say it's correct to call it CPS anymore.  Instead I'm thinking of it as "co-routine emulation".
+
+The only potential drawbacks to co-routine emulation that I'm seeing right now are a) increased implementation complexity, and b) bloated size of rewritten code.  I'm not too worried about (a), but (b) I'm pretty sensitive to.  I'm currently thinking through implementation ideas that minimize the impact of (b).  In the meantime, thoughts and comments are appreciated.
+
+  -Neil

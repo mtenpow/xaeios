@@ -1,0 +1,7 @@
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel\bin\Debug\XaeiOS.Kernel.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel\bin\Debug\XaeiOS.Kernel.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel\bin\Debug\OSCorlib.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel\obj\Debug\ResolveAssemblyReference.cache
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel\obj\Debug\XaeiOS.Kernel.dll
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel\obj\Debug\XaeiOS.Kernel.pdb
+C:\Codebase\XaeiOS\Core\XaeiOS.Core\XaeiOS.Kernel\bin\Debug\OSCorlib.pdb

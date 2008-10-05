@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Browser", "System.Browser\System.Browser.csproj", "{57808758-6BBB-40E1-BAA8-2A3885754268}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug IE6|Any CPU = Debug IE6|Any CPU
+		Release IE6|Any CPU = Release IE6|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57808758-6BBB-40E1-BAA8-2A3885754268}.Debug IE6|Any CPU.ActiveCfg = Debug IE6|Any CPU
+		{57808758-6BBB-40E1-BAA8-2A3885754268}.Debug IE6|Any CPU.Build.0 = Debug IE6|Any CPU
+		{57808758-6BBB-40E1-BAA8-2A3885754268}.Release IE6|Any CPU.ActiveCfg = Release IE6|Any CPU
+		{57808758-6BBB-40E1-BAA8-2A3885754268}.Release IE6|Any CPU.Build.0 = Release IE6|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

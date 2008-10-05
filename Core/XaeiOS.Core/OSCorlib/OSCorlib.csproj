@@ -1,0 +1,410 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A65012D8-10F7-4995-976C-0FAB52ADF0BF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>OSCorlib</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>default</LangVersion>
+    <DebugType>Full</DebugType>
+    <ErrorReport>queue</ErrorReport>
+    <OutputType>Library</OutputType>
+    <AssemblyName>OSCorlib</AssemblyName>
+    <RootNamespace>
+    </RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>default</LangVersion>
+    <ErrorReport>queue</ErrorReport>
+    <OutputType>Library</OutputType>
+    <AssemblyName>OSCorlib</AssemblyName>
+    <RootNamespace>
+    </RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Collections\ArrayList.cs" />
+    <Compile Include="System\Collections\Queue.cs" />
+    <Compile Include="System\Collections\Generic\ICollection.cs" />
+    <Compile Include="System\Collections\ICollection.cs" />
+    <Compile Include="System\Collections\Generic\KeyValuePair.cs" />
+    <Compile Include="System\Collections\Generic\IList.cs" />
+    <Compile Include="System\Collections\Generic\Dictionary.cs" />
+    <Compile Include="System\Collections\Generic\IEnumerable.cs" />
+    <Compile Include="System\Collections\Generic\List.cs" />
+    <Compile Include="System\Collections\IList.cs" />
+    <Compile Include="System\Console.cs" />
+    <Compile Include="System\ArgumentException.cs" />
+    <Compile Include="System\ArgumentOutOfRangeException.cs" />
+    <Compile Include="System\Activator.cs" />
+    <Compile Include="System\IAsyncResult.cs" />
+    <Compile Include="System\Diagnostics\Debug.cs" />
+    <Compile Include="System\IO\TextWriter.cs" />
+    <Compile Include="System\IO\Stream.cs" />
+    <Compile Include="System\Reflection\ConstructorInfo.cs" />
+    <Compile Include="System\Reflection\RuntimeConstructorInfo.cs" />
+    <Compile Include="System\Reflection\MethodBase.cs" />
+    <Compile Include="System\Reflection\MemberInfo.cs" />
+    <Compile Include="System\Reflection\RuntimeMethodInfo.cs" />
+    <Compile Include="System\Reflection\RuntimePropertyInfo.cs" />
+    <Compile Include="System\Reflection\PropertyInfo.cs" />
+    <Compile Include="System\Reflection\ReflectionHelpers.cs" />
+    <Compile Include="System\Reflection\RuntimeType.cs" />
+    <Compile Include="System\Runtime\Class.cs" />
+    <Compile Include="System\Runtime\Assembly.cs" />
+    <Compile Include="System\Runtime\CompilerServices\CompilerGeneratedAttribute.cs" />
+    <Compile Include="System\Runtime\Parameter.cs" />
+    <Compile Include="System\Runtime\MethodBase.cs" />
+    <Compile Include="System\Runtime\CustomAttribute.cs" />
+    <Compile Include="System\Runtime\Constructor.cs" />
+    <Compile Include="System\Runtime\ICustomAttributeProvider.cs" />
+    <Compile Include="System\Runtime\Property.cs" />
+    <Compile Include="System\Runtime\Method.cs" />
+    <Compile Include="System\Runtime\XaeiOSObject.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RuntimeHelpers.cs" />
+    <Compile Include="System\Runtime\VTable.cs" />
+    <Compile Include="System\Runtime\InteropServices\NativeDelegateAttribute.cs" />
+    <Compile Include="System\Security\SecurityException.cs" />
+    <Compile Include="System\Security\IPermission.cs" />
+    <Compile Include="System\Security\Principal\IIdentity.cs" />
+    <Compile Include="System\Security\Principal\IPrincipal.cs" />
+    <Compile Include="System\Threading\ManualResetEvent.cs" />
+    <Compile Include="System\Threading\WaitCallback.cs" />
+    <Compile Include="System\Threading\ThreadPool.cs" />
+    <Compile Include="System\Threading\Monitor.cs" />
+    <Compile Include="System\Void.cs" />
+    <Compile Include="System\WeakReference.cs" />
+    <Compile Include="System\ICloneable.cs" />
+    <Compile Include="System\ExecutionEngineException.cs" />
+    <Compile Include="System\Diagnostics\Logging.cs" />
+    <Compile Include="System\Diagnostics\ObjectDebugger.cs" />
+    <Compile Include="System\NativeError.cs" />
+    <Compile Include="System\Reflection\MethodInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\CLRConjugateAttribute.cs" />
+    <Compile Include="System\Threading\ThreadAbortException.cs" />
+    <Compile Include="System\Threading\Semaphore.cs" />
+    <Compile Include="XaeiOS\Boot\BootManager.cs" />
+    <Compile Include="XaeiOS\Boot\BootMethod.cs" />
+    <Compile Include="XaeiOS\DataStructures\DoublyLinkedList.cs" />
+    <Compile Include="XaeiOS\Security\RootPrincipal.cs" />
+    <Compile Include="XaeiOS\Security\RootIdentity.cs" />
+    <Compile Include="XaeiOS\Security\ManifestPrincipal.cs" />
+    <Compile Include="XaeiOS\Security\ExternalIdentity.cs" />
+    <Compile Include="XaeiOS\Security\ExternalPrincipal.cs" />
+    <Compile Include="XaeiOS\Process\SignalPermission.cs" />
+    <Compile Include="XaeiOS\Process\Signal.cs" />
+    <Compile Include="XaeiOS\Process\SignalHandler.cs" />
+    <Compile Include="XaeiOS\Process\SignalDaemon.cs" />
+    <Compile Include="XaeiOS\Process\ImageFormat\ObjectImage.cs" />
+    <Compile Include="XaeiOS\Process\ImageFormat\AssemblyName.cs" />
+    <Compile Include="XaeiOS\Process\DynamicLinker.cs" />
+    <Compile Include="XaeiOS\SIPState.cs" />
+    <Compile Include="XaeiOS\SIPManager.cs" />
+    <Compile Include="XaeiOS\SIP.cs" />
+    <Compile Include="System\Reflection\AssemblyCompanyAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyConfigurationAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyCopyrightAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyCultureAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyDelaySignAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyDescriptionAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyKeyFileAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyKeyNameAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyProductAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyTitleAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyTrademarkAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyVersionAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\AssemblyFileVersionAttribute.cs" />
+    <Compile Include="System\Reflection\CompileTimeReflection.cs" />
+    <Compile Include="System\Reflection\DefaultMemberAttribute.cs" />
+    <Compile Include="System\Reflection\MethodAttributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Reflection\MethodImplAttributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Resources\ResourceManager.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NativeCodeGenerator.cs" />
+    <Compile Include="System\Runtime\InteropServices\ExposedAttribute.cs" />
+    <Compile Include="System\Runtime\InteropServices\ExposedCallbackDelegate.cs" />
+    <Compile Include="System\Runtime\InteropServices\MethodCallingConventionAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\DummyAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IndexerNameAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Runtime\CompilerServices\MethodImplAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Runtime\CompilerServices\MethodImplOptions.cs" />
+    <Compile Include="System\Runtime\InteropServices\CallingConvention.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Runtime\InteropServices\DllImportAttribute.cs" />
+    <Compile Include="System\Runtime\InteropServices\FieldOffset.cs" />
+    <Compile Include="System\Runtime\InteropServices\IntrinsicAttribute.cs" />
+    <Compile Include="System\Runtime\InteropServices\LayoutKind.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Runtime\InteropServices\OutAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Runtime\InteropServices\StructLayoutAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\NativeArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Attribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\AttributeTargets.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\AttributeUsageAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Boolean.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Byte.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Char.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\CLSCompliantAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Collections\IEnumerable.cs" />
+    <Compile Include="System\Decimal.cs" />
+    <Compile Include="System\Environment.cs" />
+    <Compile Include="System\NativeFunction.cs" />
+    <Compile Include="System\IDisposable.cs" />
+    <Compile Include="System\InvalidOperationException.cs" />
+    <Compile Include="System\NativeDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Delegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Double.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Enum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\EventHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Exception.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\FlagsAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Int16.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Int32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Int64.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\IntPtr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\InvalidCastException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Math.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\MulticastDelegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\MulticastNotSupportedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\NotImplementedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\NotSupportedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\NullReferenceException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\NativeNumber.cs" />
+    <Compile Include="System\NativeObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\OverflowException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\ParamArrayAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\RuntimeFieldHandle.cs" />
+    <Compile Include="System\RuntimeMethodHandle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\RuntimeTypeHandle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Sbyte.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Single.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\String.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Threading\Condition.cs" />
+    <Compile Include="XaeiOS\OSCorlib.cs" />
+    <Compile Include="XaeiOS\SystemCalls.cs" />
+    <Compile Include="System\SystemException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\TemplateAttribute.cs" />
+    <Compile Include="System\Threading\Lock.cs" />
+    <Compile Include="System\Threading\Thread.cs" />
+    <Compile Include="System\Threading\ThreadManager.cs" />
+    <Compile Include="System\Type.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\TypeCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\UInt16.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\UInt32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\UInt64.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\ValueType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\var.cs" />
+    <Compile Include="System\VoidDelegate.cs" />
+    <Compile Include="System\Global.cs" />
+    <AppDesigner Include="Properties\" />
+    <Compile Include="System\AsyncCallback.cs" />
+    <Compile Include="System\Nullable.cs" />
+    <Compile Include="System\Runtime\InteropServices\GuidAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RequiredAttributeAttribute.cs" />
+    <Compile Include="XaeiOS\TaskHandle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="XaeiOS\DirectoryService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <ProjectGuid>{A65012D8-10F7-4995-976C-0FAB52ADF0BF}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+  </PropertyGroup>
+</Project>

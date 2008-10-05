@@ -1,0 +1,10 @@
+C:\Codebase\XaeiO\XaeiOS\Develop\XaeiO.Compiler\Mono.Cecil\bin\Debug\Mono.Cecil.dll
+C:\Codebase\XaeiO\XaeiOS\Develop\XaeiO.Compiler\Mono.Cecil\bin\Debug\Mono.Cecil.pdb
+C:\Codebase\XaeiO\XaeiOS\Develop\XaeiO.Compiler\Mono.Cecil\obj\Debug\ResolveAssemblyReference.cache
+C:\Codebase\XaeiO\XaeiOS\Develop\XaeiO.Compiler\Mono.Cecil\obj\Debug\Mono.Cecil.dll
+C:\Codebase\XaeiO\XaeiOS\Develop\XaeiO.Compiler\Mono.Cecil\obj\Debug\Mono.Cecil.pdb
+C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\Mono.Cecil\bin\Debug\Mono.Cecil.dll
+C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\Mono.Cecil\bin\Debug\Mono.Cecil.pdb
+C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\Mono.Cecil\obj\Debug\ResolveAssemblyReference.cache
+C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\Mono.Cecil\obj\Debug\Mono.Cecil.dll
+C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\Mono.Cecil\obj\Debug\Mono.Cecil.pdb

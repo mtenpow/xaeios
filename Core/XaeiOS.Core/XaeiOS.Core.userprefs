@@ -1,0 +1,32 @@
+﻿<UserCombinePreferences version="1.0" filename="/home/mtenpow/Codebase/XaeiOS/Core/XaeiOS.Core/XaeiOS.Core.sln">
+  <Files>
+    <File name="Welcome" />
+    <File name="XaeiOS.Kernel/XaeiOS/Kernel/Scheduler.cs" line="384" column="34" />
+    <File name="XaeiOS.Kernel/XaeiOS/Kernel/OptimisticStackRebuildingContext.cs" line="1" column="1" />
+    <File name="OSCorlib/System/Threading/Lock.cs" line="60" column="96" />
+    <File name="OSCorlib/System/Threading/Monitor.cs" line="1" column="1" />
+    <File name="XaeiOS.Kernel/XaeiOS/SystemCalls.cs" line="60" column="33" />
+    <File name="OSCorlib/System/AsyncCallback.cs" line="5" column="1" />
+    <File name="OSCorlib/System/Nullable.cs" line="5" column="9" />
+    <File name="OSCorlib/System/Runtime/InteropServices/GuidAttribute.cs" line="12" column="9" />
+  </Files>
+  <Views>
+    <ViewMemento id="ProjectPad">
+      <Node expanded="True">
+        <Node name="OSCorlib" expanded="True" selected="True">
+          <Node name="System" expanded="True" />
+        </Node>
+      </Node>
+    </ViewMemento>
+    <ViewMemento id="ClassPad">
+      <Node expanded="True" />
+    </ViewMemento>
+    <ViewMemento id="MonoDevelop.NUnit.TestPad">
+      <Node />
+    </ViewMemento>
+  </Views>
+  <Properties>
+    <Property key="ActiveWindow" value="Welcome" />
+    <Property key="ActiveConfiguration" value="Debug|Any CPU" />
+  </Properties>
+</UserCombinePreferences>

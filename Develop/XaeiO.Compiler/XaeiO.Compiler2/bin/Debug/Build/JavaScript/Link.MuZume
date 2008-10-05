@@ -1,0 +1,1 @@
+../../../../../XaeiO.Linker/bin/Debug/XaeiO.Linker.exe -i OSCorlib.xo -i XaeiOS.Kernel.xo -i System.xo -e MuZume.xo -v -o MuZume.xm

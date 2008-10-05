@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1000]C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2\XaeiO.Compiler2.nunit</TopNode>
+  <SelectedNode>[0-1015]XaeiO.Compiler.Collections.Tests.TestEqualsWithMultipleIndices</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2\XaeiO.Compiler2.nunit" Expanded="true">
+      <Nodes>
+        <Node UniqueName="[0-1018]C:\Codebase\XaeiOS\Develop\XaeiO.Compiler\XaeiO.Compiler2\bin\Debug\XaeiO.Compiler2.exe" Expanded="true">
+          <Nodes>
+            <Node UniqueName="[0-1019]XaeiO" Expanded="true">
+              <Nodes>
+                <Node UniqueName="[0-1020]XaeiO.Compiler" Expanded="true">
+                  <Nodes>
+                    <Node UniqueName="[0-1001]XaeiO.Compiler.CLRHandler+Tests" Expanded="true">
+                      <Nodes>
+                        <Node UniqueName="[0-1002]XaeiO.Compiler.CLRHandler+Tests.TestNamespaceAndNameRegex" />
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1021]XaeiO.Compiler.Collections" Expanded="true">
+                      <Nodes>
+                        <Node UniqueName="[0-1003]XaeiO.Compiler.Collections.Tests" Expanded="true">
+                          <Nodes>
+                            <Node UniqueName="[0-1006]XaeiO.Compiler.Collections.Tests.TestAddAndRemove" />
+                            <Node UniqueName="[0-1005]XaeiO.Compiler.Collections.Tests.TestAddRemoveAndContains" />
+                            <Node UniqueName="[0-1004]XaeiO.Compiler.Collections.Tests.TestAddRemoveAndCount" />
+                            <Node UniqueName="[0-1013]XaeiO.Compiler.Collections.Tests.TestAddWithMultipleIndices" />
+                            <Node UniqueName="[0-1008]XaeiO.Compiler.Collections.Tests.TestAnd" />
+                            <Node UniqueName="[0-1007]XaeiO.Compiler.Collections.Tests.TestClear" />
+                            <Node UniqueName="[0-1016]XaeiO.Compiler.Collections.Tests.TestClone" />
+                            <Node UniqueName="[0-1012]XaeiO.Compiler.Collections.Tests.TestEquals" />
+                            <Node UniqueName="[0-1015]XaeiO.Compiler.Collections.Tests.TestEqualsWithMultipleIndices" />
+                            <Node UniqueName="[0-1017]XaeiO.Compiler.Collections.Tests.TestGenericSetClone" />
+                            <Node UniqueName="[0-1011]XaeiO.Compiler.Collections.Tests.TestMinus" />
+                            <Node UniqueName="[0-1010]XaeiO.Compiler.Collections.Tests.TestPlus" />
+                            <Node UniqueName="[0-1014]XaeiO.Compiler.Collections.Tests.TestPlusWithMultipleIndices" />
+                            <Node UniqueName="[0-1009]XaeiO.Compiler.Collections.Tests.TestXor" />
+                          </Nodes>
+                        </Node>
+                      </Nodes>
+                    </Node>
+                  </Nodes>
+                </Node>
+              </Nodes>
+            </Node>
+          </Nodes>
+        </Node>
+      </Nodes>
+    </Node>
+  </Nodes>
+</VisualState>

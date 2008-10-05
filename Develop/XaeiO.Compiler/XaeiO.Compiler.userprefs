@@ -1,0 +1,27 @@
+﻿<UserCombinePreferences version="1.0" filename="/home/mtenpow/Codebase/XaeiOS/Develop/XaeiO.Compiler/XaeiO.Compiler.sln">
+  <Files>
+    <File name="Welcome" />
+    <File name="Mono.Cecil.Pdb/Mono.Cecil.Pdb/PdbHelper.cs" line="77" column="69" />
+  </Files>
+  <Views>
+    <ViewMemento id="ProjectPad">
+      <Node expanded="True">
+        <Node name="Mono.Cecil.Pdb" expanded="True">
+          <Node name="Mono.Cecil.Pdb" expanded="True">
+            <Node name="PdbHelper.cs" selected="True" />
+          </Node>
+        </Node>
+      </Node>
+    </ViewMemento>
+    <ViewMemento id="ClassPad">
+      <Node expanded="True" />
+    </ViewMemento>
+    <ViewMemento id="MonoDevelop.NUnit.TestPad">
+      <Node expanded="True" />
+    </ViewMemento>
+  </Views>
+  <Properties>
+    <Property key="ActiveWindow" value="/home/mtenpow/Codebase/XaeiOS/Develop/XaeiO.Compiler/Mono.Cecil.Pdb/Mono.Cecil.Pdb/PdbHelper.cs" />
+    <Property key="ActiveConfiguration" value="Debug|Any CPU" />
+  </Properties>
+</UserCombinePreferences>

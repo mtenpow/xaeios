@@ -1,0 +1,403 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F36BEC6-E0BB-4341-9B28-6AB6BB5E508D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XaeiO.Compiler2</RootNamespace>
+    <AssemblyName>XaeiO.Compiler2</AssemblyName>
+    <StartupObject>Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>XaeiO.Compiler2</AssemblyName>
+    <RootNamespace>XaeiO.Compiler2</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>XaeiO.Compiler2</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <RootNamespace>XaeiO.Compiler2</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NDesk.Options, Version=3.5.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NDesk.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=1.1.1.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Newtonsoft.Json\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NGraphviz, Version=1.5.1609.21361, Culture=neutral, PublicKeyToken=05e526eb3b1f8001">
+      <HintPath>..\lib\QuickGraph\NGraphviz.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="NGraphviz.Helpers, Version=1.5.1609.21362, Culture=neutral, PublicKeyToken=05e526eb3b1f8001">
+      <HintPath>..\lib\QuickGraph\NGraphviz.Helpers.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="NGraphviz.Layout, Version=1.4.1609.7162, Culture=neutral, PublicKeyToken=05e526eb3b1f8001">
+      <HintPath>..\lib\QuickGraph\NGraphviz.Layout.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="nunit.core, Version=2.4.6.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\nunit\nunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core.interfaces, Version=2.4.6.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\nunit\nunit.core.interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.fixtures, Version=2.4.6.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\nunit\nunit.fixtures.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.6.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\nunit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.util, Version=2.4.6.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\nunit\nunit.util.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickGraph, Version=2.21.1.0, Culture=neutral, PublicKeyToken=975e84d0c8d6464d">
+      <HintPath>..\lib\QuickGraph\QuickGraph.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="QuickGraph.Algorithms, Version=2.21.1.0, Culture=neutral, PublicKeyToken=975e84d0c8d6464d">
+      <HintPath>..\lib\QuickGraph\QuickGraph.Algorithms.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="QuickGraph.Algorithms.Graphviz, Version=2.21.1.0, Culture=neutral">
+      <HintPath>..\lib\QuickGraph\QuickGraph.Algorithms.Graphviz.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DebugSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tenpow\Collections\Generic\CollectionHelper.cs" />
+    <Compile Include="Tenpow\Collections\Generic\DynamicDictionary.cs" />
+    <Compile Include="Tenpow\Collections\Generic\Set.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\CallingConvention.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ContinuationObjectExpression.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\FramePropertyReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\FrameProperty.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\StaticConstructors.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\XaeiOSBackend.Constants.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\FrameSlotReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ExecutionPointerSpecialRegisterReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\FrameSlot.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\Optimization\ExceptionHandlingInitializingTransformation.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\Optimization\TryBlockInfoTree.cs" />
+    <Compile Include="XaeiO\Compiler\CFGUtility.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\BoxExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\CanCastExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\UnboxExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IUnboxExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IBoxExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\Extensions.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\XaeiOSBackEnd.SpecialTypesAndMethods.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\XaeiOSBackEnd.EmitCode.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\InstanceOfExpression.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\FieldReference.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\FieldReferences.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\Parameter.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\Parameters.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\MethodImplOptions.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\Optimization\BooleanExpressionConversionTransformation.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\Optimization\InitializingTransformation.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ParentContinuationObjectSpecialRegisterReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\PseudoVariableDefinition.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\SpecialRegister.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\SpecialRegisterReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ParentContinuationObjectRegisterReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\AssemblyReferences.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\AssemblyReference.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\AssemblyName.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\Method.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\Methods.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\StaticField.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\StaticFields.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\Field.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\Fields.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\Type.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\Types.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\ParameterReference.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\ParameterReferences.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\NativeThrowExceptionStatement.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\UnboundFixup.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\ImageHeader.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\Fixup.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\Fixups.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\MethodReference.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\MethodReferences.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\Metadata.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\RestoreRegisterStatement.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\SetExecutionPointerStatement.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\LabeledContinueStatement.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\Manifest.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\TypeReference.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\ImageFormat\TypeReferences.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\VTable.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\VTableFlags.cs" />
+    <Compile Include="XaeiO\Compiler\CLRHandler.cs" />
+    <Compile Include="XaeiO\Compiler\CodeFormatter.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\AddressOfExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ArrayCreateExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ArrayIndexerExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\CastExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\CatchClause.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\CodeUtility.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ConditionalBranchExpressionStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ContinueStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ArrayLengthExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\Int64LiteralExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\Float32LiteralExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\Float64LiteralExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IExceptionExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IArrayLengthExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ExceptionExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\DynamicExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\FieldReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\LabeledStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\NullLiteralExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ObjectInitializeExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ReferenceComparer.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ReferenceResolver.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ThrowExceptionStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\TryCastExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\TryCatchFinallyStatement.cs" />
+    <Compile Include="XaeiO\Compiler\Collections\CFGNodeSet.cs" />
+    <Compile Include="XaeiO\Compiler\CompilerBase.cs" />
+    <Compile Include="XaeiO\Compiler\CompilerTierBase.cs" />
+    <Compile Include="XaeiO\Compiler\AssemblyCompileInfo.cs" />
+    <Compile Include="XaeiO\Compiler\Graph\AdjacencyGraphBase.cs" />
+    <Compile Include="XaeiO\Compiler\Optimization\DominatorAnalysis.cs" />
+    <Compile Include="XaeiO\Compiler\Optimization\TransformationConsistencyAttribute.cs" />
+    <Compile Include="XaeiO\Compiler\Optimization\TransformationUtility.cs" />
+    <Compile Include="XaeiO\Compiler\TryBlockInfo.cs" />
+    <Compile Include="XaeiO\Compiler\IncrementalCompilationState.cs" />
+    <Compile Include="XaeiO\Compiler\Helpers\AttributeHelper.cs" />
+    <Compile Include="XaeiO\Compiler\IBackEnd.cs" />
+    <Compile Include="XaeiO\Compiler\BackEnds\XaeiOS\XaeiOSBackEnd.cs" />
+    <Compile Include="XaeiO\Compiler\BasicBlock.cs" />
+    <Compile Include="XaeiO\Compiler\BlockEnding.cs" />
+    <Compile Include="XaeiO\Compiler\BranchCondition.cs" />
+    <Compile Include="XaeiO\Compiler\CFG.cs" />
+    <Compile Include="XaeiO\Compiler\CFGPattern.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\CodeMatcher.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\CodeReplacer.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ContextAwareCodeMatcher.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ContextAwareCodeReplacer.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ArgumentReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\AssignExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\BinaryExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\BinaryOperator.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\BlockStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\BreakStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ConditionCase.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ConditionExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\BooleanLiteralExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\AssignStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ConditionStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\DefaultCase.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\DoStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ExpressionStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ICodeObject.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\Int32LiteralExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\CoreTypes.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IAssignStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\Expression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IAddressDereferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IAddressOfExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IAddressOutExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IAddressReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IArgumentListExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IArgumentReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IArrayCreateExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IArrayIndexerExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IArrayInitializerExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IAssignExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IAttachEventStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IBaseReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IBinaryExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IBlockStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IBreakStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ICanCastExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ICastExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ICatchClause.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IConditionCase.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IConditionExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IConditionStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IContinueStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IDefaultCase.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IDelegateCreateExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IDelegateInvokeExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IDoStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IEventReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IExpressionStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IFieldOfExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IFieldReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IFixedStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IForEachStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IForStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IGenericDefaultExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IGotoStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ILabeledStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ILiteralExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ILockStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IMemoryCopyStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IMemoryInitializeStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IMethodInvokeExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IMethodOfExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IMethodReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IMethodReturnStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\INamedArgumentExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\INullCoalescingExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IObjectCreateExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IObjectInitializeExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IPropertyIndexerExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IPropertyReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IRemoveEventStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ISizeOfExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ISnippetExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IStackAllocateExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ISwitchCase.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ISwitchStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IThisReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IThrowExceptionStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ITryCastExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ITryCatchFinallyStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ITypedReferenceCreateExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ITypeOfExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ITypeOfTypedReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ITypeReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IUnaryExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IUsingStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IVariableDeclarationExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IVariableReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\IWhileStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\MethodInvokeExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\MethodReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\MethodReturnStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\NopStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\NullType.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ObjectCreateExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\PhiExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\StringLiteralExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\SwitchStatement.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\ThisReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\TypeReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\UnaryExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\UnaryOperator.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\VariableDefinitionExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\VariableReferenceExpression.cs" />
+    <Compile Include="XaeiO\Compiler\CodeModel\WhileStatement.cs" />
+    <Compile Include="XaeiO\Compiler\MethodCompileInfo.cs" />
+    <Compile Include="XaeiO\Compiler\CompilerException.cs" />
+    <Compile Include="XaeiO\Compiler\CompilerOptions.cs" />
+    <Compile Include="XaeiO\Compiler\CPUClass.cs" />
+    <Compile Include="XaeiO\Compiler\FlowControl.cs" />
+    <Compile Include="XaeiO\Compiler\FrontEnds\CecilFrontEnd.cs" />
+    <Compile Include="XaeiO\Compiler\Helpers\GraphHelper.cs" />
+    <Compile Include="XaeiO\Compiler\Helpers\GraphRenderer.cs" />
+    <Compile Include="XaeiO\Compiler\ICompiler.cs" />
+    <Compile Include="XaeiO\Compiler\ICompilerTier.cs" />
+    <Compile Include="XaeiO\Compiler\IFrontEnd.cs" />
+    <Compile Include="XaeiO\Compiler\IMiddleEnd.cs" />
+    <Compile Include="XaeiO\Compiler\InterferenceGraph.cs" />
+    <Compile Include="XaeiO\Compiler\Definition.cs" />
+    <Compile Include="XaeiO\Compiler\ITargetArchitectureHandler.cs" />
+    <Compile Include="XaeiO\Compiler\JavaScriptHandler.cs" />
+    <Compile Include="XaeiO\Compiler\MiddleEnds\BasicMiddleEnd.cs" />
+    <Compile Include="XaeiO\Compiler\Optimization\MethodInliningTransformation.cs" />
+    <Compile Include="XaeiO\Compiler\Optimization\ReachingDefinitions.cs" />
+    <Compile Include="XaeiO\Compiler\Optimization\TransformationBase.cs" />
+    <Compile Include="XaeiO\Compiler\PhiFunction.cs" />
+    <Compile Include="XaeiO\Compiler\SSAVariableDefinition.cs" />
+    <Compile Include="XaeiO\Compiler\Optimization\DuffsDevice.cs" />
+    <Compile Include="XaeiO\Compiler\Optimization\ITransformation.cs" />
+    <Compile Include="XaeiO\Compiler\Optimization\LoopTree.cs" />
+    <Compile Include="XaeiO\Compiler\Optimization\ConvergingProgramAnalysis.cs" />
+    <Compile Include="XaeiO\Compiler\Optimization\TransformationPhaseOrder.cs" />
+    <Compile Include="XaeiO\Compiler\Optimization\TransitiveClosureAndTopologicalOrder.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\AnyExpressionPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\BlockStatementPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\BooleanExpressionPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\CFGNodePattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\CFGPatternMatch.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\ConditionStatementPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\CostRestrictedBlockStatementPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\CostRestrictedStatementPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\DoStatementPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\ExpressionPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\ICodeGenerationPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\StatementPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\SwitchStatementPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\CodeGeneration\WhileStatementPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\IPattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\Pattern.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\PatternMatch.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\PatternMatchEventArgs.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\PatternMatchEventHandler.cs" />
+    <Compile Include="XaeiO\Compiler\Rules\Patterns\PatternMatchException.cs" />
+    <Compile Include="XaeiO\Compiler\TargetArchitecture.cs" />
+    <Compile Include="XaeiO\Compiler\XaeiOSCompiler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mono.Cecil.Pdb\Mono.Cecil.Pdb.csproj">
+      <Project>{4FEBBB25-D5C0-48F0-A822-2E0D6F3D777E}</Project>
+      <Name>Mono.Cecil.Pdb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mono.Cecil\Mono.Cecil.csproj">
+      <Project>{D8F63DFF-5230-43E4-9AB2-DA6E721A1FAE}</Project>
+      <Name>Mono.Cecil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

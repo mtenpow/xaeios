@@ -1,0 +1,47 @@
+- fix Firefox timing bug discovered by James Long
+- print compilation errors nicely in the Java compiler
+- fixed double-incrememtation bug and resume correctness bugs found by Kris Zyp
+- fix bug found by Kris Zyp where yeilding for loops not delimited by braces
+  would cause an infinite loop
+- fix bug found by Christer Forslund: global assignment in for loop setup
+  didn't compile correctly
+- fix makefile bug
+
+Beta 1
+------
+- added client-side dynamic script compiler for Ajax applications
+- added threading library and simplified API
+- added java-based compiler using Rhino
+- added web version of test suite
+- added new algorithm for stack manipulation that is more like lua-style
+  coroutines, less like CPS transformation.  (this change fixes a design problem
+  where a non-yielding method called with the yielding operator would result
+  in a truncated thread that never completes.)
+- functions containing no yielding try/catch blocks are no longer wrapped with
+  a try/catch block
+- added support for yielding within switch blocks
+- fixed compilation of += in Internet Explorer
+- made it possible to call a yielding constructor
+- put narcissus into single file/object to reduce global namespace pollution
+- fix bug where single-statement blocks not enclosed in curlies wouldn't show
+  up in the output
+
+Alpha 2
+-------
+- added notifier API
+- added support for exceptions (blocking within try/catch/finally blocks)
+- added --exceptions flag to compiler to turn on/off exception support 
+  (default is "on")
+- added sample compilation in docs via web page
+- incorporated patch from chocolateboy that allows $ in variable names, 
+  disallows `
+- updated parser to properly handle non-tab, space, or newline whitespace
+- fixed array initialization bug that left out comma separators
+- fixed bug in scoping/nesting of both sync and async methods
+- fixed identifier resolution problems in for and while blocks
+- fixed identifier resolution problems for the dot operator and object 
+  property init
+
+Alpha 1
+-------
+- initial Narrative JavaScript release

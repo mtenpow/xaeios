@@ -1,0 +1,85 @@
+try
+{ // 1
+    try
+    { // 2
+    } // 3
+    catch
+    { // 4
+    } // 5
+    finally
+    { // 6
+    } // 7
+} // 8
+catch
+{ // 9
+    try
+    { // 9.1
+    } // 9.2
+    catch
+    { // 9.3
+    } // 9.4
+    finally
+    { // 9.5
+    } // 9.6
+} // 10
+finally
+{ // 11
+} // 12
+
+Pseudo-becomes:
+
+try {
+    case 1: // try block
+        ecp = 9; // set ecp to catch (or finally) block at beginning of try block
+    case 2: // try block
+        ecp = 4; // set ecp to catch (or finally) block at beginning of try block
+    case 3:
+        ep = 6; // branch to finally block at end of try block
+    case 4: // catch block
+        r0 = frame[ex]; // move exception from frame to register because it has been caught
+        frame[ex] = null; // clear exception from frame because it has been caught
+        ecp = 6; // set ecp to finally (or parent catch [or parent finally]) block at beginning of catch block
+    case 5:
+        ep = 6; // branch to finally block at end of catch block
+        // if no finally block exists, set ecp to parent catch (or finally) block at end of catch block
+    case 6: // finally block
+        ecp = 9; // set ecp to parent catch (or finally) block at beginning of child finally block
+        // if there is no parent TryBlockInfo, clear ecp at beginning of finally block
+    case 7:
+        if(frame[ex] != null) { // rethrow exception from end of finally block if there was an exception
+            throw frame[ex];
+        }
+    case 8:
+    case 9: // catch block
+        r0 = frame[ex]; // move exception from frame to register because it has been caught
+        frame[ex] = null; // clear exception from frame because is has been caught
+        ecp = 11; // set ecp to finally (or parent catch [or parent finally]) block at beginning of catch block
+    case 9.1: // try block
+        ecp = // set ecp to catch (or finally) block at beginning of try block
+    case 9.2: // try block
+    case 9.3: // catch block
+    case 9.4: // catch block
+    case 9.5: // finally block
+    case 9.6: // finally block
+    case 10:
+        ep = 11; // branch to finally block at end of catch block
+        // if no finally block exists, set ecp to parent catch (or finally) block at end of catch block
+    case 11: // finally block
+        ecp = null; // set ecp to parent catch (or finally) block at beginning of child finally block
+        // if there is no parent TryBlockInfo, clear ecp at beginning of finally block
+    case 12:
+        if(frame[ex] != null) { // rethrow exception from end of finally block if there was an exception
+            throw frame[ex];
+        }
+} catch(e) {
+    if(ecp) {
+        frame[ex] = e;
+        ep = ecp;
+    } else {
+        throw e;
+    }
+
+}
+
+Misc:
+ + _throwContext is preserved during finally rethrow because frame[ex]._throwContext is already set.  Yay!
